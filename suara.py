@@ -18,9 +18,10 @@ def durasi(path):
 
 SUARA_LAIN = {"pria": "id-ID-ArdiNeural", "wanita": "id-ID-GadisNeural"}
 # suara hantu: lebih berat & lambat, bergema, sedikit bergetar — bukan suara narator biasa
-FILTER_HANTU = ("asetrate=44100*0.86,aresample=44100,atempo=1.04,highpass=f=90,lowpass=f=6500,"
-                "tremolo=f=5:d=0.25,aecho=0.8:0.85:45|95|180:0.45|0.32|0.2,volume=1.5")
-FILTER_ORANG = "highpass=f=120,volume=1.1"
+# PENTING: aresample=44100 dulu (Edge TTS keluar 24 kHz), baru asetrate — kalau tidak, suara jadi kecepetan
+FILTER_HANTU = ("aresample=44100,asetrate=44100*0.86,aresample=44100,atempo=1.04,highpass=f=90,lowpass=f=6500,"
+                "tremolo=f=4:d=0.12,aecho=0.8:0.85:45|95|180:0.4|0.28|0.18,volume=1.5")
+FILTER_ORANG = "aresample=44100,highpass=f=120,volume=1.1"
 _KUTIP = re.compile(r"[\"“”]([^\"“”]+)[\"“”]|[‘']([^‘’']{6,})[’']")
 
 
@@ -60,7 +61,7 @@ def narasi(teks, path, dialog=None):
     for k, (isi, jenis) in enumerate(bagian):
         mentah = f"{path}.{k}.mp3"; jadi = f"{path}.{k}.wav"
         if jenis == "narator":
-            _tts(isi, mentah, SUARA, "-4%", "-6Hz"); filt = "anull"
+            _tts(isi, mentah, SUARA, "-4%", "-6Hz"); filt = "aresample=44100"
         elif hantu:
             _tts(isi, mentah, SUARA_LAIN.get(kelamin, SUARA_LAIN["wanita"]), "-22%", "-12Hz"); filt = FILTER_HANTU
         else:

@@ -167,13 +167,31 @@ def _judul_pas(dr, teks, y, isi, maks=940, ukuran=150):
     return y + ukuran * 1.25
 
 
-_CACHE_JUDUL = {}
+_CACHE_LENCANA = {}
+ORANYE = (255, 149, 64)
 
 
-def _judul_atas(teks):
-    """Judul besar pemancing perhatian di bagian atas video (dibuat sekali, ditempel tiap frame)."""
-    if teks in _CACHE_JUDUL:
-        return _CACHE_JUDUL[teks]
+def _lencana(judul, nomor):
+    """Kotak kecil di pojok kiri atas: kategori, PART n, dan judul cerita (sama untuk ketiga part)."""
+    kunci = (judul, nomor)
+    if kunci in _CACHE_LENCANA:
+        return _CACHE_LENCANA[kunci]
+    x0, y0, lebar, tinggi = 36, 150, 640, 190
+    lap = Image.new("RGBA", (W, y0 + tinggi + 10), (0, 0, 0, 0)); dr = ImageDraw.Draw(lap)
+    dr.rounded_rectangle([x0, y0, x0 + lebar, y0 + tinggi], 18, fill=(18, 18, 26, 215))
+    dr.rounded_rectangle([x0, y0, x0 + 9, y0 + tinggi], 4, fill=ORANYE + (255,))
+    f_kat = _font("Montserrat-ExtraBold.ttf", 28); f_part = _font("Montserrat-ExtraBold.ttf", 68)
+    f_jdl = _font("Montserrat-ExtraBold.ttf", 28)
+    dr.ellipse([x0 + 34, y0 + 30, x0 + 50, y0 + 46], fill=ORANYE + (255,))
+    dr.text((x0 + 62, y0 + 22), "CERITA HOROR", font=f_kat, fill=ORANYE + (255,))
+    dr.text((x0 + 32, y0 + 58), f"PART {nomor}", font=f_part, fill=(250, 248, 244, 255))
+    teks = judul.upper().strip(); maks = lebar - 64
+    if dr.textlength(teks, font=f_jdl) > maks:
+        while teks and dr.textlength(teks + "...", font=f_jdl) > maks: teks = teks[:-1]
+        teks = teks.rstrip() + "..."
+    dr.text((x0 + 32, y0 + 140), teks, font=f_jdl, fill=(215, 212, 222, 255))
+    _CACHE_LENCANA[kunci] = (lap, y0 + tinggi)
+    return _CACHE_LENCANA[kunci]
     lap = Image.new("RGBA", (W, 520), (0, 0, 0, 0)); dr = ImageDraw.Draw(lap)
     teks = teks.upper().strip()
     ukuran = 132
@@ -260,7 +278,7 @@ def _render_adegan(pipe, adegan, gambar, dur, label, idx):
         fade = min(1.0, t / 0.25, (dur - t) / 0.2)   # gambar saja yang memudar, judul tetap
         if fade < 1: a = (a * max(fade, 0)).astype(np.uint8)
         img = Image.fromarray(a)
-        lap, bawah_judul = _judul_atas(label)
+        lap, bawah_judul = _lencana(*label)
         img.paste(lap, (0, 0), lap)
         dr = ImageDraw.Draw(img)
         if "cctv" in efek: _cctv_teks(img, t, int(bawah_judul) + 20)
@@ -303,7 +321,7 @@ def buat_video(adegan_list, gambar_list, audio_list, durasi_list, musik, keluar,
     bagian = []
     for idx, (a, g, d) in enumerate(zip(adegan_list, gambar_list, durasi_list)):
         p = os.path.join(kerja, f"adegan_{idx:02d}.mp4"); tmp = p + ".tmp.mp4"
-        pipe = _ffmpeg_tulis(tmp); _render_adegan(pipe, a, g, d, label, idx)
+        pipe = _ffmpeg_tulis(tmp); _render_adegan(pipe, a, g, d, (label, nomor_part), idx)
         pipe.stdin.close(); pipe.wait()
         if pipe.returncode != 0: raise RuntimeError(f"render adegan {idx} gagal")
         os.replace(tmp, p); bagian.append(p)
@@ -330,7 +348,7 @@ def buat_video(adegan_list, gambar_list, audio_list, durasi_list, musik, keluar,
     filt.append(f"[{nn + 1}:a]aformat=channel_layouts=mono[sfx]")
     # musik latar otomatis mengecil saat narator bicara (ducking), efek suara tetap terdengar
     filt.append("[narasi]volume=1.5,asplit=2[nv][kunci];"
-                "[musik][kunci]sidechaincompress=threshold=0.015:ratio=12:attack=20:release=450[mk];"
+                "[musik][kunci]sidechaincompress=threshold=0.05:ratio=4:attack=40:release=900[mk];"
                 "[nv][mk][sfx]amix=inputs=3:duration=first:normalize=0,alimiter=limit=0.95[aout]")
     masukan += ["-i", musik, "-i", musik.replace(".wav", "_sfx.wav")]
     audio = os.path.join(kerja, "audio.m4a")

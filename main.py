@@ -147,7 +147,7 @@ def main():
     nama = f"{cid}-part{nomor}"
     keluar = os.path.join(HASIL, nama + ".mp4")
     video.buat_video(part["adegan"], gambar_list, audio_list, dur_list, musik, keluar,
-                     part.get("judul_layar") or c["judul"].upper(), nomor, 3, c["judul"], kerja)
+                     c["judul"], nomor, 3, c["judul"], kerja)
 
     tag = " ".join(part.get("hashtag", [])[:6]) or "#ceritahoror #horor #ceritaseram"
     caption = f"{c['judul']} — Part {nomor}/3\n\n{part.get('caption', '')}\n\n{tag}"
