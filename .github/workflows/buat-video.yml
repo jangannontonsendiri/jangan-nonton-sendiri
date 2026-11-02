@@ -1,6 +1,9 @@
 name: Buat video horor
 
 on:
+  schedule:
+    - cron: "43 10 * * *"   # 17.43 WIB -> tayang sekitar 18.00
+    - cron: "43 13 * * *"   # 20.43 WIB -> tayang sekitar 21.00
   workflow_dispatch:
     inputs:
       tema:
