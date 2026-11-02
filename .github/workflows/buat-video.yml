@@ -46,7 +46,6 @@ jobs:
         run: python main.py
 
       - name: Unggah ke YouTube Shorts
-        continue-on-error: true
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
@@ -54,6 +53,7 @@ jobs:
         run: python unggah_youtube.py
 
       - name: Simpan video untuk diunduh
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: video-horor

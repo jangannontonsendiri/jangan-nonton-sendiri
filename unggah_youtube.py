@@ -7,9 +7,14 @@ AKAR = os.path.dirname(os.path.abspath(__file__))
 
 def token_akses():
     r = requests.post("https://oauth2.googleapis.com/token", timeout=60, data={
-        "client_id": os.environ["YT_CLIENT_ID"], "client_secret": os.environ["YT_CLIENT_SECRET"],
-        "refresh_token": os.environ["YT_REFRESH_TOKEN"], "grant_type": "refresh_token"})
+        "client_id": os.environ["YT_CLIENT_ID"].strip(), "client_secret": os.environ["YT_CLIENT_SECRET"].strip(),
+        "refresh_token": os.environ["YT_REFRESH_TOKEN"].strip(), "grant_type": "refresh_token"})
     if r.status_code != 200:
+        sec = os.environ["YT_CLIENT_SECRET"].strip()
+        print("Petunjuk: YT_CLIENT_SECRET seharusnya diawali 'GOCSPX-' ->",
+              "OK" if sec.startswith("GOCSPX-") else "TIDAK (isinya salah)")
+        print("Petunjuk: YT_CLIENT_ID seharusnya berakhiran '.apps.googleusercontent.com' ->",
+              "OK" if os.environ["YT_CLIENT_ID"].strip().endswith(".apps.googleusercontent.com") else "TIDAK (isinya salah)")
         raise RuntimeError(f"Gagal minta token YouTube: {r.text[:300]}")
     return r.json()["access_token"]
 
