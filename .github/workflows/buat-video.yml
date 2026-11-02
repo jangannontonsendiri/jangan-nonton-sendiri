@@ -1,0 +1,61 @@
+name: Buat video horor
+
+on:
+  workflow_dispatch:
+    inputs:
+      tema:
+        description: "Tema cerita baru (kosongkan = pilih otomatis dari tema.json)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: buat-video
+  cancel-in-progress: false
+
+jobs:
+  buat:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Pasang ffmpeg dan font
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          mkdir -p fonts
+          curl -sSfL -o fonts/Anton-Regular.ttf https://github.com/google/fonts/raw/main/ofl/anton/Anton-Regular.ttf || true
+          curl -sSfL -o fonts/Montserrat-ExtraBold.ttf https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/Montserrat-ExtraBold.ttf || true
+
+      - name: Pasang library Python
+        run: pip install -r requirements.txt
+
+      - name: Buat satu part video
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          TEMA: ${{ github.event.inputs.tema }}
+        run: python main.py
+
+      - name: Simpan video untuk diunduh
+        uses: actions/upload-artifact@v4
+        with:
+          name: video-horor
+          path: hasil/
+          retention-days: 7
+
+      - name: Simpan progres cerita
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state.json cerita/
+          git diff --cached --quiet || git commit -m "Progres cerita: $(python -c "import json;print(json.load(open('state.json'))['terakhir']['video'])")"
+          git push
