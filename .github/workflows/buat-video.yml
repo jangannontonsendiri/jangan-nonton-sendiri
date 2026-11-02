@@ -19,6 +19,8 @@ jobs:
   buat:
     runs-on: ubuntu-latest
     timeout-minutes: 45
+    env:
+      ADA_IG: ${{ secrets.IG_ACCESS_TOKEN != '' && 'ya' || 'tidak' }}
     steps:
       - uses: actions/checkout@v4
 
@@ -51,6 +53,36 @@ jobs:
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
         run: python unggah_youtube.py
+
+      - name: Taruh video di link publik sementara (untuk Instagram)
+        id: publik
+        if: env.ADA_IG == 'ya'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          F=$(python -c "import json;print(json.load(open('hasil/terbaru.json'))['video'])")
+          TAG="ig-${{ github.run_id }}"
+          cp "$F" hasil/reel.mp4
+          gh release create "$TAG" hasil/reel.mp4 --title "$TAG" --notes "sementara untuk Instagram" --prerelease
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+          echo "url=https://github.com/${{ github.repository }}/releases/download/$TAG/reel.mp4" >> "$GITHUB_OUTPUT"
+
+      - name: Unggah ke Instagram Reels
+        if: steps.publik.outputs.url != ''
+        continue-on-error: true
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          VIDEO_URL: ${{ steps.publik.outputs.url }}
+        run: python unggah_instagram.py
+
+      - name: Hapus link sementara
+        if: always() && steps.publik.outputs.tag != ''
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release delete "${{ steps.publik.outputs.tag }}" --yes --cleanup-tag
 
       - name: Simpan video untuk diunduh
         if: always()
