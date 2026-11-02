@@ -20,10 +20,50 @@ def _cek(r, apa):
     return r.json()
 
 
+USERNAME = os.environ.get("IG_USERNAME", "jangan.nontonsendiri").lower()
+
+
+def cari_akun(tok, uid_simpan=""):
+    """Token Facebook (EAA) butuh ID 'Instagram Business Account', bukan ID yang tampil di halaman Meta.
+    Cari otomatis lewat beberapa jalur; kembalikan (api, id)."""
+    api = _api(tok)
+    if not tok.startswith("EAA"):
+        return api, uid_simpan
+    fb = "https://graph.facebook.com/v23.0"; ketemu = []
+    def get(path, **params):
+        params["access_token"] = tok
+        r = requests.get(f"{fb}/{path}", params=params, timeout=60)
+        return r.json() if r.status_code == 200 else {"_error": r.text[:200]}
+    # 1) lewat Halaman Facebook yang terhubung
+    d = get("me/accounts", fields="name,instagram_business_account{id,username}")
+    for pg in d.get("data", []):
+        ig = pg.get("instagram_business_account")
+        if ig: ketemu.append((ig["id"], ig.get("username", "")))
+    # 2) lewat business portfolio
+    b = get("me/businesses", fields="name")
+    for bz in b.get("data", []):
+        for kolom in ["owned_instagram_accounts", "instagram_business_accounts", "instagram_accounts"]:
+            d2 = get(f"{bz['id']}/{kolom}", fields="id,username")
+            for ig in d2.get("data", []):
+                ketemu.append((ig["id"], ig.get("username", "")))
+    # 3) ID yang disimpan, kalau ternyata valid
+    if uid_simpan:
+        d3 = get(uid_simpan, fields="id,username")
+        if d3.get("username"): ketemu.append((d3["id"], d3["username"]))
+    unik = list(dict.fromkeys(ketemu))
+    print("Instagram: akun yang terlihat oleh token ->", [u for _, u in unik] or "TIDAK ADA")
+    for i, u in unik:
+        if u.lower() == USERNAME:
+            return fb, i
+    if len(unik) == 1:
+        return fb, unik[0][0]
+    raise RuntimeError(f"Akun {USERNAME} tidak ditemukan lewat token. Detail: me/accounts={d} me/businesses={b}")
+
+
 def unggah(info, video_url):
-    tok = os.environ["IG_ACCESS_TOKEN"].strip(); uid = os.environ["IG_USER_ID"].strip()
-    API = _api(tok)
-    print(f"Instagram: memakai {API.split('/')[2]}")
+    tok = os.environ["IG_ACCESS_TOKEN"].strip()
+    API, uid = cari_akun(tok, os.environ.get("IG_USER_ID", "").strip())
+    print(f"Instagram: memakai {API.split('/')[2]}, akun id ...{uid[-4:]}")
     caption = info["teks_lengkap"][:2150]
     c = _cek(requests.post(f"{API}/{uid}/media", timeout=120, data={
         "media_type": "REELS", "video_url": video_url, "caption": caption,
@@ -45,8 +85,16 @@ def unggah(info, video_url):
     return p["id"]
 
 
+if __name__ == "__main__" and os.environ.get("CEK_SAJA"):
+    tok = os.environ["IG_ACCESS_TOKEN"].strip()
+    api, uid = cari_akun(tok, os.environ.get("IG_USER_ID", "").strip())
+    r = requests.get(f"{api}/{uid}", params={"fields": "username", "access_token": tok}, timeout=60)
+    print("CEK:", r.status_code, r.text[:200])
+    print("BERHASIL: siap posting ke @" + r.json().get("username", "?") if r.status_code == 200 else "GAGAL")
+    sys.exit(0 if r.status_code == 200 else 1)
+
 if __name__ == "__main__":
-    kosong = [k for k in ["IG_ACCESS_TOKEN", "IG_USER_ID", "VIDEO_URL"] if not os.environ.get(k, "").strip()]
+    kosong = [k for k in ["IG_ACCESS_TOKEN", "VIDEO_URL"] if not os.environ.get(k, "").strip()]
     if kosong:
         print("Instagram dilewati: belum terbaca -> " + ", ".join(kosong)); sys.exit(0)
     info = json.load(open(os.path.join(AKAR, "hasil", "terbaru.json"), encoding="utf-8"))
