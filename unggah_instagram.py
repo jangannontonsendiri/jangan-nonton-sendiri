@@ -34,6 +34,16 @@ def cari_akun(tok, uid_simpan=""):
         params["access_token"] = tok
         r = requests.get(f"{fb}/{path}", params=params, timeout=60)
         return r.json() if r.status_code == 200 else {"_error": r.text[:200]}
+    # 0) baca isi token: izin apa saja & akun mana yang diizinkan
+    dbg = get("debug_token", input_token=tok).get("data", {})
+    print("Instagram: izin di token ->", dbg.get("scopes"))
+    for gs in dbg.get("granular_scopes", []):
+        print(f"  {gs.get('scope')}: {gs.get('target_ids', 'semua')}")
+        if gs.get("scope") in ("instagram_content_publish", "instagram_basic",
+                               "instagram_business_content_publish", "instagram_business_basic"):
+            for t in gs.get("target_ids", []):
+                d0 = get(t, fields="id,username")
+                if d0.get("username"): ketemu.append((d0["id"], d0["username"]))
     # 1) lewat Halaman Facebook yang terhubung
     d = get("me/accounts", fields="name,instagram_business_account{id,username}")
     for pg in d.get("data", []):
