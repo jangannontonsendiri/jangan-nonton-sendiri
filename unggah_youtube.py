@@ -50,8 +50,9 @@ def unggah(info):
 
 
 if __name__ == "__main__":
-    if not os.environ.get("YT_REFRESH_TOKEN"):
-        print("YouTube dilewati: secret belum diisi"); sys.exit(0)
+    kosong = [k for k in ["YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN"] if not os.environ.get(k, "").strip()]
+    if kosong:
+        print("YouTube dilewati: secret ini belum terbaca -> " + ", ".join(kosong)); sys.exit(0)
     info = json.load(open(os.path.join(AKAR, "hasil", "terbaru.json"), encoding="utf-8"))
     vid = unggah(info)
     sp = os.path.join(AKAR, "state.json"); st = json.load(open(sp, encoding="utf-8"))
