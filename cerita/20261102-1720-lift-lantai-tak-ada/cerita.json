@@ -1,0 +1,506 @@
+{
+  "judul": "Lift Lantai Tak Ada",
+  "suasana": "sunyi",
+  "tokoh_utama": "A 24-year-old Indonesian man with short messy black hair, wearing a dark navy blue polo shirt with an office ID card lanyard, pale skin, exhausted expression.",
+  "part": [
+    {
+      "judul_layar": "LIFT LANTAI TERLARANG",
+      "caption": "Jangan pernah naik lift sendirian kalau sudah lewat jam satu malam... ini alasannya.",
+      "hashtag": [
+        "#ceritahoror",
+        "#hororindonesia",
+        "#kisahnyata",
+        "#apartemen"
+      ],
+      "adegan": [
+        {
+          "narasi": "Jam setengah dua malam, aku baru pulang lembur dengan badan sangat capek.",
+          "gambar": "A tired young Indonesian man standing in a dim, deserted apartment lobby holding a backpack, leaning against the wall near an old elevator.",
+          "tokoh": true,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Lift apartemen tua ini selalu sepi dan lampu indikatornya sering berkedip.",
+          "gambar": "Close-up of an vintage metal elevator panel in a dark hallway, yellow floor display flickering faintly with shadows overhead.",
+          "tokoh": false,
+          "gerak": "pan_up",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku masuk ke dalam lift, memencet tombol angka tujuh seperti biasa.",
+          "gambar": "Inside the elevator, the young man pushes button number 7 on the metallic elevator control panel.",
+          "tokoh": true,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "kanan",
+          "dialog": null
+        },
+        {
+          "narasi": "Tiba-tiba lift bergetar hebat dan terus bergerak naik melampaui lantai sepuluh.",
+          "gambar": "The elevator interior shaking violently, the young man holding onto the metal handrail in panic, overhead light flickering.",
+          "tokoh": true,
+          "gerak": "zoom_out",
+          "efek": [
+            "shake",
+            "flicker"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Layar indikator digital mendadak mati, berganti tulisan aneh bertuliskan angka nol.",
+          "gambar": "Close-up of the elevator digital screen showing a distorted glitched red digit zero instead of floor numbers.",
+          "tokoh": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [],
+          "fokus": "atas",
+          "dialog": null
+        },
+        {
+          "narasi": "Suara berdenging keras terdengar, lalu lift berhenti mendadak di lantai tak dikenal.",
+          "gambar": "The young man covering his ears in discomfort inside the cramped steel elevator cabin, looking up in fear.",
+          "tokoh": true,
+          "gerak": "pan_down",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Pintu lift terbuka pelan, memperlihatkan lorong gelap gulita berbau bunga melati busuk.",
+          "gambar": "Elevator doors sliding open to reveal an unlit, damp corridor covered in heavy shadows and thick low-hanging grey mist.",
+          "tokoh": true,
+          "gerak": "zoom_out",
+          "efek": [
+            "kabut"
+          ],
+          "suara": [
+            "pintu"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Di ujung lorong gelap, berdiri sosok tinggi kurus dengan posisi tubuh bungkuk.",
+          "gambar": "A tall, unnaturally thin shadowy figure standing hunched at the end of the dark corridor, lit only by dim elevator light.",
+          "tokoh": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kabut"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Sosok itu perlahan menoleh, memperlihatkan wajah pucat tanpa mata dengan senyum lebar.",
+          "gambar": "Terrifying close-up of a pale ghastly face with pitch-black empty eye sockets and a bizarrely wide, unnatural grin.",
+          "tokoh": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tangannya yang sangat panjang dan pucat tiba-tiba menahan pintu lift yang terbuka.",
+          "gambar": "Extremely long, pale, bony fingers grasping the edge of the elevator door frame, preventing it from closing.",
+          "tokoh": false,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [
+            "pukulan"
+          ],
+          "fokus": "kiri",
+          "dialog": null
+        },
+        {
+          "narasi": "Dia melangkah masuk satu titik, lalu berbisik pelan, \"Lantai ini belum selesai.\"",
+          "gambar": "The creepy pale creature stepping closer into the lift light, its mouth open wide as it leans forward.",
+          "tokoh": true,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "hantu",
+            "kelamin": "pria"
+          }
+        },
+        {
+          "narasi": "Wajahnya yang mengerikan mendekat cepat persis di depan mataku tanpa bersuara sama sekali.",
+          "gambar": "Extreme close-up jumpscare of the faceless pale creature staring directly at the viewer with an uncanny stretched smile.",
+          "tokoh": true,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget",
+            "shake"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        }
+      ]
+    },
+    {
+      "judul_layar": "SOSOK DI KOSANMEU",
+      "caption": "Mata bolong itu melihat ke arahku dari balik pintu kamar...",
+      "hashtag": [
+        "#ceritahoror",
+        "#hororindonesia",
+        "#misteri",
+        "#ghoststory"
+      ],
+      "adegan": [
+        {
+          "narasi": "Lanjutan malam itu, aku panik setengah mati memencet tombol tutup berkali-kali.",
+          "gambar": "The young man aggressively mashing the elevator door close button with a sweaty, trembling hand.",
+          "tokoh": true,
+          "gerak": "zoom_in",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "ketukan"
+          ],
+          "fokus": "kanan",
+          "dialog": null
+        },
+        {
+          "narasi": "Sosok mengerikan itu menahan pintu sambil berbisik, \"Kenapa mau buru-buru pulang?\"",
+          "gambar": "The tall pale entity leaning into the elevator doorway, its wide empty face grinning unnaturally right in front of the young man.",
+          "tokoh": true,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "hantu",
+            "kelamin": "pria"
+          }
+        },
+        {
+          "narasi": "Pintu lift akhirnya tertutup rapat setelah aku memukul tombol lantai satu panik.",
+          "gambar": "The elevator metal doors slamming shut, blocking out the dark hallway as the young man slides down against the lift wall.",
+          "tokoh": true,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [
+            "pintu"
+          ],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Lift mendadak meluncur turun sangat cepat sampai membuat kepalaku terasa begitu pusing.",
+          "gambar": "Inside the falling elevator, motion blur effect showing lights streaking as the young man holds his head in fear.",
+          "tokoh": true,
+          "gerak": "zoom_out",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Lampu lift berkedip-kedip cepat sebelum akhirnya lift berhenti dengan hantaman keras.",
+          "gambar": "The elevator landing hard, dust falling from the ceiling, overhead panel flickering dimly in complete chaos.",
+          "tokoh": true,
+          "gerak": "zoom_in",
+          "efek": [
+            "flicker",
+            "shake"
+          ],
+          "suara": [
+            "pukulan"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Pintu terbuka lagi, memperlihatkan lorong yang persis seperti lantai tujuh tempat kosku.",
+          "gambar": "Elevator doors open to reveal an apartment corridor that looks familiar, with room doors and dim orange hallway lamps.",
+          "tokoh": true,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [
+            "pintu"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku keluar ragu-ragu dan berjalan mendekati pintu kamarku nomor tujuh ratus empat.",
+          "gambar": "The young man walking cautiously down the quiet corridor toward door room 704.",
+          "tokoh": true,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Pintu kamar sedikit terbuka, memperlihatkan cahaya lampu teras yang kedap-kedip pelan.",
+          "gambar": "Close-up of wooden door room 704 slightly ajar, warm dim light flickering from inside the room.",
+          "tokoh": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku mengintip lewat celah pintu dan melihat seseorang sedang duduk di tempat tidurku.",
+          "gambar": "POV peeking through the cracked door frame, showing a figure seated on the mattress in a dark bedroom.",
+          "tokoh": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Orang itu memakai baju yang sama persis seperti baju yang sedang aku pakai.",
+          "gambar": "Inside the room, the seated figure wears the exact same navy blue polo shirt and ID lanyard as the main character.",
+          "tokoh": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Perlahan sosok yang mirip denganku itu memutar lehernya ke belakang seratus delapan puluh derajat.",
+          "gambar": "Shocking view of the figure's head rotating unnaturally backward 180 degrees to face the door.",
+          "tokoh": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "kaca"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Matanya bolong menghitam dan dia tersenyum lebar sambil membisikkan namaku dari jauh.",
+          "gambar": "Close-up horrifying face of the doppelganger with hollow black eye holes grinning malevolently right at the camera.",
+          "tokoh": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget"
+          ],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "hantu",
+            "kelamin": "pria"
+          }
+        }
+      ]
+    },
+    {
+      "judul_layar": "DI BELAKANG PUNGGUNG",
+      "caption": "Coba cek foto HP-mu sekarang... siapa tahu ada yang memotretmu dari belakang.",
+      "hashtag": [
+        "#ceritahoror",
+        "#hororindonesia",
+        "#creepy",
+        "#ending"
+      ],
+      "adegan": [
+        {
+          "narasi": "Lanjutan... Sosok yang mirip denganku itu mendadak merangkak cepat ke arah pintu.",
+          "gambar": "The creepy double crawling rapidly on all fours toward the doorway with limbs bent weirdly.",
+          "tokoh": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku menjerit ketakutan, berlari kencang kembali ke dalam lift dan memencet tombol.",
+          "gambar": "The young man sprinting in sheer panic back down the hallway toward the illuminated elevator.",
+          "tokoh": true,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Pintu lift tertutup tepat saat tangan pucatnya hampir menyambar kakiku dari luar.",
+          "gambar": "Pale twisted fingers reaching into the narrowing gap of the sliding elevator doors just as they snap shut.",
+          "tokoh": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "pintu"
+          ],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Lift bergerak cepat dan akhirnya pintu terbuka di lantai dasar yang terang benderang.",
+          "gambar": "Elevator doors open to a brightly lit, normal lobby floor with clean tiles and bright overhead lights.",
+          "tokoh": true,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [
+            "pintu"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Satpam apartemen menatapku bingung saat aku berlari kencang menuju tangga darurat.",
+          "gambar": "A uniformed security guard standing near desk looking startled as the main character rushes past him.",
+          "tokoh": true,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Sampai di kamar asliku, aku langsung mengunci pintu rapat-rapat sambil napas terengah-engah.",
+          "gambar": "The young man pressing his back against his locked room door, sweating heavily, gasping for air.",
+          "tokoh": true,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Suara kipas angin kamar dan bunyi motor di luar membuatku merasa sedikit tenang.",
+          "gambar": "Interior of a small cozy Indonesian rental room, a standing fan spinning slowly near a desk.",
+          "tokoh": true,
+          "gerak": "pan_up",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "HP di genggamanku mendadak bergetar kuat menandakan ada satu pesan gambar masuk.",
+          "gambar": "Close-up of a smartphone screen lighting up in the dark room with a notification box: '1 New Image Received'.",
+          "tokoh": true,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "getar_hp"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku membuka pesan dari nomor tak dikenal itu dengan tangan yang sangat gemetaran.",
+          "gambar": "The young man's trembling thumb tapping the phone screen in suspense.",
+          "tokoh": true,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Foto itu memperlihatkan kamarku dari sudut belakang, diambil tepat detik ini juga.",
+          "gambar": "On the phone screen, a dark photo shows the main character from behind, holding his phone in his room.",
+          "tokoh": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Di foto tersebut, tampak sosok tanpa mata berdiri tepat di belakang punggungku sekarang.",
+          "gambar": "Close-up of the phone screen showing the terrifying empty-eyed tall entity looming right behind his shoulder in the photo.",
+          "tokoh": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Hembusan napas dingin terasa di leherku dan suara itu berbisik, \"Sudah sampai.\"",
+          "gambar": "Terrifying close-up of the ghastly pale entity standing directly behind the protagonist's shoulder, whispering into his ear.",
+          "tokoh": true,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget",
+            "flicker"
+          ],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "kanan",
+          "dialog": {
+            "siapa": "hantu",
+            "kelamin": "pria"
+          }
+        }
+      ]
+    }
+  ],
+  "tema": "lift apartemen yang berhenti di lantai yang tidak ada"
+}
