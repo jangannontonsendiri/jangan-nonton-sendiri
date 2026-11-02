@@ -1,0 +1,244 @@
+{
+  "judul": "Tamu Penunjuk Jalan Pos Ronda",
+  "tokoh_utama": "A 22-year-old Indonesian male named Doni, short black hair, wearing a navy blue jacket over a white t-shirt and dark trousers.",
+  "part": [
+    {
+      "caption": "Jangan pernah memberi petunjuk jalan pada asing yang bertamu jam 2 malam di pos ronda...",
+      "hashtag": [
+        "#ceritahoror",
+        "#posronda",
+        "#kisahnyata",
+        "#misteri"
+      ],
+      "adegan": [
+        {
+          "narasi": "Jam dua malam di pos ronda ujung desa yang terpencil, gerimis turun makin deras dan suasana terasa sangat mencekam.",
+          "gambar": "A dimly lit wooden guard post on a quiet rural village road at night under heavy light rain. Dim yellow light glowing inside the post.",
+          "tokoh": true,
+          "gerak": "zoom_in",
+          "efek": [
+            "kabut"
+          ]
+        },
+        {
+          "narasi": "Aku sendirian bertugas menjaga pos ronda malam itu karena temanku mendadak izin pulang duluan lantaran mengaku sakit perut.",
+          "gambar": "Doni, a young Indonesian man, sitting inside a wooden shelter shelter holding a metal flashlight, looking anxiously at the dark rainy road.",
+          "tokoh": true,
+          "gerak": "pan_left",
+          "efek": []
+        },
+        {
+          "narasi": "Tiba-tiba terdengar suara langkah kaki basah yang menyeret pelan dari arah kegelapan jalanan desa yang sama sekali tanpa lampu.",
+          "gambar": "A long muddy village road at night flanked by tall banana trees, covered in thick fog, with a silhouette standing far down the road.",
+          "tokoh": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kabut"
+          ]
+        },
+        {
+          "narasi": "Seorang pria berjas hujan hitam kusam berjalan mendekati pos ronda sambil memegang sebuah payung tua yang sangat lapuk.",
+          "gambar": "A mysterious man wearing a wet dark raincoat holding an old wooden umbrella standing near the dimly lit guard post entrance.",
+          "tokoh": true,
+          "gerak": "pan_up",
+          "efek": []
+        },
+        {
+          "narasi": "Pria misterius itu menanyakan lokasi rumah Mbah Sumi dengan suara yang amat berat, serak, dan terdengar luar biasa dingin.",
+          "gambar": "Close-up of a dark figure in a raincoat, lower half of a pale unmoving face visible under the umbrella shadow near the wooden wall.",
+          "tokoh": true,
+          "gerak": "zoom_in",
+          "efek": [
+            "flicker"
+          ]
+        },
+        {
+          "narasi": "Aku refleks menunjuk arah jalan ke rumah tua itu, namun mendadak dadaku sesak dan perasaanku menjadi amat tidak enak.",
+          "gambar": "Doni pointing down a dark muddy path while looking extremely uncomfortable and terrified under yellow post light.",
+          "tokoh": true,
+          "gerak": "pan_right",
+          "efek": []
+        },
+        {
+          "narasi": "Bulu kudukku berdiri merinding saat melihat ke bawah, ternyata kedua kaki pria itu mengambang tanpa menyentuh tanah basah.",
+          "gambar": "Low angle close-up of muddy ground, showing the bottom hem of a dark raincoat hovering several inches above wet soil without touching.",
+          "tokoh": false,
+          "gerak": "zoom_in",
+          "efek": []
+        },
+        {
+          "narasi": "Padahal Mbah Sumi sudah meninggal lima tahun lalu, lalu pria itu mendadak tersenyum amat lebar hingga merobek pipinya.",
+          "gambar": "Terror-stricken expression on Doni face in foreground, while the shadowy stranger in background opens an unnaturally wide, terrifying smile.",
+          "tokoh": true,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget",
+            "shake"
+          ]
+        }
+      ]
+    },
+    {
+      "caption": "Ternyata dia tidak mengetuk dari luar... melainkan dari dalam! Simak lanjutannya!",
+      "hashtag": [
+        "#ceritahoror",
+        "#hororindonesia",
+        "#posronda",
+        "#creepy"
+      ],
+      "adegan": [
+        {
+          "narasi": "Lanjutan... Senyuman sangat mengerikan dari pria itu membuat jantungku serasa berhenti berdetak dan seluruh badanku bergetar hebat.",
+          "gambar": "Doni looking extremely shocked and terrified, staring wide-eyed inside the dim wooden shelter under flickering light.",
+          "tokoh": true,
+          "gerak": "zoom_in",
+          "efek": [
+            "flicker"
+          ]
+        },
+        {
+          "narasi": "Aku langsung berbalik membelakangi pria itu, berlari masuk dan mengunci pintu kayu pos ronda sambil napas terengah-engah.",
+          "gambar": "Doni desperately locking a wooden door inside the small guard post, breathing heavily with a terrified face.",
+          "tokoh": true,
+          "gerak": "pan_down",
+          "efek": []
+        },
+        {
+          "narasi": "Dari balik dinding bambu pos ronda yang tipis, terdengar ketukan bertubi-tubi yang semakin lama kian keras dan amat kasar.",
+          "gambar": "Close-up of a woven bamboo wall of the guard post glowing dimly under rain, violently vibrating from loud knocks outside.",
+          "tokoh": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "shake"
+          ]
+        },
+        {
+          "narasi": "Dengan gemetar aku memberanikan diri mengintip lewat celah dinding bambu, namun di luar sana hanya ada kegelapan pekat.",
+          "gambar": "Doni peeking terrifyingly through a small gap in the bamboo wall, seeing only pitch black dark and heavy rain outside.",
+          "tokoh": true,
+          "gerak": "pan_right",
+          "efek": [
+            "kabut"
+          ]
+        },
+        {
+          "narasi": "Aku lalu membuka layar ponselku untuk melihat siaran langsung kamera CCTV yang terpasang di atas pos ronda tersebut.",
+          "gambar": "Doni hand holding a smartphone in the dark, revealing a bright screen displaying a camera monitor application.",
+          "tokoh": true,
+          "gerak": "zoom_in",
+          "efek": [
+            "cctv"
+          ]
+        },
+        {
+          "narasi": "Layar ponsel menampilkan sudut area depan pos ronda yang sangat sepi, tidak ada jejak keberadaan seorang pun di sana.",
+          "gambar": "Black and white grainy security footage on a smartphone screen showing empty wet ground outside the guard post entrance.",
+          "tokoh": false,
+          "gerak": "zoom_out",
+          "efek": [
+            "cctv"
+          ]
+        },
+        {
+          "narasi": "Namun saat layar berkedip cepat, aku melihat sosok berjas hujan hitam itu justru sedang berdiri di dalam ruangan denganku.",
+          "gambar": "Grainy camera video feed on smartphone screen showing Doni sitting inside the post, with a tall dark shadowy raincoat figure standing directly behind him.",
+          "tokoh": true,
+          "gerak": "zoom_in",
+          "efek": [
+            "cctv",
+            "flicker"
+          ]
+        },
+        {
+          "narasi": "Ponselku mendadak terlepas, lalu tepat di samping telingaku terdengar bisikan ghaib yang amat dingin: 'Kenapa tidak balik badan?'",
+          "gambar": "Close up of Doni dropping his phone in shock, a pale ghostly hand coming down on his shoulder from behind in dark room.",
+          "tokoh": true,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget",
+            "shake"
+          ]
+        }
+      ]
+    },
+    {
+      "caption": "Siapa yang sebenarnya pulang ke rumah? Ending yang bikin kamu gak bisa tidur!",
+      "hashtag": [
+        "#ceritahoror",
+        "#klimaks",
+        "#urbanlegend",
+        "#kisahseram"
+      ],
+      "adegan": [
+        {
+          "narasi": "Lanjutan... Bisikan dingin di samping telingaku membuat keberanianku hancur lebur dan aku langsung menjerit sekencang-kencangnya.",
+          "gambar": "Doni screaming in extreme terror inside the dark guard post room with shadow looming right next to his head.",
+          "tokoh": true,
+          "gerak": "zoom_in",
+          "efek": [
+            "shake"
+          ]
+        },
+        {
+          "narasi": "Aku nekat mendobrak pintu pos ronda, berlari menembus hujan deras dan kegelapan jalanan desa menuju ke rumahku.",
+          "gambar": "Doni running frantically down a dark muddy country road under pouring rain and heavy mist night atmosphere.",
+          "tokoh": true,
+          "gerak": "pan_left",
+          "efek": [
+            "kabut"
+          ]
+        },
+        {
+          "narasi": "Suara tawa melengking yang amat mengerikan terus bergema memantul di sepanjang jalanan sepi yang aku lewati.",
+          "gambar": "Empty dark rural gravel path surrounded by shadowy trees at night, rain pouring down with misty atmosphere.",
+          "tokoh": false,
+          "gerak": "pan_right",
+          "efek": [
+            "kabut"
+          ]
+        },
+        {
+          "narasi": "Sesampainya di rumah, aku langsung mengunci pintu depan rapat-rapat dan terduduk lemas di lantai ruang tamu yang dingin.",
+          "gambar": "Doni leaning exhausted against a closed wooden door inside a dark house living room, chest heaving in relief.",
+          "tokoh": true,
+          "gerak": "pan_down",
+          "efek": []
+        },
+        {
+          "narasi": "Aku merasa lega karena berhasil lolos dari teror makhluk mengerikan yang berada di pos ronda tadi malam.",
+          "gambar": "Doni sitting on the floor of the dim living room, taking a deep breath while holding his chest with both hands.",
+          "tokoh": true,
+          "gerak": "zoom_out",
+          "efek": []
+        },
+        {
+          "narasi": "Tiba-tiba ponselku berdering keras, menampilkan pesan masuk dari temanku yang tadi izin pulang lebih awal dari pos ronda.",
+          "gambar": "Close-up of a smartphone lit screen resting on the wooden floor showing a text notification popup in dark room.",
+          "tokoh": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "flicker"
+          ]
+        },
+        {
+          "narasi": "Temanku mengirimkan foto pos ronda terkini sambil mengetik pesan: 'Bro, kamu bicara sama siapa dari tadi di pos?'",
+          "gambar": "Close-up of smartphone screen displaying a photo of the village guard post taken from afar night setting.",
+          "tokoh": false,
+          "gerak": "zoom_in",
+          "efek": []
+        },
+        {
+          "narasi": "Foto itu memperlihatkan diriku masih duduk diam di pos ronda bersama pria berjas hujan... padahal sosok itu kini berdiri di depanku.",
+          "gambar": "Doni looking up in absolute horror from his phone as a tall figure in a wet dark raincoat stands silently inside his dark living room.",
+          "tokoh": true,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget",
+            "flicker"
+          ]
+        }
+      ]
+    }
+  ],
+  "tema": "pos ronda dan tamu yang menanyakan jalan"
+}
