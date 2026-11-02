@@ -4,17 +4,25 @@ import requests
 
 MODELS = ["gemini-3.5-flash", "gemini-3.6-flash", "gemini-flash-latest"]
 GERAK = ["zoom_in", "zoom_out", "pan_up", "pan_down", "pan_left", "pan_right"]
-EFEK = ["flicker", "shake", "cctv", "kaget", "kabut"]
+EFEK = ["flicker", "shake", "cctv", "kaget", "kabut", "hujan"]
+SFX = ["langkah", "pintu", "ketukan", "petir", "bisikan", "detak", "getar_hp", "kaca", "pukulan"]
+FOKUS = ["atas", "tengah", "bawah", "kiri", "kanan"]
+SUASANA = ["hujan", "angin", "sunyi", "jangkrik"]
 
 PROMPT = """Kamu penulis cerita horor Indonesia untuk video pendek animasi.
 
 Tulis SATU cerita horor ORISINAL bertema: "{tema}".
 Aturan isi:
 - Cerita harus baru dan karanganmu sendiri. Jangan menyalin atau meniru alur cerita kreator/channel mana pun.
-- Latar Indonesia, sudut pandang orang pertama ("aku"), bahasa santai sehari-hari, kalimat pendek dan mencekam.
+- Latar Indonesia, sudut pandang orang pertama ("aku"), seperti orang biasa yang sedang curhat pengalaman nyata.
+- HARUS terasa NATURAL dan RELATE: situasi sehari-hari yang pernah dialami banyak orang (pulang kerja lembur,
+  ngekos, jaga warung, nugas tengah malam, nunggu ojol, mudik, ronda). Detail kecil yang akrab
+  (bunyi kipas angin, notifikasi HP, bau melati, lampu teras kedip, suara motor lewat) membuat cerita terasa nyata.
+- Bahasa obrolan santai sehari-hari (boleh "nggak", "banget", "kok", "sih"), BUKAN bahasa buku. Kalimat pendek.
+  Hindari kata berlebihan seperti "amat", "luar biasa", "sangat mencekam".
 - Tidak ada nama orang terkenal, tidak ada tempat nyata yang spesifik, tidak ada adegan sadis berlebihan.
 - Cerita dibagi menjadi 3 part. Part 1 dan 2 WAJIB diakhiri cliffhanger yang bikin penasaran. Part 3 berisi klimaks dan akhir yang menghantui.
-- Setiap part berisi 8 sampai 10 adegan. Narasi tiap adegan 12-22 kata. Total narasi per part 140-190 kata.
+- Setiap part berisi 11 sampai 14 adegan PENDEK supaya video cepat berganti gambar. Narasi tiap adegan 7-15 kata. Total narasi per part 130-180 kata.
 - Adegan pertama setiap part adalah hook yang langsung bikin penasaran (part 2 dan 3 boleh mulai dengan "Lanjutan..." singkat).
 
 Untuk setiap part isi "judul_layar": judul besar yang tampil di atas video, HURUF KAPITAL, 2-4 kata,
@@ -30,14 +38,19 @@ Untuk setiap adegan isi:
   tapi JANGAN sadis: tanpa darah berceceran, tanpa luka terbuka, tanpa potongan tubuh. Seram, bukan jijik.
 - "tokoh": true jika tokoh utama terlihat di gambar.
 - "gerak": salah satu dari {gerak}.
-- "efek": daftar (boleh kosong) dari {efek}. "kaget" hanya untuk 1-2 momen paling menakutkan per part. "cctv" untuk adegan rekaman kamera.
+- "efek": daftar (boleh kosong) dari {efek}. "kaget" hanya untuk 1-2 momen paling menakutkan per part. "cctv" untuk adegan rekaman kamera. "hujan" bila adegan di luar ruangan saat hujan.
+- "suara": daftar efek suara (boleh kosong, maks 2) dari {sfx} yang COCOK dengan yang terjadi di adegan itu
+  (contoh: ada yang berjalan mendekat = "langkah", pintu dibuka = "pintu", ada yang mengetuk = "ketukan",
+  HP bergetar = "getar_hp", ketakutan = "detak"). Pakai di banyak adegan supaya terasa nyata.
+- "fokus": bagian gambar yang paling penting untuk di-close-up, salah satu dari {fokus}.
 
 Kembalikan HANYA JSON dengan bentuk:
 {{
   "judul": "judul cerita singkat (maks 5 kata)",
+  "suasana": "suara latar sepanjang cerita, salah satu dari {suasana}",
   "tokoh_utama": "deskripsi fisik tokoh utama dalam bahasa Inggris (usia, wajah, rambut, pakaian khas) yang akan dipakai di semua gambar",
   "part": [
-    {{"judul_layar": "JUDUL BESAR", "caption": "caption media sosial 1-2 kalimat yang bikin penasaran", "hashtag": ["#ceritahoror", "..."], "adegan": [{{"narasi": "...", "gambar": "...", "tokoh": true, "gerak": "zoom_in", "efek": []}}]}}
+    {{"judul_layar": "JUDUL BESAR", "caption": "caption media sosial 1-2 kalimat yang bikin penasaran", "hashtag": ["#ceritahoror", "..."], "adegan": [{{"narasi": "...", "gambar": "...", "tokoh": true, "gerak": "zoom_in", "efek": [], "suara": [], "fokus": "tengah"}}]}}
   ]
 }}
 """
@@ -76,12 +89,17 @@ def _rapikan(c):
                 a["gerak"] = random.choice(GERAK)
             a["efek"] = [e for e in a.get("efek", []) if e in EFEK]
             a["tokoh"] = bool(a.get("tokoh"))
+            a["suara"] = [x for x in a.get("suara", []) if x in SFX][:2]
+            if a.get("fokus") not in FOKUS:
+                a["fokus"] = "tengah"
+    if c.get("suasana") not in SUASANA:
+        c.pop("suasana", None)
     return c
 
 
 def buat_cerita(tema):
     key = os.environ["GEMINI_API_KEY"]
-    prompt = PROMPT.format(tema=tema, gerak=GERAK, efek=EFEK)
+    prompt = PROMPT.format(tema=tema, gerak=GERAK, efek=EFEK, sfx=SFX, fokus=FOKUS, suasana=SUASANA)
     for _ in range(3):
         try:
             return _rapikan(_panggil(prompt, key))

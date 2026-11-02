@@ -17,7 +17,11 @@
           "tokoh": true,
           "gerak": "zoom_in",
           "efek": [
-            "flicker"
+            "flicker",
+            "hujan"
+          ],
+          "suara": [
+            "langkah"
           ]
         },
         {
@@ -25,7 +29,8 @@
           "gambar": "old woman silhouette standing in a lit doorway",
           "tokoh": false,
           "gerak": "pan_up",
-          "efek": []
+          "efek": [],
+          "suara": []
         },
         {
           "narasi": "Malam itu aku nggak bisa tidur. Jam di meja menunjukkan dua belas lewat satu menit.",
@@ -34,6 +39,9 @@
           "gerak": "pan_left",
           "efek": [
             "kabut"
+          ],
+          "suara": [
+            "detak"
           ]
         },
         {
@@ -43,7 +51,8 @@
           "gerak": "zoom_in",
           "efek": [
             "cctv"
-          ]
+          ],
+          "suara": []
         },
         {
           "narasi": "Tok. Tok. Tok. Ada yang mengetuk jendela. Padahal kamarku di lantai tiga.",
@@ -53,6 +62,10 @@
           "efek": [
             "kaget",
             "shake"
+          ],
+          "suara": [
+            "ketukan",
+            "kaca"
           ]
         },
         {
@@ -62,6 +75,9 @@
           "gerak": "zoom_out",
           "efek": [
             "flicker"
+          ],
+          "suara": [
+            "bisikan"
           ]
         }
       ],
@@ -93,5 +109,6 @@
         }
       ]
     }
-  ]
+  ],
+  "suasana": "hujan"
 }

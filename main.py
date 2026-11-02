@@ -65,6 +65,8 @@ def siapkan_cerita(state):
 
 def gambar_palsu(path, teks):
     from PIL import Image, ImageDraw
+    if os.environ.get("MOCK_GAMBAR"):
+        Image.open(os.environ["MOCK_GAMBAR"]).convert("RGB").resize((768, 1344)).save(path); return
     im = Image.new("RGB", (768, 1344), (18, 40, 44)); dr = ImageDraw.Draw(im)
     for k in range(0, 1344, 64): dr.line([(0, k), (768, k + 300)], fill=(30, 60, 64), width=3)
     dr.rectangle([234, 300, 534, 1000], outline=(240, 180, 90), width=8)
@@ -112,13 +114,24 @@ def main():
         dur_list.append(suara.durasi(au) + video.JEDA)
         print(f"  adegan {i + 1}: gambar & suara siap ({dur_list[-1]:.1f} dtk)")
 
-    # 4. musik latar + video
-    t, kaget = 0.0, []
+    # 4. efek suara + musik latar + video
+    t, kaget, kejadian = 0.0, [], []
     for a, d in zip(part["adegan"], dur_list):
+        if "suara" in a:   # dipilih penulis cerita
+            a["suara"] = [x for x in a["suara"] if x in suara.SFX]
+        else:              # cerita lama tanpa pilihan suara: tebak dari narasi
+            a["suara"] = suara.tebak_sfx(a["narasi"])
+        teks = (a["narasi"] + " " + a.get("gambar", "")).lower()
+        if re.search(r"hujan|gerimis|\brain", teks) and "hujan" not in a.get("efek", []):
+            a.setdefault("efek", []).append("hujan")
         if "kaget" in a.get("efek", []): kaget.append(t)
+        for j, jenis in enumerate(a["suara"]):
+            kejadian.append((t + 0.25 + j * 1.2, jenis))
         t += d
     musik = os.path.join(kerja, "musik.wav")
-    suara.musik_latar(musik, t + video.AKHIR, kaget)
+    suasana = c.get("suasana") or suara.tebak_suasana(c)
+    suara.musik_latar(musik, t + video.AKHIR, kaget, kejadian, suasana)
+    print(f"  efek suara: {[k for _, k in kejadian]} | suasana: {suasana}")
     nama = f"{cid}-part{nomor}"
     keluar = os.path.join(HASIL, nama + ".mp4")
     video.buat_video(part["adegan"], gambar_list, audio_list, dur_list, musik, keluar,

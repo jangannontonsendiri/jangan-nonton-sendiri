@@ -44,26 +44,91 @@ def _ease(x):
     return x * x * (3 - 2 * x)
 
 
-def _jendela(big, gerak, p):
+FOKUS = {"atas": (0.5, 0.33), "tengah": (0.5, 0.47), "bawah": (0.5, 0.64),
+         "kiri": (0.36, 0.45), "kanan": (0.64, 0.45)}
+
+
+def _potong(big, cx, cy, cw, ch):
+    bw, bh = big.size
+    cw, ch = min(cw, bw), min(ch, bh)
+    x0 = min(max(cx - cw / 2, 0), bw - cw); y0 = min(max(cy - ch / 2, 0), bh - ch)
+    # EXTENT = potongan sub-piksel, gerakan pelan tetap halus (tidak patah-patah)
+    return big.transform((W, H), Image.EXTENT, (x0, y0, x0 + cw, y0 + ch), Image.BILINEAR)
+
+
+def _kamera(big, gerak, p, t, shot, fokus="tengah"):
+    """shot 1 = gambar lebar dengan gerak pilihan; shot 2 = close-up ke titik fokus."""
     bw, bh = big.size
     e = _ease(p)
+    # goyangan kamera dipegang tangan, supaya gambar terasa hidup
+    gx = 7 * math.sin(t * 1.3) + 3 * math.sin(t * 2.9 + 0.5)
+    gy = 9 * math.sin(t * 0.9 + 1.0) + 3 * math.sin(t * 2.3)
+    if shot == 2:
+        fx, fy = FOKUS.get(fokus, FOKUS["tengah"])
+        s = 1.42 + 0.12 * e
+        return _potong(big, bw * fx + gx + 20 * (e - 0.5), bh * fy + gy, W * 1.16 / s, H * 1.16 / s)
     if gerak == "zoom_in":
-        s = 1.0 + 0.15 * e; cx, cy = bw / 2, bh / 2
+        s = 1.0 + 0.2 * e; cx, cy = bw / 2, bh / 2
     elif gerak == "zoom_out":
-        s = 1.15 - 0.15 * e; cx, cy = bw / 2, bh / 2
+        s = 1.2 - 0.2 * e; cx, cy = bw / 2, bh / 2
     else:
         s = 1.0
-        mx, my = (bw - W) / 2, (bh - H) / 2
+        mx, my = (bw - W) / 2 - 12, (bh - H) / 2 - 12
         cx, cy = bw / 2, bh / 2
         if gerak == "pan_up": cy = bh / 2 + my * (1 - 2 * e)
         if gerak == "pan_down": cy = bh / 2 - my * (1 - 2 * e)
         if gerak == "pan_left": cx = bw / 2 + mx * (1 - 2 * e)
         if gerak == "pan_right": cx = bw / 2 - mx * (1 - 2 * e)
-    # s=1 → jendela seukuran layar (gambar dasar sudah 18% lebih besar); s>1 → lebih dekat
     dasar = 1.16 if gerak.startswith("zoom") else 1.0
-    cw, ch = min(W * dasar / s, bw), min(H * dasar / s, bh)
-    x0 = min(max(cx - cw / 2, 0), bw - cw); y0 = min(max(cy - ch / 2, 0), bh - ch)
-    return big.crop((int(x0), int(y0), int(x0 + cw), int(y0 + ch))).resize((W, H), Image.BILINEAR)
+    return _potong(big, cx + gx, cy + gy, W * dasar / s, H * dasar / s)
+
+
+# ---------- lapisan bergerak: hujan & kabut ----------
+def _lapisan_hujan():
+    r = np.random.default_rng(21); lap = np.zeros((H * 2, W), np.float32)
+    for _ in range(900):
+        x = r.integers(0, W); y = r.integers(0, H * 2); L = r.integers(40, 110); a = r.uniform(0.25, 0.8)
+        for k in range(L):
+            yy, xx = y + k, x + k // 6
+            if yy < H * 2 and xx < W: lap[yy, xx] = max(lap[yy, xx], a)
+    return lap
+
+
+def _lapisan_kabut():
+    r = np.random.default_rng(31)
+    kecil = Image.fromarray((r.random((12, 40)) * 255).astype(np.uint8)).resize((W * 2, H), Image.BICUBIC)
+    a = np.asarray(kecil, np.float32) / 255
+    return np.clip((a - 0.35) * 1.6, 0, 1)
+
+
+_HUJAN = _KABUT = None
+
+
+def _hujan(a, t):
+    global _HUJAN
+    if _HUJAN is None: _HUJAN = _lapisan_hujan()
+    y0 = int((t * 1900) % H)
+    m = _HUJAN[y0:y0 + H][..., None] * 0.45
+    return a * (1 - m) + 200 * m
+
+
+def _kabut(a, t):
+    global _KABUT
+    if _KABUT is None: _KABUT = _lapisan_kabut()
+    x0 = int((t * 35) % W)
+    m = _KABUT[:, x0:x0 + W][..., None] * 0.38
+    return a * (1 - m) + np.array([150, 175, 175], np.float32) * m
+
+
+def _distorsi(a, kuat, t):
+    """Gelombang + pecah warna untuk momen hantu muncul."""
+    baris = np.arange(H)
+    geser = (kuat * np.sin(baris / 23.0 + t * 40)).astype(int)
+    idx = (np.arange(W)[None, :] - geser[:, None]) % W
+    b = np.take_along_axis(a, idx[..., None].repeat(3, 2), 1)
+    k = max(1, int(kuat * 0.8))
+    b[..., 0] = np.roll(b[..., 0], k, 1); b[..., 2] = np.roll(b[..., 2], -k, 1)
+    return b
 
 
 def _potong_subtitle(teks, maks=6):
@@ -136,7 +201,9 @@ def _efek_array(a, efek, t, i, rnd):
         r = random.Random(int(t * 11) + i)
         if r.random() < 0.2: a *= 0.38
     if "kabut" in efek:
-        a = a * 0.85 + 30
+        a = _kabut(a, t)
+    if "hujan" in efek:
+        a = _hujan(a, t)
     a *= VIGNET
     a += GRAIN[(i // 6) % 4].repeat(2, 0).repeat(2, 1)[..., None]  # bintik halus, ganti tiap 6 frame
     return np.clip(a, 0, 255).astype(np.uint8)
@@ -163,16 +230,32 @@ def _render_adegan(pipe, adegan, gambar, dur, label, idx):
     for b in bobot:
         acc += b; batas.append(narr * acc / total_b)
     n = int(round(dur * FPS))
+    gerak = adegan.get("gerak", "zoom_in")
+    # adegan cukup panjang dipotong jadi 2 shot: lebar lalu close-up (momen kaget: close-up dulu)
+    potong = dur * 0.55 if dur >= 3.2 else None
+    kaget = "kaget" in efek
+    petir = "petir" in adegan.get("suara", [])
     for i in range(n):
         t = i / FPS
-        img = _jendela(big, adegan.get("gerak", "zoom_in"), t / dur)
+        if potong is None:
+            img = _kamera(big, gerak, t / dur, t, 1)
+        elif kaget:
+            shot = 2 if t < potong * 0.7 else 1
+            awal, akhir = (0, potong * 0.7) if shot == 2 else (potong * 0.7, dur)
+            img = _kamera(big, gerak, (t - awal) / (akhir - awal), t, shot, adegan.get("fokus", "atas"))
+        else:
+            shot = 1 if t < potong else 2
+            awal, akhir = (0, potong) if shot == 1 else (potong, dur)
+            img = _kamera(big, gerak, (t - awal) / (akhir - awal), t, shot, adegan.get("fokus", "tengah"))
         a = _efek_array(np.asarray(img), efek, t, i + idx * 1000, None)
+        if kaget and t < 0.7:
+            a = _distorsi(a, 18 * (1 - t / 0.7), t)
         guncang = 0
         if "shake" in efek: guncang = 6
-        if "kaget" in efek and t < 0.6: guncang = 22
+        if kaget and t < 0.6: guncang = 22
         if guncang:
             a = np.roll(np.roll(a, random.randint(-guncang, guncang), 0), random.randint(-guncang, guncang), 1)
-        if "kaget" in efek and t < 0.12:
+        if (kaget and t < 0.12) or (petir and (0.3 < t < 0.38 or 0.5 < t < 0.56)):
             a = np.clip(a.astype(np.int16) + 120, 0, 255).astype(np.uint8)
         fade = min(1.0, t / 0.25, (dur - t) / 0.2)   # gambar saja yang memudar, judul tetap
         if fade < 1: a = (a * max(fade, 0)).astype(np.uint8)
