@@ -44,6 +44,10 @@ def cari_akun(tok, uid_simpan=""):
             for t in gs.get("target_ids", []):
                 d0 = get(t, fields="id,username")
                 if d0.get("username"): ketemu.append((d0["id"], d0["username"]))
+    # 0b) token milik Halaman: 'me' adalah Halaman itu sendiri
+    dp = get("me", fields="name,instagram_business_account{id,username}")
+    if dp.get("instagram_business_account"):
+        ig = dp["instagram_business_account"]; ketemu.append((ig["id"], ig.get("username", "")))
     # 1) lewat Halaman Facebook yang terhubung
     d = get("me/accounts", fields="name,instagram_business_account{id,username}")
     for pg in d.get("data", []):
@@ -70,10 +74,24 @@ def cari_akun(tok, uid_simpan=""):
     raise RuntimeError(f"Akun {USERNAME} tidak ditemukan lewat token. Detail: me/accounts={d} me/businesses={b}")
 
 
+def daftar_token():
+    return [(n, os.environ.get(n, "").strip()) for n in ["IG_PAGE_TOKEN", "IG_ACCESS_TOKEN"]
+            if os.environ.get(n, "").strip()]
+
+
 def unggah(info, video_url):
-    tok = os.environ["IG_ACCESS_TOKEN"].strip()
+    err = None
+    for nama, tok in daftar_token():
+        try:
+            return _unggah(info, video_url, tok, nama)
+        except Exception as e:
+            err = e; print(f"Instagram: {nama} gagal -> {str(e)[:200]}")
+    raise RuntimeError(f"Semua token Instagram gagal: {err}")
+
+
+def _unggah(info, video_url, tok, nama):
     API, uid = cari_akun(tok, os.environ.get("IG_USER_ID", "").strip())
-    print(f"Instagram: memakai {API.split('/')[2]}, akun id ...{uid[-4:]}")
+    print(f"Instagram: memakai {nama} di {API.split('/')[2]}, akun id ...{uid[-4:]}")
     caption = info["teks_lengkap"][:2150]
     c = _cek(requests.post(f"{API}/{uid}/media", timeout=120, data={
         "media_type": "REELS", "video_url": video_url, "caption": caption,
@@ -95,16 +113,36 @@ def unggah(info, video_url):
     return p["id"]
 
 
-if __name__ == "__main__" and os.environ.get("CEK_SAJA"):
-    tok = os.environ["IG_ACCESS_TOKEN"].strip()
+TES_GAMBAR = "https://raw.githubusercontent.com/jangannontonsendiri/jangan-nonton-sendiri/main/contoh/tes.jpg"
+
+
+def cek(nama, tok):
+    print(f"\n=== {nama} ===")
     api, uid = cari_akun(tok, os.environ.get("IG_USER_ID", "").strip())
     r = requests.get(f"{api}/{uid}", params={"fields": "username", "access_token": tok}, timeout=60)
-    print("CEK:", r.status_code, r.text[:200])
-    print("BERHASIL: siap posting ke @" + r.json().get("username", "?") if r.status_code == 200 else "GAGAL")
-    sys.exit(0 if r.status_code == 200 else 1)
+    print("akun:", r.json().get("username", r.text[:150]))
+    d = requests.get(f"{api}/debug_token", params={"input_token": tok, "access_token": tok}, timeout=60).json()
+    exp = d.get("data", {}).get("expires_at")
+    print("kedaluwarsa:", "TIDAK PERNAH" if exp == 0 else (time.strftime("%d-%m-%Y", time.gmtime(exp)) if exp else "tidak diketahui"))
+    # uji izin posting: buat container gambar TANPA dipublikasikan (hilang sendiri dalam 24 jam)
+    c = requests.post(f"{api}/{uid}/media", timeout=120, data={
+        "image_url": TES_GAMBAR, "caption": "tes", "access_token": tok})
+    ok = c.status_code == 200
+    print("izin posting:", "OK" if ok else f"GAGAL {c.text[:200]}")
+    return ok
+
+
+if __name__ == "__main__" and os.environ.get("CEK_SAJA"):
+    hasil = {}
+    for nama, tok in daftar_token():
+        try: hasil[nama] = cek(nama, tok)
+        except Exception as e: print(f"{nama}: GAGAL {str(e)[:200]}"); hasil[nama] = False
+    print("\nRINGKASAN:", {k: ("BERHASIL" if v else "GAGAL") for k, v in hasil.items()})
+    sys.exit(0 if any(hasil.values()) else 1)
 
 if __name__ == "__main__":
-    kosong = [k for k in ["IG_ACCESS_TOKEN", "VIDEO_URL"] if not os.environ.get(k, "").strip()]
+    kosong = [k for k in ["VIDEO_URL"] if not os.environ.get(k, "").strip()]
+    if not daftar_token(): kosong.append("IG_ACCESS_TOKEN / IG_PAGE_TOKEN")
     if kosong:
         print("Instagram dilewati: belum terbaca -> " + ", ".join(kosong)); sys.exit(0)
     info = json.load(open(os.path.join(AKAR, "hasil", "terbaru.json"), encoding="utf-8"))

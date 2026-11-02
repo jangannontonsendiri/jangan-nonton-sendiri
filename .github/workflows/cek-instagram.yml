@@ -17,5 +17,6 @@ jobs:
         env:
           CEK_SAJA: "1"
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_PAGE_TOKEN: ${{ secrets.IG_PAGE_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
         run: python unggah_instagram.py
