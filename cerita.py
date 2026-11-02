@@ -77,23 +77,27 @@ jangan menyalin atau meniru alur cerita kreator/channel mana pun."""
 
 
 def _panggil(prompt, key):
+    """Server Gemini kadang sibuk (503/429). Coba lagi dengan jeda makin panjang, lalu pindah model."""
     err = None
-    for model in MODELS:
-        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-        for coba in range(3):
-            try:
-                r = requests.post(url, params={"key": key}, timeout=180, json={
-                    "contents": [{"parts": [{"text": prompt}]}],
-                    "generationConfig": {"responseMimeType": "application/json", "temperature": 1.0},
-                })
-                if r.status_code == 404:
-                    break
-                r.raise_for_status()
-                teks = r.json()["candidates"][0]["content"]["parts"][0]["text"]
-                return json.loads(re.sub(r"^```(json)?|```$", "", teks.strip()))
-            except Exception as e:  # coba lagi
-                err = e
-                time.sleep(5 * (coba + 1))
+    for putaran in range(2):
+        for model in MODELS:
+            url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+            for coba, jeda in enumerate([15, 30, 60]):
+                try:
+                    r = requests.post(url, params={"key": key}, timeout=240, json={
+                        "contents": [{"parts": [{"text": prompt}]}],
+                        "generationConfig": {"responseMimeType": "application/json", "temperature": 1.0},
+                    })
+                    if r.status_code == 404:
+                        print(f"  model {model} tidak tersedia, pindah model"); break
+                    r.raise_for_status()
+                    teks = r.json()["candidates"][0]["content"]["parts"][0]["text"]
+                    print(f"  cerita ditulis oleh {model}")
+                    return json.loads(re.sub(r"^```(json)?|```$", "", teks.strip()))
+                except Exception as e:
+                    err = e
+                    print(f"  {model} gagal (percobaan {coba + 1}): {str(e)[:120]} — tunggu {jeda} dtk")
+                    time.sleep(jeda)
     raise RuntimeError(f"Gemini gagal: {err}")
 
 
