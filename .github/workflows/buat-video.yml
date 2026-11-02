@@ -63,8 +63,8 @@ jobs:
         run: |
           F=$(python -c "import json;print(json.load(open('hasil/terbaru.json'))['video'])")
           TAG="ig-${{ github.run_id }}"
-          cp "$F" hasil/reel.mp4
-          gh release create "$TAG" hasil/reel.mp4 --title "$TAG" --notes "sementara untuk Instagram" --prerelease
+          mkdir -p /tmp/ig && cp "$F" /tmp/ig/reel.mp4
+          gh release create "$TAG" /tmp/ig/reel.mp4 --title "$TAG" --notes "sementara untuk Instagram" --prerelease
           echo "tag=$TAG" >> "$GITHUB_OUTPUT"
           echo "url=https://github.com/${{ github.repository }}/releases/download/$TAG/reel.mp4" >> "$GITHUB_OUTPUT"
 
