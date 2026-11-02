@@ -81,6 +81,15 @@ def suara_palsu(path, kata):
                     "-c:a", "libmp3lame", path], check=True)
 
 
+def tebak_dialog(a):
+    """Siapa yang bicara di kalimat bertanda kutip (cerita lama belum punya kolom 'dialog')."""
+    if isinstance(a.get("dialog"), dict):
+        return a["dialog"]
+    teks = a["narasi"].lower()
+    seram = "kaget" in a.get("efek", []) or re.search(r"bisik|ghaib|gaib|suara itu|dingin|serak|melengking|sosok|hantu", teks)
+    return {"siapa": "hantu" if seram else "orang", "kelamin": "pria" if re.search(r"pria|bapak|laki|mas |pak ", teks) else "wanita"}
+
+
 def main():
     state = baca(STATE, {})
     c = siapkan_cerita(state)
@@ -109,7 +118,7 @@ def main():
         else:
             import gambar
             gambar.gambar_adegan(a, c["tokoh_utama"], ref, g, seed=benih + nomor * 100 + i)
-            suara.narasi(a["narasi"], au)
+            suara.narasi(a["narasi"], au, tebak_dialog(a))
         gambar_list.append(g); audio_list.append(au)
         dur_list.append(suara.durasi(au) + video.JEDA)
         print(f"  adegan {i + 1}: gambar & suara siap ({dur_list[-1]:.1f} dtk)")
@@ -128,6 +137,9 @@ def main():
         for j, jenis in enumerate(a["suara"]):
             kejadian.append((t + 0.25 + j * 1.2, jenis))
         t += d
+    # suara HP cukup sekali per part
+    hp = [k for k, (_, j) in enumerate(kejadian) if j == "getar_hp"]
+    for k in reversed(hp[1:]): kejadian.pop(k)
     musik = os.path.join(kerja, "musik.wav")
     suasana = c.get("suasana") or suara.tebak_suasana(c)
     suara.musik_latar(musik, t + video.AKHIR, kaget, kejadian, suasana)

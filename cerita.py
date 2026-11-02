@@ -41,7 +41,13 @@ Untuk setiap adegan isi:
 - "efek": daftar (boleh kosong) dari {efek}. "kaget" hanya untuk 1-2 momen paling menakutkan per part. "cctv" untuk adegan rekaman kamera. "hujan" bila adegan di luar ruangan saat hujan.
 - "suara": daftar efek suara (boleh kosong, maks 2) dari {sfx} yang COCOK dengan yang terjadi di adegan itu
   (contoh: ada yang berjalan mendekat = "langkah", pintu dibuka = "pintu", ada yang mengetuk = "ketukan",
-  HP bergetar = "getar_hp", ketakutan = "detak"). Pakai di banyak adegan supaya terasa nyata.
+  ketakutan = "detak"). Pakai di banyak adegan supaya terasa nyata.
+  "getar_hp" HANYA untuk notifikasi / pesan / telepon MASUK, maksimal 1 kali per part. Sekadar membuka atau
+  melihat HP TIDAK diberi suara.
+- Kalimat yang DIUCAPKAN tokoh lain (hantu atau orang) WAJIB ditulis di dalam tanda kutip ganda di narasi,
+  contoh: Lalu suara itu berbisik, "Kenapa nggak balik badan?"
+- "dialog": isi HANYA jika narasi berisi kalimat dalam tanda kutip:
+  {{"siapa": "hantu" atau "orang", "kelamin": "pria" atau "wanita"}}. Kalau tidak ada, isi null.
 - "fokus": bagian gambar yang paling penting untuk di-close-up, salah satu dari {fokus}.
 
 Kembalikan HANYA JSON dengan bentuk:
@@ -50,7 +56,7 @@ Kembalikan HANYA JSON dengan bentuk:
   "suasana": "suara latar sepanjang cerita, salah satu dari {suasana}",
   "tokoh_utama": "deskripsi fisik tokoh utama dalam bahasa Inggris (usia, wajah, rambut, pakaian khas) yang akan dipakai di semua gambar",
   "part": [
-    {{"judul_layar": "JUDUL BESAR", "caption": "caption media sosial 1-2 kalimat yang bikin penasaran", "hashtag": ["#ceritahoror", "..."], "adegan": [{{"narasi": "...", "gambar": "...", "tokoh": true, "gerak": "zoom_in", "efek": [], "suara": [], "fokus": "tengah"}}]}}
+    {{"judul_layar": "JUDUL BESAR", "caption": "caption media sosial 1-2 kalimat yang bikin penasaran", "hashtag": ["#ceritahoror", "..."], "adegan": [{{"narasi": "...", "gambar": "...", "tokoh": true, "gerak": "zoom_in", "efek": [], "suara": [], "fokus": "tengah", "dialog": null}}]}}
   ]
 }}
 """

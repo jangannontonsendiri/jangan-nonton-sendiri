@@ -16,15 +16,64 @@ def durasi(path):
     return float(out.strip())
 
 
-def narasi(teks, path):
+SUARA_LAIN = {"pria": "id-ID-ArdiNeural", "wanita": "id-ID-GadisNeural"}
+# suara hantu: lebih berat & lambat, bergema, sedikit bergetar — bukan suara narator biasa
+FILTER_HANTU = ("asetrate=44100*0.86,aresample=44100,atempo=1.04,highpass=f=90,lowpass=f=6500,"
+                "tremolo=f=5:d=0.25,aecho=0.8:0.85:45|95|180:0.45|0.32|0.2,volume=1.5")
+FILTER_ORANG = "highpass=f=120,volume=1.1"
+_KUTIP = re.compile(r"[\"“”]([^\"“”]+)[\"“”]|[‘']([^‘’']{6,})[’']")
+
+
+def _tts(teks, path, suara, rate, pitch):
     import edge_tts
     async def _jalan():
-        await edge_tts.Communicate(teks, SUARA, rate="-4%", pitch="-6Hz").save(path)
+        await edge_tts.Communicate(teks, suara, rate=rate, pitch=pitch).save(path)
     for coba in range(3):
         try:
             asyncio.run(_jalan()); return path
         except Exception:
             if coba == 2: raise
+
+
+def pecah_dialog(teks):
+    """Pisahkan narasi dan kalimat dalam tanda kutip -> [(teks, 'narator'|'dialog'), ...]."""
+    hasil, pos = [], 0
+    for m in _KUTIP.finditer(teks):
+        sebelum = teks[pos:m.start()].strip(" ,:")
+        if sebelum: hasil.append((sebelum, "narator"))
+        hasil.append(((m.group(1) or m.group(2)).strip(), "dialog"))
+        pos = m.end()
+    sisa = teks[pos:].strip(" ,:")
+    if sisa: hasil.append((sisa, "narator"))
+    return hasil or [(teks, "narator")]
+
+
+def narasi(teks, path, dialog=None):
+    """dialog = {"siapa": "hantu"|"orang", "kelamin": "pria"|"wanita"} untuk kalimat dalam tanda kutip."""
+    dialog = dialog or {}
+    bagian = pecah_dialog(teks)
+    if len(bagian) == 1 and bagian[0][1] == "narator":
+        return _tts(teks, path, SUARA, "-4%", "-6Hz")
+    hantu = dialog.get("siapa", "hantu") == "hantu"
+    kelamin = dialog.get("kelamin", "wanita" if hantu else "pria")
+    potongan = []
+    for k, (isi, jenis) in enumerate(bagian):
+        mentah = f"{path}.{k}.mp3"; jadi = f"{path}.{k}.wav"
+        if jenis == "narator":
+            _tts(isi, mentah, SUARA, "-4%", "-6Hz"); filt = "anull"
+        elif hantu:
+            _tts(isi, mentah, SUARA_LAIN.get(kelamin, SUARA_LAIN["wanita"]), "-22%", "-12Hz"); filt = FILTER_HANTU
+        else:
+            lain = "id-ID-GadisNeural" if kelamin == "wanita" else "id-ID-ArdiNeural"
+            _tts(isi, mentah, lain, "-2%", "+4Hz" if kelamin == "pria" else "+0Hz"); filt = FILTER_ORANG
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", mentah, "-af",
+                        f"{filt},aformat=sample_rates=44100:channel_layouts=mono,apad=pad_dur=0.18", jadi], check=True)
+        potongan.append(jadi)
+    ins = sum([["-i", p] for p in potongan], [])
+    filt = "".join(f"[{i}:a]" for i in range(len(potongan))) + f"concat=n={len(potongan)}:v=0:a=1[a]"
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", *ins, "-filter_complex", filt, "-map", "[a]",
+                    "-c:a", "libmp3lame", "-b:a", "160k", path], check=True)
+    return path
 
 
 # ---------- alat bantu ----------
@@ -142,7 +191,7 @@ KATA_KUNCI = [
     (r"petir|guntur|geledek|kilat", "petir"),
     (r"bisik", "bisikan"),
     (r"jantung|deg", "detak"),
-    (r"ponsel|hp |handphone|getar|berdering", "getar_hp"),
+    (r"bergetar|berdering|notifikasi|pesan masuk|telepon masuk|ada (yang )?nelpon", "getar_hp"),
     (r"jendela|kaca", "kaca"),
     (r"brak|dobrak|dibanting|banting|jatuh", "pukulan"),
 ]
@@ -180,28 +229,34 @@ def _suasana(jenis, n):
     return np.zeros(n)
 
 
+def _simpan(path, x):
+    with wave.open(path, "wb") as w:
+        w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR)
+        w.writeframes((np.clip(x, -1, 1) * 32767).astype(np.int16).tobytes())
+
+
 def musik_latar(path, total, waktu_kaget, kejadian=(), suasana="sunyi"):
-    """kejadian = daftar (detik, jenis_sfx)."""
+    """Menulis 2 trek: `path` = musik latar (nanti dikecilkan otomatis saat narator bicara),
+    `path`_sfx.wav = efek suara (volumenya tetap). kejadian = daftar (detik, jenis_sfx)."""
     rng = np.random.default_rng(3)
     n = int(total * SR); t = np.arange(n) / SR
     lfo = 0.6 + 0.4 * np.sin(2 * np.pi * 0.09 * t)
     drone = (0.16 * np.sin(2 * np.pi * 55 * t) + 0.09 * np.sin(2 * np.pi * 58.2 * t)
              + 0.05 * np.sin(2 * np.pi * 110.4 * t))
     noise = _band(rng.normal(0, 1, n), 30, 260) * 2.0
-    out = (drone + noise) * lfo * 0.55
-    out += _suasana(suasana, n)
+    latar = (drone + noise) * lfo * 0.32 + _suasana(suasana, n) * 0.55
+    env = np.minimum(1, np.minimum(t / 1.0, (total - t) / 1.5))
+    _simpan(path, latar * env)
+
+    efek = np.zeros(n)
     st = np.arange(int(2.2 * SR)) / SR
     sting = (np.sin(2 * np.pi * 41 * st) * 0.8 + rng.normal(0, 0.35, len(st))) * np.exp(-st * 1.6)
     for k in waktu_kaget:
-        a = int(k * SR); b = min(n, a + len(sting)); out[a:b] += sting[:b - a] * 0.7
+        a = int(k * SR); b = min(n, a + len(sting)); efek[a:b] += sting[:b - a] * 0.55
     cache = {}
     for k, jenis in kejadian:
         if jenis not in SFX: continue
         s = cache.setdefault(jenis, SFX[jenis]())
         a = int(k * SR); b = min(n, a + len(s))
-        if a < n: out[a:b] += s[:b - a] * 0.75
-    env = np.minimum(1, np.minimum(t / 1.0, (total - t) / 1.5))
-    out = np.clip(out * env, -1, 1)
-    with wave.open(path, "wb") as w:
-        w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR)
-        w.writeframes((out * 32767).astype(np.int16).tobytes())
+        if a < n: efek[a:b] += s[:b - a] * 0.6
+    _simpan(path.replace(".wav", "_sfx.wav"), efek)

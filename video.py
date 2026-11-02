@@ -326,10 +326,13 @@ def buat_video(adegan_list, gambar_list, audio_list, durasi_list, musik, keluar,
     nn = len(audio_list)
     filt.append(f"anullsrc=r=44100:cl=mono,atrim=0:{AKHIR}[sepi]")
     filt.append("".join(f"[n{k}]" for k in range(nn)) + f"[sepi]concat=n={nn + 1}:v=0:a=1[narasi]")
-    filt.append(f"[{nn}:a]aformat=channel_layouts=mono[musik]")
-    filt.append("[narasi]volume=1.6[nv];[nv][musik]amix=inputs=2:duration=first:normalize=0,"
-                "alimiter=limit=0.95[aout]")
-    masukan += ["-i", musik]
+    filt.append(f"[{nn}:a]aformat=channel_layouts=mono,volume=0.8[musik]")
+    filt.append(f"[{nn + 1}:a]aformat=channel_layouts=mono[sfx]")
+    # musik latar otomatis mengecil saat narator bicara (ducking), efek suara tetap terdengar
+    filt.append("[narasi]volume=1.5,asplit=2[nv][kunci];"
+                "[musik][kunci]sidechaincompress=threshold=0.015:ratio=12:attack=20:release=450[mk];"
+                "[nv][mk][sfx]amix=inputs=3:duration=first:normalize=0,alimiter=limit=0.95[aout]")
+    masukan += ["-i", musik, "-i", musik.replace(".wav", "_sfx.wav")]
     audio = os.path.join(kerja, "audio.m4a")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", *masukan, "-filter_complex", ";".join(filt),
                     "-map", "[aout]", "-c:a", "aac", "-b:a", "160k", audio], check=True)

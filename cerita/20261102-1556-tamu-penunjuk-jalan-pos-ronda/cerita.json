@@ -158,7 +158,11 @@
           "efek": [
             "kaget",
             "shake"
-          ]
+          ],
+          "dialog": {
+            "siapa": "hantu",
+            "kelamin": "pria"
+          }
         }
       ],
       "judul_layar": "DIA ADA DI DALAM POS"
@@ -227,7 +231,11 @@
           "gambar": "Close-up of smartphone screen displaying a photo of the village guard post taken from afar night setting.",
           "tokoh": false,
           "gerak": "zoom_in",
-          "efek": []
+          "efek": [],
+          "dialog": {
+            "siapa": "orang",
+            "kelamin": "pria"
+          }
         },
         {
           "narasi": "Foto itu memperlihatkan diriku masih duduk diam di pos ronda bersama pria berjas hujan... padahal sosok itu kini berdiri di depanku.",
