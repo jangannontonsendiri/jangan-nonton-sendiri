@@ -1,0 +1,543 @@
+{
+  "judul": "Grup WA Keluarga",
+  "suasana": "sunyi",
+  "tokoh_utama": "A 21-year-old Indonesian young man with short messy black hair, wearing a dark grey t-shirt and grey cotton shorts, with an anxious expression and dark circles under his eyes",
+  "part": [
+    {
+      "pertanyaan": "Kalau kamu jadi aku, kamu cek pintu belakang atau pura-pura nggak baca?",
+      "caption": "Pesan dari nomor Ibu yang sudah meninggal 40 hari lalu... Ternyata ini bukan sekadar teror.",
+      "hashtag": [
+        "#ceritahoror",
+        "#hororindonesia",
+        "#kisahnyata",
+        "#grupwa",
+        "#creepypasta"
+      ],
+      "adegan": [
+        {
+          "narasi": "Tiap jam dua tiga belas malam, pesan misterius masuk di grup WA keluarga kami.",
+          "gambar": "A smartphone screen lying on a bedside table in a dim bedroom glowing at exactly 02:13 AM showing a family WhatsApp chat group notification.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [
+            "getar_hp"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Pengirimnya akun Ibu yang menulis, \"Pintu belakang rumah sudah kamu kunci?\"",
+          "gambar": "Close-up on the smartphone screen displaying a WhatsApp message from 'Ibu' reading 'Pintu belakang sudah dikunci?' in Indonesian text.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "hantu",
+            "kelamin": "wanita"
+          }
+        },
+        {
+          "narasi": "Padahal Ibu sudah meninggal empat puluh hari lalu dan HP-nya tersimpan di lemari.",
+          "gambar": "An older framed photo of a middle-aged Indonesian mother on a wooden cabinet beside a locked antique box.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_up",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Kakak menenangkan dan bilang, \"Paling itu ulah orang iseng yang bajak nomor Ibu.\"",
+          "gambar": "An older brother sitting on a couch in a dimly lit living room looking at his phone with a casual nonchalant face.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "orang",
+            "kelamin": "pria"
+          }
+        },
+        {
+          "narasi": "Tapi dadaku sesak, rasa penasaran membuatku nggak bisa tidur sama sekali malam itu.",
+          "gambar": "A 21-year-old Indonesian young man with short black hair sitting on his bed in the dark, staring nervously at his bedroom doorway.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Jam dua lewat empat belas, aku memberanikan diri berjalan keluar kamar menuju dapur.",
+          "gambar": "First-person perspective walking down a narrow dark hallway of an Indonesian house toward the quiet kitchen area.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Suasana lorong rumah sangat sunyi, hanya ada dengung mesin kulkas tua yang bising.",
+          "gambar": "An old green refrigerator in the corner of a dimly lit kitchen glowing faintly in shadow.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku menyalakan lampu dapur yang sedikit berkedip remang-remang menembus kegelapan malam.",
+          "gambar": "A dim kitchen with a flickering light, in the background a translucent white curtain covers the window where a tall dark shadow figure stands hidden behind the curtain watching silently.",
+          "tokoh": true,
+          "petunjuk": true,
+          "gerak": "zoom_in",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [],
+          "fokus": "kanan",
+          "dialog": null
+        },
+        {
+          "narasi": "Langkah kakiku terhenti perlahan saat berdiri tepat di depan pintu kayu belakang.",
+          "gambar": "The young man standing frozen in front of a rustic wooden back door of the Indonesian kitchen.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Pintu kayu itu ternyata terbuka sedikit, padahal aku yakin sudah menguncinya rapat tadi.",
+          "gambar": "Close-up of the wooden back door slightly ajar by a few inches, revealing pure black darkness outside.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "pintu"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Angin dingin berembus masuk membawa aroma tanah kuburan basah yang sangat menyengat hidung.",
+          "gambar": "The young man covering his nose in disgust as cold mist drifts inside through the small crack of the wooden door.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kabut"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Saat aku menunduk ke bawah, di atas ubin dapur ada deretan jejak kaki basah.",
+          "gambar": "Low angle view of wet muddy footprints stamped on the light gray tiled floor of the kitchen.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Jejak kaki hitam itu berjalan dari pintu luar, mengarah lurus ke dalam kamarku.",
+          "gambar": "Close-up shot of wet black footprints leading from the opened back door across the kitchen floor directly into the dark bedroom hallway.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        }
+      ]
+    },
+    {
+      "pertanyaan": "Menurut kalian, siapa yang selama ini masuk lewat pintu belakang?",
+      "caption": "Pesan dari Ibu bukan teror... tapi peringatan bahaya!",
+      "hashtag": [
+        "#ceritahoror",
+        "#hororindonesia",
+        "#misteri",
+        "#serialhoror",
+        "#thriller"
+      ],
+      "adegan": [
+        {
+          "narasi": "Lanjutan... Malam berikutnya aku nekat duduk begadang di dapur dekat pintu belakang.",
+          "gambar": "The young Indonesian man sitting on a wooden chair in the dark kitchen holding a heavy metal pipe, staring at the back door.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Mataku terus menatap gagang pintu kayu sambil memegang erat sebuah besi tua.",
+          "gambar": "Close-up on the metal door handle of the dark wooden back door, bathed in eerie moonlight.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Suara jangkrik di luar mendadak berhenti total ketika jam menunjukkan pukul dua lewat dua belas.",
+          "gambar": "The young man checking his wrist watch showing 02:12 AM in intense silence and fear.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Suasana dapur menjadi gelap gulita, hanya cahaya layar ponselku yang menyinari meja.",
+          "gambar": "A smartphone resting on a dark dining table emitting light, in the dark gap under the dining table behind it, pale glowing eyes are faintly visible lurking.",
+          "tokoh": false,
+          "petunjuk": true,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tepat jam dua tiga belas, ponsel di genggamanku bergetar kencang menandakan pesan baru.",
+          "gambar": "The smartphone vibrating violently in his trembling hand with bright glowing screen notification.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "getar_hp"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Jantungku berdebar saat membaca pesan dari nomor Ibu yang kali ini berbeda pesan.",
+          "gambar": "Close-up of the young man's shocked eyes reflected in the bright screen of his phone.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Ibu menulis pesan singkat di grup, \"Jangan dijaga di situ. Segera kunci pintu kamarmu!\"",
+          "gambar": "Close-up on phone screen showing WhatsApp text from 'Ibu': 'Jangan dijaga. Kunci kamarmu.'",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "hantu",
+            "kelamin": "wanita"
+          }
+        },
+        {
+          "narasi": "Badanku gemetar hebat begitu menyadari pesan Ibu selama ini bukanlah sebuah teror gaib.",
+          "gambar": "The young man dropping his metal pipe on the floor, mouth open in sudden horror.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "pukulan"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Pesan itu adalah peringatan bahwa sosok penyusup ganjil itu sudah berada di dalam rumah.",
+          "gambar": "Wide shot of the dark pitch-black hallway leading into the bedroom area, shrouded in deep shadows.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku langsung berlari kencang menuju kamarku dan membanting pintu kayu kamar rapat-rapat.",
+          "gambar": "The young man sprinting frantically into his bedroom and slamming the heavy wooden door shut.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "langkah",
+            "pintu"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Napas terengah-engah, aku membelakangi pintu sambil menyapu penglihatan ke seluruh sudut kamar tidur.",
+          "gambar": "The young man pressing his back against the closed bedroom door, panting heavily, scanning the shadowy bedroom.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tiba-tiba dari sudut kegelapan kamar, terdengar bunyi engsel kayu berdecit sangat pelan.",
+          "gambar": "A large dark wooden wardrobe sitting in the shadowy corner of the bedroom.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "pintu"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Di depan mataku sendiri, pintu lemari pakaianku pelan-pelan terbuka dari dalam.",
+          "gambar": "Extreme close-up on the wooden wardrobe door slowly opening by itself from the pitch-black inside.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget",
+            "shake"
+          ],
+          "suara": [
+            "pintu"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        }
+      ]
+    },
+    {
+      "pertanyaan": "Apa yang bakal kamu lakukan kalau nomor HP-mu sendiri kirim pesan seram?",
+      "caption": "PLOTTWIST! Ternyata penyusup itu sudah ada di dekatku selama ini...",
+      "hashtag": [
+        "#ceritahoror",
+        "#plottwist",
+        "#hororindonesia",
+        "#puncakcerita",
+        "#creepy"
+      ],
+      "adegan": [
+        {
+          "narasi": "Lanjutan... Panik luar biasa, aku langsung melompat dan mengunci diri di dalam kamar mandi.",
+          "gambar": "The young man locking the small wooden door of a dimly lit bathroom, trembling uncontrollably.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "pintu"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku terduduk gemetar di lantai kamar mandi yang dingin sampai suara azan subuh berkumandang.",
+          "gambar": "The young man sitting hunched on the cold tiled bathroom floor hugging his knees in fear.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Pagi harinya suasana rumah terasa sangat normal, tidak ada hal aneh yang terjadi.",
+          "gambar": "Bright morning sunlight pouring into the clean living room of the Indonesian home.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Hari itu berlalu cepat, aku merasa lega karena pesan teror Ibu akhirnya berhenti.",
+          "gambar": "The young man sitting on his couch during daylight drinking a cup of tea, looking relieved.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Malam harinya aku mencoba tidur tenang di atas kasur dengan lampu kamar menyala terang.",
+          "gambar": "The young man lying in bed in a bright bedroom, under the dark narrow gap beneath his bed, long eerie pale fingers creep out slightly into view.",
+          "tokoh": true,
+          "petunjuk": true,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Namun tepat jam dua tiga belas malam, layar ponselku mendadak menyala terang benderang.",
+          "gambar": "Close-up on the smartphone resting next to his pillow turning brightly on at 02:13 AM.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [
+            "getar_hp"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Ada notifikasi pesan baru masuk di dalam grup WhatsApp keluarga kami malam itu.",
+          "gambar": "The young man picking up the phone with a terrified expression as a new group chat notification appears.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Mataku melotot ketakutan saat melihat pengirim pesan misterius itu adalah nomor HP-ku sendiri.",
+          "gambar": "Close-up on screen showing the sender name as 'Aku' (My Number) in the WhatsApp family group.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Padahal ponsel itu jelas-jelas sedang berada rapat di dalam genggaman tanganku sendiri.",
+          "gambar": "Shot of the young man's trembling hand holding the actual phone firmly.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Isi pesannya terketik dingin, \"Pintu belakang rumah sudah aku bukakan untuknya.\"",
+          "gambar": "WhatsApp message close-up reading: 'Pintu belakang rumah sudah aku bukakan untuknya.'",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "orang",
+            "kelamin": "pria"
+          }
+        },
+        {
+          "narasi": "Saat itu juga, terdengar langkah kaki berat melangkah cepat keluar dari dalam lemariku.",
+          "gambar": "The wooden wardrobe door throwing open wide as a tall pale creature with eerie grinning features steps out.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Dan bisikan di belakang telingaku berkata, \"Terima kasih sudah membukakan pintu.\"",
+          "gambar": "Extreme close-up behind the young man's head, pale eerie thin lips whisper right near his ear in the dark shadow.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget",
+            "shake"
+          ],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "kanan",
+          "dialog": {
+            "siapa": "hantu",
+            "kelamin": "wanita"
+          }
+        }
+      ]
+    }
+  ],
+  "tema": "konsep: Grup WA Keluarga"
+}

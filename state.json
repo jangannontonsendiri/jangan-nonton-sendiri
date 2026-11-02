@@ -1,12 +1,15 @@
 {
-  "cerita": null,
-  "part_berikut": 1,
+  "cerita": "20261102-1755-grup-wa-keluarga",
+  "part_berikut": 2,
   "tema_terpakai": [
     "pos ronda dan tamu yang menanyakan jalan",
     "lift apartemen yang berhenti di lantai yang tidak ada"
   ],
   "terakhir": {
-    "video": "20261102-1720-lift-lantai-tak-ada-part1",
-    "waktu": "2026-11-02T17:26+07:00"
-  }
+    "video": "20261102-1755-grup-wa-keluarga-part1",
+    "waktu": "2026-11-02T18:02+07:00"
+  },
+  "konsep_terpakai": [
+    "Grup WA Keluarga"
+  ]
 }
