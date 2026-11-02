@@ -25,7 +25,7 @@ _yy, _xx = np.mgrid[0:H, 0:W]
 _d = np.sqrt(((_xx - W / 2) / (W / 2)) ** 2 + ((_yy - H / 2) / (H / 2)) ** 2)
 VIGNET = np.clip(1.12 - 0.62 * _d ** 1.7, 0.18, 1.0)[..., None].astype(np.float32)
 _rng = np.random.default_rng(11)
-GRAIN = [_rng.normal(0, 8, (H // 2, W // 2)).astype(np.float32) for _ in range(8)]
+GRAIN = [_rng.normal(0, 3.5, (H // 2, W // 2)).astype(np.float32) for _ in range(4)]
 SCAN = np.where((_yy % 4) < 2, 0.9, 1.0)[..., None].astype(np.float32)
 del _yy, _xx, _d
 
@@ -71,7 +71,8 @@ def _potong_subtitle(teks, maks=6):
     while kata:
         hasil.append(" ".join(kata[:maks])); kata = kata[maks:]
     if len(hasil) > 1 and len(hasil[-1].split()) <= 2:
-        hasil[-2] += " " + hasil.pop()
+        ekor = hasil.pop()
+        hasil[-1] += " " + ekor
     return hasil
 
 
@@ -117,7 +118,7 @@ def _efek_array(a, efek, t, i, rnd):
     if "kabut" in efek:
         a = a * 0.85 + 30
     a *= VIGNET
-    a += GRAIN[i % 8].repeat(2, 0).repeat(2, 1)[..., None]
+    a += GRAIN[(i // 6) % 4].repeat(2, 0).repeat(2, 1)[..., None]  # bintik halus, ganti tiap 6 frame
     return np.clip(a, 0, 255).astype(np.uint8)
 
 
@@ -189,7 +190,7 @@ def _render_penutup(pipe, nomor_part, total_part, judul):
 def _ffmpeg_tulis(path):
     return subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24",
                              "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-", "-c:v", "libx264", "-preset", "veryfast",
-                             "-crf", "20", "-pix_fmt", "yuv420p", path], stdin=subprocess.PIPE)
+                             "-crf", "24", "-maxrate", "4500k", "-bufsize", "9M", "-g", "60", "-pix_fmt", "yuv420p", path], stdin=subprocess.PIPE)
 
 
 def buat_video(adegan_list, gambar_list, audio_list, durasi_list, musik, keluar, label, nomor_part,
