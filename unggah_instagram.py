@@ -7,7 +7,11 @@ import json, os, sys, time
 import requests
 
 AKAR = os.path.dirname(os.path.abspath(__file__))
-API = "https://graph.instagram.com/v23.0"
+
+
+def _api(tok):
+    # token Instagram Login (IGAA...) -> graph.instagram.com ; token Facebook (EAA...) -> graph.facebook.com
+    return "https://graph.facebook.com/v23.0" if tok.startswith("EAA") else "https://graph.instagram.com/v23.0"
 
 
 def _cek(r, apa):
@@ -18,6 +22,8 @@ def _cek(r, apa):
 
 def unggah(info, video_url):
     tok = os.environ["IG_ACCESS_TOKEN"].strip(); uid = os.environ["IG_USER_ID"].strip()
+    API = _api(tok)
+    print(f"Instagram: memakai {API.split('/')[2]}")
     caption = info["teks_lengkap"][:2150]
     c = _cek(requests.post(f"{API}/{uid}/media", timeout=120, data={
         "media_type": "REELS", "video_url": video_url, "caption": caption,
