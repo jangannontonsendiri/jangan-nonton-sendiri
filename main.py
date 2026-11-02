@@ -170,6 +170,9 @@ def main():
     if tanya: caption += f"\n\n{tanya} Jawab di komen \U0001F447"
     caption += f"\n\n{tag}"
     with open(os.path.join(HASIL, nama + ".txt"), "w", encoding="utf-8") as f: f.write(caption)
+    tulis(os.path.join(HASIL, "terbaru.json"), {
+        "video": keluar, "judul": c["judul"], "part": nomor, "caption": part.get("caption", ""),
+        "pertanyaan": tanya, "hashtag": part.get("hashtag", []), "teks_lengkap": caption})
     print(f"SELESAI: {keluar} ({t + video.AKHIR:.1f} detik)")
 
     state["part_berikut"] = nomor + 1
