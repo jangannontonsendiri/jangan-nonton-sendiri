@@ -4,17 +4,94 @@
   "part": [
     {
       "caption": "Harganya setengah dari kamar lain. Sekarang aku tahu kenapa.",
-      "hashtag": ["#ceritahoror", "#horor", "#kosangker", "#jangannontonsendiri"],
+      "hashtag": [
+        "#ceritahoror",
+        "#horor",
+        "#kosangker",
+        "#jangannontonsendiri"
+      ],
       "adegan": [
-        {"narasi": "Kamar nomor tujuh harganya cuma setengah. Aku baru tahu alasannya di malam pertama.", "gambar": "narrow old boarding house hallway at night, door number 7 at the end", "tokoh": true, "gerak": "zoom_in", "efek": ["flicker"]},
-        {"narasi": "Ibu kos cuma pesan satu hal. Jangan buka jendela lewat jam dua belas malam.", "gambar": "old woman silhouette standing in a lit doorway", "tokoh": false, "gerak": "pan_up", "efek": []},
-        {"narasi": "Malam itu aku nggak bisa tidur. Jam di meja menunjukkan dua belas lewat satu menit.", "gambar": "small bedroom at night, moonlight through window, digital clock", "tokoh": true, "gerak": "pan_left", "efek": ["kabut"]},
-        {"narasi": "Kamera di lorong merekam sesuatu berdiri di depan pintuku. Diam. Lama sekali.", "gambar": "CCTV view of hallway, tall shadow figure in front of door", "tokoh": false, "gerak": "zoom_in", "efek": ["cctv"]},
-        {"narasi": "Tok. Tok. Tok. Ada yang mengetuk jendela. Padahal kamarku di lantai tiga.", "gambar": "pale hand pressed against window glass from outside", "tokoh": false, "gerak": "zoom_in", "efek": ["kaget", "shake"]},
-        {"narasi": "Lalu suara itu memanggil namaku. Masalahnya, aku belum kasih tahu namaku ke siapa pun.", "gambar": "two glowing eyes behind curtains", "tokoh": false, "gerak": "zoom_out", "efek": ["flicker"]}
+        {
+          "narasi": "Kamar nomor tujuh harganya cuma setengah. Aku baru tahu alasannya di malam pertama.",
+          "gambar": "narrow old boarding house hallway at night, door number 7 at the end",
+          "tokoh": true,
+          "gerak": "zoom_in",
+          "efek": [
+            "flicker"
+          ]
+        },
+        {
+          "narasi": "Ibu kos cuma pesan satu hal. Jangan buka jendela lewat jam dua belas malam.",
+          "gambar": "old woman silhouette standing in a lit doorway",
+          "tokoh": false,
+          "gerak": "pan_up",
+          "efek": []
+        },
+        {
+          "narasi": "Malam itu aku nggak bisa tidur. Jam di meja menunjukkan dua belas lewat satu menit.",
+          "gambar": "small bedroom at night, moonlight through window, digital clock",
+          "tokoh": true,
+          "gerak": "pan_left",
+          "efek": [
+            "kabut"
+          ]
+        },
+        {
+          "narasi": "Kamera di lorong merekam sesuatu berdiri di depan pintuku. Diam. Lama sekali.",
+          "gambar": "CCTV view of hallway, tall shadow figure in front of door",
+          "tokoh": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "cctv"
+          ]
+        },
+        {
+          "narasi": "Tok. Tok. Tok. Ada yang mengetuk jendela. Padahal kamarku di lantai tiga.",
+          "gambar": "pale hand pressed against window glass from outside",
+          "tokoh": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget",
+            "shake"
+          ]
+        },
+        {
+          "narasi": "Lalu suara itu memanggil namaku. Masalahnya, aku belum kasih tahu namaku ke siapa pun.",
+          "gambar": "two glowing eyes behind curtains",
+          "tokoh": false,
+          "gerak": "zoom_out",
+          "efek": [
+            "flicker"
+          ]
+        }
+      ],
+      "judul_layar": "JANGAN BUKA JENDELA"
+    },
+    {
+      "caption": "Part 2",
+      "hashtag": [],
+      "adegan": [
+        {
+          "narasi": "Lanjutan.",
+          "gambar": "x",
+          "tokoh": false,
+          "gerak": "zoom_in",
+          "efek": []
+        }
       ]
     },
-    {"caption": "Part 2", "hashtag": [], "adegan": [{"narasi": "Lanjutan.", "gambar": "x", "tokoh": false, "gerak": "zoom_in", "efek": []}]},
-    {"caption": "Part 3", "hashtag": [], "adegan": [{"narasi": "Tamat.", "gambar": "x", "tokoh": false, "gerak": "zoom_in", "efek": []}]}
+    {
+      "caption": "Part 3",
+      "hashtag": [],
+      "adegan": [
+        {
+          "narasi": "Tamat.",
+          "gambar": "x",
+          "tokoh": false,
+          "gerak": "zoom_in",
+          "efek": []
+        }
+      ]
+    }
   ]
 }

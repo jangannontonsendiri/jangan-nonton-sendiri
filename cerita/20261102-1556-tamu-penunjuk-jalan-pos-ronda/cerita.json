@@ -76,7 +76,8 @@
             "shake"
           ]
         }
-      ]
+      ],
+      "judul_layar": "MBAH SUMI SUDAH MATI"
     },
     {
       "caption": "Ternyata dia tidak mengetuk dari luar... melainkan dari dalam! Simak lanjutannya!",
@@ -151,7 +152,7 @@
         },
         {
           "narasi": "Ponselku mendadak terlepas, lalu tepat di samping telingaku terdengar bisikan ghaib yang amat dingin: 'Kenapa tidak balik badan?'",
-          "gambar": "Close up of Doni dropping his phone in shock, a pale ghostly hand coming down on his shoulder from behind in dark room.",
+          "gambar": "Close up of Doni dropping his phone in shock, a pale ghostly hand coming down on his shoulder from behind in dark room., the ghostly man in a black raincoat clearly visible with an unnaturally wide grin stretching to his ears, hollow eyes",
           "tokoh": true,
           "gerak": "zoom_in",
           "efek": [
@@ -159,7 +160,8 @@
             "shake"
           ]
         }
-      ]
+      ],
+      "judul_layar": "DIA ADA DI DALAM POS"
     },
     {
       "caption": "Siapa yang sebenarnya pulang ke rumah? Ending yang bikin kamu gak bisa tidur!",
@@ -229,7 +231,7 @@
         },
         {
           "narasi": "Foto itu memperlihatkan diriku masih duduk diam di pos ronda bersama pria berjas hujan... padahal sosok itu kini berdiri di depanku.",
-          "gambar": "Doni looking up in absolute horror from his phone as a tall figure in a wet dark raincoat stands silently inside his dark living room.",
+          "gambar": "Doni looking up in absolute horror from his phone as a tall figure in a wet dark raincoat stands silently inside his dark living room., the ghostly man in a black raincoat clearly visible with an unnaturally wide grin stretching to his ears, hollow eyes",
           "tokoh": true,
           "gerak": "zoom_in",
           "efek": [
@@ -237,7 +239,8 @@
             "flicker"
           ]
         }
-      ]
+      ],
+      "judul_layar": "SIAPA YANG DUDUK DI POS?"
     }
   ],
   "tema": "pos ronda dan tamu yang menanyakan jalan"

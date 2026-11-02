@@ -55,6 +55,9 @@ def gambar_tokoh(deskripsi, path):
 
 def gambar_adegan(adegan, tokoh_utama, ref_tokoh, path, seed):
     p = f"{GAYA}. Vertical cinematic shot. {adegan['gambar']}"
+    if "kaget" in adegan.get("efek", []):
+        p += (" Terrifying close-up reveal of the supernatural entity, clearly visible, unsettling and uncanny,"
+              " deep shadows, stylized horror, no blood, no gore.")
     ref = None
     if adegan.get("tokoh"):
         p += f" The main character: {tokoh_utama}. Keep the same face, hair and clothing as the person in image 0."

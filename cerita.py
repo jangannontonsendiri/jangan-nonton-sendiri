@@ -17,9 +17,17 @@ Aturan isi:
 - Setiap part berisi 8 sampai 10 adegan. Narasi tiap adegan 12-22 kata. Total narasi per part 140-190 kata.
 - Adegan pertama setiap part adalah hook yang langsung bikin penasaran (part 2 dan 3 boleh mulai dengan "Lanjutan..." singkat).
 
+Untuk setiap part isi "judul_layar": judul besar yang tampil di atas video, HURUF KAPITAL, 2-4 kata,
+sangat memancing rasa penasaran dan takut, sesuai isi part itu (contoh gaya: "MBAH YANG GENTAYANGAN",
+"JANGAN BUKA JENDELA", "TAMU JAM DUA MALAM"). Jangan membocorkan akhir cerita.
+
 Untuk setiap adegan isi:
 - "narasi": teks yang dibacakan narator (Bahasa Indonesia).
 - "gambar": deskripsi visual dalam BAHASA INGGRIS untuk generator gambar: komposisi, lokasi, pencahayaan, apa yang terlihat. Jangan tulis gaya gambar (sudah ditambahkan otomatis). Jangan ada tulisan/teks di gambar.
+  PENTING: gambar harus MEMPERLIHATKAN hal seram yang sedang diceritakan di narasi itu, jangan disembunyikan.
+  Kalau narasi menyebut hantu, wajah mengerikan, senyum yang terlalu lebar, kaki melayang, mata kosong,
+  tunjukkan itu dengan jelas (close-up untuk momen paling seram). Buat makhluknya menyeramkan dan ganjil,
+  tapi JANGAN sadis: tanpa darah berceceran, tanpa luka terbuka, tanpa potongan tubuh. Seram, bukan jijik.
 - "tokoh": true jika tokoh utama terlihat di gambar.
 - "gerak": salah satu dari {gerak}.
 - "efek": daftar (boleh kosong) dari {efek}. "kaget" hanya untuk 1-2 momen paling menakutkan per part. "cctv" untuk adegan rekaman kamera.
@@ -29,7 +37,7 @@ Kembalikan HANYA JSON dengan bentuk:
   "judul": "judul cerita singkat (maks 5 kata)",
   "tokoh_utama": "deskripsi fisik tokoh utama dalam bahasa Inggris (usia, wajah, rambut, pakaian khas) yang akan dipakai di semua gambar",
   "part": [
-    {{"caption": "caption media sosial 1-2 kalimat yang bikin penasaran", "hashtag": ["#ceritahoror", "..."], "adegan": [{{"narasi": "...", "gambar": "...", "tokoh": true, "gerak": "zoom_in", "efek": []}}]}}
+    {{"judul_layar": "JUDUL BESAR", "caption": "caption media sosial 1-2 kalimat yang bikin penasaran", "hashtag": ["#ceritahoror", "..."], "adegan": [{{"narasi": "...", "gambar": "...", "tokoh": true, "gerak": "zoom_in", "efek": []}}]}}
   ]
 }}
 """

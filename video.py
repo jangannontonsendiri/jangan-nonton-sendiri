@@ -102,9 +102,29 @@ def _judul_pas(dr, teks, y, isi, maks=940, ukuran=150):
     return y + ukuran * 1.25
 
 
-def _label(dr, label):
-    x = (W - dr.textlength(label, font=F_LABEL)) / 2
-    dr.text((x, 140), label, font=F_LABEL, fill=(235, 228, 222), stroke_width=4, stroke_fill=(0, 0, 0))
+_CACHE_JUDUL = {}
+
+
+def _judul_atas(teks):
+    """Judul besar pemancing perhatian di bagian atas video (dibuat sekali, ditempel tiap frame)."""
+    if teks in _CACHE_JUDUL:
+        return _CACHE_JUDUL[teks]
+    lap = Image.new("RGBA", (W, 520), (0, 0, 0, 0)); dr = ImageDraw.Draw(lap)
+    teks = teks.upper().strip()
+    ukuran = 132
+    while True:
+        f = _font("Anton-Regular.ttf", ukuran)
+        baris = _bungkus(teks, f, 960)
+        if len(baris) <= 2 or ukuran <= 70: break
+        ukuran -= 8
+    y = 150
+    for b in baris[:2]:
+        x = (W - dr.textlength(b, font=f)) / 2
+        dr.text((x, y), b, font=f, fill=(248, 244, 238), stroke_width=11, stroke_fill=(0, 0, 0))
+        y += int(ukuran * 1.08)
+    dr.rectangle([W / 2 - 90, y + 14, W / 2 + 90, y + 24], fill=MERAH + (255,))
+    _CACHE_JUDUL[teks] = (lap, y + 40)
+    return _CACHE_JUDUL[teks]
 
 
 def _efek_array(a, efek, t, i, rnd):
@@ -122,15 +142,15 @@ def _efek_array(a, efek, t, i, rnd):
     return np.clip(a, 0, 255).astype(np.uint8)
 
 
-def _cctv_teks(img, t):
+def _cctv_teks(img, t, y0=520):
     dr = ImageDraw.Draw(img)
     detik = 48 * 60 + 10 + int(t)
     jam = f"2026-11-02  23:{detik // 60 % 60:02d}:{detik % 60:02d}"
-    dr.text((60, 250), jam, font=F_CCTV, fill=(220, 240, 230))
+    dr.text((60, y0), jam, font=F_CCTV, fill=(220, 240, 230))
     if int(t * 2) % 2 == 0:
-        dr.ellipse([W - 190, 255, W - 160, 285], fill=MERAH)
-    dr.text((W - 145, 250), "REC", font=F_CCTV, fill=(220, 240, 230))
-    dr.text((60, 305), "CAM 03", font=F_CCTV, fill=(220, 240, 230))
+        dr.ellipse([W - 190, y0 + 5, W - 160, y0 + 35], fill=MERAH)
+    dr.text((W - 145, y0), "REC", font=F_CCTV, fill=(220, 240, 230))
+    dr.text((60, y0 + 55), "CAM 03", font=F_CCTV, fill=(220, 240, 230))
 
 
 def _render_adegan(pipe, adegan, gambar, dur, label, idx):
@@ -154,17 +174,17 @@ def _render_adegan(pipe, adegan, gambar, dur, label, idx):
             a = np.roll(np.roll(a, random.randint(-guncang, guncang), 0), random.randint(-guncang, guncang), 1)
         if "kaget" in efek and t < 0.12:
             a = np.clip(a.astype(np.int16) + 120, 0, 255).astype(np.uint8)
+        fade = min(1.0, t / 0.25, (dur - t) / 0.2)   # gambar saja yang memudar, judul tetap
+        if fade < 1: a = (a * max(fade, 0)).astype(np.uint8)
         img = Image.fromarray(a)
+        lap, bawah_judul = _judul_atas(label)
+        img.paste(lap, (0, 0), lap)
         dr = ImageDraw.Draw(img)
-        if "cctv" in efek: _cctv_teks(img, t)
-        _label(dr, label)
+        if "cctv" in efek: _cctv_teks(img, t, int(bawah_judul) + 20)
         k = next((j for j, b in enumerate(batas) if t < b), None)
         if k is not None:
             _tulis_tengah(dr, potongan[k], F_SUB, 1430, isi=(255, 222, 89) if "kaget" in efek else (245, 240, 235))
-        a = np.asarray(img)
-        fade = min(1.0, t / 0.25, (dur - t) / 0.2)
-        if fade < 1: a = (a * max(fade, 0)).astype(np.uint8)
-        pipe.stdin.write(a.tobytes())
+        pipe.stdin.write(np.asarray(img).tobytes())
 
 
 def _render_penutup(pipe, nomor_part, total_part, judul):
@@ -175,6 +195,7 @@ def _render_penutup(pipe, nomor_part, total_part, judul):
         a = min(1, t / 0.5)
         warna = tuple(int(c * a) for c in MERAH)
         putih = tuple(int(c * a) for c in (235, 228, 222))
+        _tulis_tengah(dr, f"PART {nomor_part}/{total_part}", F_SEDANG, 620, isi=putih, garis=0)
         if nomor_part < total_part:
             y = _judul_pas(dr, "BERSAMBUNG", 720, warna) + 30
             _tulis_tengah(dr, f"Part {nomor_part + 1} segera tayang", F_SEDANG, y, isi=putih, garis=0)
