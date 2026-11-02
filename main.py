@@ -40,6 +40,14 @@ def pilih_tema(state):
     return random.choice(sisa)
 
 
+def pilih_konsep(state):
+    """Konsep buatan sendiri (konsep.json) dipakai berurutan; kalau habis, kembali ke tema acak."""
+    for k in baca(os.path.join(AKAR, "konsep.json"), []):
+        if k["judul"] not in state.get("konsep_terpakai", []):
+            return k
+    return None
+
+
 def cerita_mock():
     return baca(os.path.join(AKAR, "contoh", "cerita_contoh.json"), None)
 
@@ -51,15 +59,22 @@ def siapkan_cerita(state):
         c = cerita_mock(); tema = "contoh"
     else:
         import cerita
-        tema = os.environ.get("TEMA") or pilih_tema(state)
-        print(f"Menulis cerita baru, tema: {tema}")
-        c = cerita.buat_cerita(tema)
+        konsep = None if os.environ.get("TEMA") else pilih_konsep(state)
+        if konsep:
+            tema = "konsep: " + konsep["judul"]
+            print(f"Menulis cerita baru dari konsep: {konsep['judul']}")
+            c = cerita.buat_cerita(konsep=konsep)
+            state.setdefault("konsep_terpakai", []).append(konsep["judul"])
+        else:
+            tema = os.environ.get("TEMA") or pilih_tema(state)
+            print(f"Menulis cerita baru, tema: {tema}")
+            c = cerita.buat_cerita(tema)
+            state.setdefault("tema_terpakai", []).append(tema)
     cid = datetime.now(WIB).strftime("%Y%m%d-%H%M") + "-" + slug(c["judul"])
     os.makedirs(os.path.join(CERITA_DIR, cid), exist_ok=True)
     c["tema"] = tema
     tulis(os.path.join(CERITA_DIR, cid, "cerita.json"), c)
     state.update({"cerita": cid, "part_berikut": 1})
-    state.setdefault("tema_terpakai", []).append(tema)
     return c
 
 
@@ -147,10 +162,13 @@ def main():
     nama = f"{cid}-part{nomor}"
     keluar = os.path.join(HASIL, nama + ".mp4")
     video.buat_video(part["adegan"], gambar_list, audio_list, dur_list, musik, keluar,
-                     c["judul"], nomor, 3, c["judul"], kerja)
+                     c["judul"], nomor, 3, c["judul"], kerja, part.get("pertanyaan", ""))
 
     tag = " ".join(part.get("hashtag", [])[:6]) or "#ceritahoror #horor #ceritaseram"
-    caption = f"{c['judul']} — Part {nomor}/3\n\n{part.get('caption', '')}\n\n{tag}"
+    tanya = part.get("pertanyaan", "")
+    caption = f"{c['judul']} — Part {nomor}/3\n\n{part.get('caption', '')}"
+    if tanya: caption += f"\n\n{tanya} Jawab di komen \U0001F447"
+    caption += f"\n\n{tag}"
     with open(os.path.join(HASIL, nama + ".txt"), "w", encoding="utf-8") as f: f.write(caption)
     print(f"SELESAI: {keluar} ({t + video.AKHIR:.1f} detik)")
 

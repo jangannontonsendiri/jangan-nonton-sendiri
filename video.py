@@ -5,7 +5,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageEnhance
 
 W, H, FPS = 1080, 1920, 30
 JEDA = 0.6          # jeda setelah narasi tiap adegan (detik)
-AKHIR = 3.0         # durasi kartu penutup
+AKHIR = 4.0         # durasi kartu penutup
 FONT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonts")
 
 
@@ -288,7 +288,7 @@ def _render_adegan(pipe, adegan, gambar, dur, label, idx):
         pipe.stdin.write(np.asarray(img).tobytes())
 
 
-def _render_penutup(pipe, nomor_part, total_part, judul):
+def _render_penutup(pipe, nomor_part, total_part, judul, pertanyaan=""):
     n = int(AKHIR * FPS)
     for i in range(n):
         t = i / FPS
@@ -300,11 +300,16 @@ def _render_penutup(pipe, nomor_part, total_part, judul):
         if nomor_part < total_part:
             y = _judul_pas(dr, "BERSAMBUNG", 720, warna) + 30
             _tulis_tengah(dr, f"Part {nomor_part + 1} segera tayang", F_SEDANG, y, isi=putih, garis=0)
-            _tulis_tengah(dr, "Follow biar nggak ketinggalan", F_SEDANG, y + 90, isi=putih, garis=0)
+            if pertanyaan:
+                kuning = tuple(int(c * a) for c in (255, 222, 89))
+                _tulis_tengah(dr, pertanyaan, F_SUB, y + 130, isi=kuning, garis=0, jarak=78)
+                _tulis_tengah(dr, "Jawab di komen!", F_SEDANG, y + 130 + 78 * len(_bungkus(pertanyaan, F_SUB, 940)) + 30, isi=putih, garis=0)
+            else:
+                _tulis_tengah(dr, "Follow biar nggak ketinggalan", F_SEDANG, y + 90, isi=putih, garis=0)
         else:
             y = _judul_pas(dr, "TAMAT", 720, warna) + 30
             _tulis_tengah(dr, f"“{judul}”", F_SEDANG, y, isi=putih, garis=0)
-            _tulis_tengah(dr, "Mau cerita apa lagi? Tulis di komen", F_SEDANG, y + 90, isi=putih, garis=0)
+            _tulis_tengah(dr, pertanyaan or "Mau cerita apa lagi? Tulis di komen", F_SEDANG, y + 90, isi=putih, garis=0)
         a2 = _efek_array(np.asarray(img), [], t, i, None)
         pipe.stdin.write(a2.tobytes())
 
@@ -316,7 +321,7 @@ def _ffmpeg_tulis(path):
 
 
 def buat_video(adegan_list, gambar_list, audio_list, durasi_list, musik, keluar, label, nomor_part,
-               total_part, judul, kerja):
+               total_part, judul, kerja, pertanyaan=""):
     """Render video satu part. durasi_list = durasi tiap adegan (narasi + JEDA)."""
     bagian = []
     for idx, (a, g, d) in enumerate(zip(adegan_list, gambar_list, durasi_list)):
@@ -326,7 +331,7 @@ def buat_video(adegan_list, gambar_list, audio_list, durasi_list, musik, keluar,
         if pipe.returncode != 0: raise RuntimeError(f"render adegan {idx} gagal")
         os.replace(tmp, p); bagian.append(p)
     p = os.path.join(kerja, "penutup.mp4"); tmp = p + ".tmp.mp4"
-    pipe = _ffmpeg_tulis(tmp); _render_penutup(pipe, nomor_part, total_part, judul)
+    pipe = _ffmpeg_tulis(tmp); _render_penutup(pipe, nomor_part, total_part, judul, pertanyaan)
     pipe.stdin.close(); pipe.wait(); os.replace(tmp, p); bagian.append(p)
 
     daftar = os.path.join(kerja, "daftar.txt")

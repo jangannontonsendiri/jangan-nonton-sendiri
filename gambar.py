@@ -58,6 +58,9 @@ def gambar_adegan(adegan, tokoh_utama, ref_tokoh, path, seed):
     if "kaget" in adegan.get("efek", []):
         p += (" Terrifying close-up reveal of the supernatural entity, clearly visible, unsettling and uncanny,"
               " deep shadows, stylized horror, no blood, no gore.")
+    if adegan.get("petunjuk"):
+        p += (" Include the described hidden creepy detail subtly in the background or a reflection,"
+              " small and easy to miss at first glance but clearly there when you look closely.")
     ref = None
     if adegan.get("tokoh"):
         p += f" The main character: {tokoh_utama}. Keep the same face, hair and clothing as the person in image 0."

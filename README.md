@@ -5,7 +5,7 @@ Sistem otomatis pembuat video cerita horor animasi 2D (vertikal 1080×1920) untu
 Setiap kali dijalankan, sistem membuat **satu part** video. Satu cerita = 3 part bersambung.
 
 ## Alur
-1. **Cerita** — Gemini menulis cerita horor orisinal 3 part dari daftar tema di `tema.json`.
+1. **Cerita** — Gemini mengembangkan konsep di `konsep.json` (dipakai berurutan) menjadi naskah 3 part. Kalau konsep habis, memakai tema acak dari `tema.json`.
 2. **Gambar** — Cloudflare Workers AI membuat gambar gaya komik horor (tokoh utama dijaga tetap sama lewat `cerita/<id>/tokoh.png`).
 3. **Suara** — narator Edge TTS (`id-ID-ArdiNeural`) + musik latar mencekam buatan sendiri.
 4. **Video** — gerakan kamera (zoom/geser), efek (lampu berkedip, guncangan, CCTV, kabut, kaget), subtitle, kartu "BERSAMBUNG"/"TAMAT".
