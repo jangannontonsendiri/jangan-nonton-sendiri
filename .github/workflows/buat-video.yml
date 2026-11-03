@@ -57,6 +57,24 @@ jobs:
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
         run: python unggah_youtube.py
 
+      - name: Siapkan video + caption untuk TikTok (posting manual)
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          F=$(python -c "import json;print(json.load(open('hasil/terbaru.json'))['video'])")
+          NAMA=$(basename "$F" .mp4)
+          JUDUL=$(python -c "import json;d=json.load(open('hasil/terbaru.json'));print(f\"{d['judul']} Part {d['part']}-3\")")
+          JAM=$(TZ=Asia/Jakarta date +%H)
+          if [ "$JAM" -lt 19 ]; then SLOT="18.00"; else SLOT="21.00"; fi
+          TGL=$(TZ=Asia/Jakarta date +%Y-%m-%d)
+          mkdir -p /tmp/tt
+          cp "$F" "/tmp/tt/$NAMA.mp4"
+          python -c "import json;open('/tmp/tt/caption.txt','w',encoding='utf-8').write(json.load(open('hasil/terbaru.json'))['teks_lengkap'])"
+          { echo "Jadwal posting TikTok: $TGL jam $SLOT WIB"; echo; echo "CAPTION (salin semua di bawah ini):"; echo; cat /tmp/tt/caption.txt; } > /tmp/tt/catatan.md
+          gh release create "tiktok-$NAMA" "/tmp/tt/$NAMA.mp4" /tmp/tt/caption.txt \
+            --title "TikTok | $TGL $SLOT WIB | $JUDUL" --notes-file /tmp/tt/catatan.md
+
       - name: Taruh video di link publik sementara (untuk Instagram)
         id: publik
         if: env.ADA_IG == 'ya'
