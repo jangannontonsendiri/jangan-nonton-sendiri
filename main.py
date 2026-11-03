@@ -9,7 +9,7 @@ from datetime import datetime, timezone, timedelta
 import suara, video
 
 AKAR = os.path.dirname(os.path.abspath(__file__))
-STATE = os.path.join(AKAR, "state.json")
+STATE = os.path.join(AKAR, os.environ.get("STATE_FILE") or "state.json")
 TEMA = os.path.join(AKAR, "tema.json")
 CERITA_DIR = os.path.join(AKAR, "cerita")
 HASIL = os.path.join(AKAR, "hasil")

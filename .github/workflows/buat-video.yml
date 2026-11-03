@@ -57,21 +57,6 @@ jobs:
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
         run: python unggah_youtube.py
 
-      - name: Siapkan video + caption untuk TikTok (posting manual)
-        continue-on-error: true
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          F=$(python -c "import json;print(json.load(open('hasil/terbaru.json'))['video'])")
-          NAMA=$(basename "$F" .mp4)
-          JUDUL=$(python -c "import json;d=json.load(open('hasil/terbaru.json'));print(f\"{d['judul']} Part {d['part']}-3\")")
-          mkdir -p /tmp/tt
-          cp "$F" "/tmp/tt/$NAMA.mp4"
-          python -c "import json;open('/tmp/tt/caption.txt','w',encoding='utf-8').write(json.load(open('hasil/terbaru.json'))['teks_lengkap'])"
-          { echo "Posting di TikTok berurutan dari yang paling lama. Jadwal: 18.00 dan 21.00 WIB."; echo; echo "CAPTION (salin semua di bawah ini):"; echo; cat /tmp/tt/caption.txt; } > /tmp/tt/catatan.md
-          gh release create "tiktok-$NAMA" "/tmp/tt/$NAMA.mp4" /tmp/tt/caption.txt \
-            --title "TikTok | $JUDUL" --notes-file /tmp/tt/catatan.md
-
       - name: Taruh video di link publik sementara (untuk Instagram)
         id: publik
         if: env.ADA_IG == 'ya'

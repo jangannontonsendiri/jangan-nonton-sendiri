@@ -1,0 +1,100 @@
+name: Buat stok video TikTok (ZIP)
+
+# Membuat beberapa video sekaligus khusus TikTok (progres cerita terpisah: state-tiktok.json),
+# lalu menaruhnya dalam satu file ZIP di Releases untuk diunduh dan diposting manual.
+on:
+  push:
+    paths:
+      - .github/workflows/stok-tiktok.yml
+  workflow_dispatch:
+    inputs:
+      jumlah:
+        description: "Berapa video yang dibuat"
+        required: false
+        default: "10"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stok-tiktok
+  cancel-in-progress: false
+
+jobs:
+  stok:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    env:
+      JUMLAH: ${{ github.event.inputs.jumlah || '10' }}
+      STATE_FILE: state-tiktok.json
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Pasang ffmpeg dan font
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core zip
+          mkdir -p fonts
+          curl -sSfL -o fonts/Anton-Regular.ttf https://github.com/google/fonts/raw/main/ofl/anton/Anton-Regular.ttf || true
+          curl -sSfL -o fonts/Montserrat-ExtraBold.ttf https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/Montserrat-ExtraBold.ttf || true
+
+      - name: Pasang library Python
+        run: pip install -r requirements.txt
+
+      - name: Buat video satu per satu
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          mkdir -p /tmp/stok
+          jadi=0
+          for i in $(seq 1 "$JUMLAH"); do
+            ok=0
+            for coba in 1 2; do
+              if python main.py; then ok=1; break; fi
+              echo "Video ke-$i gagal (percobaan $coba), coba lagi sebentar lagi..."; sleep 60
+            done
+            [ $ok = 1 ] || { echo "Berhenti di video ke-$i"; break; }
+            jadi=$((jadi+1))
+            F=$(python -c "import json;print(json.load(open('hasil/terbaru.json'))['video'])")
+            N=$(printf "%02d" $jadi)
+            cp "$F" "/tmp/stok/$N-$(basename "$F")"
+            python -c "import json;open('/tmp/stok/$N-caption.txt','w',encoding='utf-8').write(json.load(open('hasil/terbaru.json'))['teks_lengkap'])"
+            rm -rf kerja
+          done
+          echo "JADI=$jadi" >> "$GITHUB_ENV"
+          ls -la /tmp/stok
+
+      - name: Simpan progres cerita TikTok
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state-tiktok.json cerita/
+          git diff --cached --quiet || git commit -m "Progres cerita TikTok"
+          for k in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
+
+      - name: Bungkus jadi ZIP dan taruh di Releases
+        if: always() && env.JADI != '0' && env.JADI != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cd /tmp/stok
+          {
+            echo "STOK VIDEO TIKTOK - Jangan Nonton Sendiri"
+            echo
+            echo "Posting berurutan sesuai nomor di depan nama file (01, 02, 03, ...)."
+            echo "Jadwal: 2x sehari, jam 18.00 dan 21.00 WIB."
+            echo "Caption tiap video ada di file NN-caption.txt (nomor sama dengan videonya)."
+            echo
+            for f in *.mp4; do echo "$f"; done
+          } > BACA-DULU.txt
+          TGL=$(TZ=Asia/Jakarta date +%Y-%m-%d-%H%M)
+          zip -q -0 "stok-tiktok-$TGL.zip" *.mp4 *.txt
+          gh release create "stok-tiktok-$TGL" "stok-tiktok-$TGL.zip" \
+            --title "TikTok | Stok $JADI video ($TGL)" --notes-file BACA-DULU.txt
