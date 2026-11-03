@@ -1,0 +1,520 @@
+{
+  "judul": "Aturan Kos Bu Ratmi",
+  "suasana": "sunyi",
+  "tokoh_utama": "A 22-year-old Indonesian male college student with short messy black hair, wearing a gray t-shirt and dark shorts, looking anxious",
+  "part": [
+    {
+      "pertanyaan": "Tebak, kira-kira isi aturan nomor 5 apa? Tulis di komen!",
+      "caption": "Jangan pernah langgar aturan nomor 4 di kosan ini... akibatnya fatal! #ceritahoror #atukos #hororindonesia",
+      "hashtag": [
+        "#ceritahoror",
+        "#atukos",
+        "#hororindonesia",
+        "#kisahnyata",
+        "#creepy"
+      ],
+      "adegan": [
+        {
+          "narasi": "Di balik pintu kamar kos baruku, tertempel kertas lapuk berisi lima aturan aneh.",
+          "gambar": "A close-up shot of an old wooden door inside a dimly lit bedroom, showing a yellowed piece of paper taped with five handwritten rules, rule number five is torn off.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Kertasnya sudah menguning, dan anehnya tulisan aturan nomor lima tampak sobek sengaja.",
+          "gambar": "Close-up of the torn bottom edge of the old rule sheet on the door, showing jagged paper tear right under rule number four.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aturan pertama menyebutkan, jangan pernah jemur pakaian di luar lorong lewat maghrib.",
+          "gambar": "A dark outdoor boarding house corridor at dusk, clotheslines hanging empty under heavy shadows.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aturan kedua, kalau dengar suara orang mandi jam dua belas malam, jangan ikut antre.",
+          "gambar": "A gloomy communal bathroom at the end of a dark corridor, door slightly ajar with dark water trickling out.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [],
+          "fokus": "kiri",
+          "dialog": null
+        },
+        {
+          "narasi": "Aturan ketiga, kalau namamu dipanggil dari arah lorong, jangan pernah sekali pun menjawab.",
+          "gambar": "The long empty hallway of the boarding house at night, lit by a flickering yellow light bulb overhead.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku membaca aturan itu sambil berjalan melintasi lorong kos yang terkesan sangat sunyi.",
+          "gambar": "The young male student walking down the quiet corridor holding his room key. In the background, one of the bedroom doors is slightly open, and a pale wide eye is peeking through the dark gap.",
+          "tokoh": true,
+          "petunjuk": true,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "kanan",
+          "dialog": null
+        },
+        {
+          "narasi": "Aturan keempat melarang mematikan lampu kamar secara total ketika sedang tidur malam.",
+          "gambar": "Inside the small bedroom, illuminated brightly by a harsh overhead light bulb, showing a desk, wardrobe, and single bed.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tapi jam satu malam, sinar bohlam kamar rasanya terlalu terang dan bikin mata silau.",
+          "gambar": "The young student lying on the bed, squinting his eyes and covering his face with his arm because of the bright overhead light.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "atas",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku memutuskan melanggar aturan empat, lalu menekan sakelar lampu hingga kamar jadi gelap.",
+          "gambar": "The student standing up and flipping the light switch on the wall, plunging the room into darkness.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "kiri",
+          "dialog": null
+        },
+        {
+          "narasi": "Hanya suara kipas angin tua yang terdengar berputar pelan di sudut ruangan.",
+          "gambar": "Low angle shot of an old electric fan spinning slowly in the pitch-black corner of the room, faintly lit by moonlight through the window gap.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tiba-tiba di ujung kasurku, pernya berbunyi dan ujung kasurnya melesak turun tajam.",
+          "gambar": "Extreme close-up of the mattress edge depressing downward under heavy unseen weight in the dark bedroom.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Seseorang baru saja duduk tepat di ujung kasurku dalam kegelapan total.",
+          "gambar": "A terrifying close-up of a dark silhouette seated at the foot of the bed, slowly turning its head towards the student crouching in fear under the blanket.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        }
+      ]
+    },
+    {
+      "pertanyaan": "Kalau kamu jadi aku, kamu jawab panggilan dari lorong itu nggak?",
+      "caption": "Jangan pernah sekali pun jawab panggilan di lorong kos jam 2 malam... #ceritahoror #atukos #hororindonesia",
+      "hashtag": [
+        "#ceritahoror",
+        "#atukos",
+        "#hororindonesia",
+        "#misteri",
+        "#viral"
+      ],
+      "adegan": [
+        {
+          "narasi": "Lanjutan kemarin, badanku kaku tak berani bergerak saat kasurku diduduki sesuatu.",
+          "gambar": "The young male student lying frozen stiff under his blanket in the dim room, eyes wide with terror staring into the dark.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Beruntung sosok itu menghilang saat subuh, aku langsung keluar kamar mencari jawaban.",
+          "gambar": "Morning light filtering into the boarding house hallway, the student walking frantically out of his room.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "kiri",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku mendatangi tetangga kamar sebelah dan bertanya tentang isi aturan nomor lima.",
+          "gambar": "The student standing outside room door number two, knocking urgently and asking a neighbor who slightly opens the door.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "ketukan"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Wajahnya seketika pucat pasif, dia langsung membanting pintu tanpa mengucap sepatah kata.",
+          "gambar": "Close-up of the neighbor's pale, terrified face as he rapidly slams the door right in the student's face.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget"
+          ],
+          "suara": [
+            "pintu"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Penghuni lain juga melakukan hal yang sama, mereka panik begitu mendengar pertanyaan soal aturan.",
+          "gambar": "A wide view of the quiet hallway as several doors quickly slam shut simultaneously, leaving the hallway deserted.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [
+            "pintu"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Malam harinya, aku duduk ketakutan di atas kasur dengan lampu tetap menyala.",
+          "gambar": "Nighttime scene inside the bedroom, brightly lit, the student hugging his knees on the bed, looking nervously at the door.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Jam dua malam, dari luar lorong terdegar suara langkah kaki mendekati pintuku.",
+          "gambar": "Outside shot of the dark hallway looking toward the student's closed bedroom door, shadows shifting on the floor.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Suara Bu Ratmi, si pemilik kos, tiba-tiba memanggil namaku dari balik pintu.",
+          "gambar": "Interior bedroom view facing the closed wooden door, shadows flickering under the door gap.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Suaranya terdengar sangat jelas dan lembut, \"Mas, buka pintunya sebentar, Ibu mau bicara.\"",
+          "gambar": "Close-up of the door handle trembling slightly as the voice speaks from the dark corridor outside.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "hantu",
+            "kelamin": "wanita"
+          }
+        },
+        {
+          "narasi": "Aku hampir saja menjawab panggilan itu dan melangkahkan kaki mendekati gagang pintu.",
+          "gambar": "The student standing near his bed looking at his smartphone in his hand. In the dark glass reflection of the phone screen, a pale ghostly silhouette stands right behind him.",
+          "tokoh": true,
+          "petunjuk": true,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tiba-tiba layarku menyala dan ada notifikasi pesan dari nomor Ibu Ratmi yang asli.",
+          "gambar": "Close-up of a smartphone screen lighting up in the dark, showing an incoming WhatsApp message from 'Bu Ratmi Kos'.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "getar_hp"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Pesan itu berbunyi, \"Mas, Ibu lagi mudik ke kampung. Jangan jawab suara siapa pun.\"",
+          "gambar": "Macro shot of the smartphone screen reading: 'Mas, Ibu lagi mudik ke kampung. Jangan jawab suara siapa pun.' while outside the door, heavy thumping sounds begin.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget"
+          ],
+          "suara": [
+            "pukulan"
+          ],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "orang",
+            "kelamin": "wanita"
+          }
+        }
+      ]
+    },
+    {
+      "pertanyaan": "Kira-kira apa yang kamu lakukan kalau 'dirimu sendiri' mengetuk pintu?",
+      "caption": "Misteri sobekan aturan nomor 5 akhirnya terungkap! Dan itu bikin merinding... #ceritahoror #atukos #hororindonesia",
+      "hashtag": [
+        "#ceritahoror",
+        "#atukos",
+        "#hororindonesia",
+        "#twist",
+        "#seram"
+      ],
+      "adegan": [
+        {
+          "narasi": "Lanjutan kemarin, napasku terhenti membaca pesan WhatsApp dari Bu Ratmi yang asli.",
+          "gambar": "Close-up of the young male student's face dripping with cold sweat, eyes wide open in sheer horror while staring at his phone.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Suara panggil dari luar pintu tadi mendadak berubah menjadi rintihan yang sangat mengerikan.",
+          "gambar": "The door shaking violently as a dark shadow looms ominously underneath the door frame.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Karena panik mencari petunjuk, aku menggeledah setiap sudut kamar kos yang berdebu ini.",
+          "gambar": "The student frantically tearing apart his room, checking drawers, under the mattress, and looking for answers.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Saat melihat ke kolong lemari pakaian, ada secarik kertas lusuh terselip di sana.",
+          "gambar": "Low angle view under the heavy wooden wardrobe, showing a crumpled yellow piece of paper tucked under the dark dusty gap.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku menarik kertas itu, dan ternyata itu adalah sobekan aturan nomor lima.",
+          "gambar": "The student's hands holding the torn paper edge, aligning it with the tear mark of the original rule list.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Kertas itu berdebu, bertuliskan tinta hitam yang sudah agak pudar dan samar.",
+          "gambar": "Close-up of the torn rule paper in the student's hand. In the background under the dark wardrobe gap behind his hand, long pale demonic fingers are creeping out.",
+          "tokoh": true,
+          "petunjuk": true,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tulisannya berbunyi, \"Kalau ada yang mengetuk dan bilang dia penghuni kamar ini, jangan dibuka.\"",
+          "gambar": "Close-up view of the handwritten text on the paper: 'Kalau ada yang mengetuk dan bilang dia penghuni kamar ini, jangan dibuka.'",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "orang",
+            "kelamin": "wanita"
+          }
+        },
+        {
+          "narasi": "Kalimat berikutnya membuat bulu kudukku berdiri, \"Sebab penghuni kamar ini sebenarnya cuma kamu.\"",
+          "gambar": "Macro shot of the second sentence on the old paper: 'Sebab penghuni kamar ini sebenarnya cuma kamu.'",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "orang",
+            "kelamin": "wanita"
+          }
+        },
+        {
+          "narasi": "Tepat saat selesai membaca, suara ketukan keras terdengar menghantam pintuku dari luar.",
+          "gambar": "The door jolts violently from three heavy loud knocks, dust falling from the wooden frame.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "ketukan"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Sebuah suara dari luar pintu tiba-tiba berteriak dengan nada yang amat sangat dikenal.",
+          "gambar": "The student staring at the door in absolute horror, backing away toward the corner of the room.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [],
+          "fokus": "kiri",
+          "dialog": null
+        },
+        {
+          "narasi": "Suara itu persis sekali dengan suaraku sendiri, \"Buka pintunya, ini kamarku!\"",
+          "gambar": "Extremely frightening shot of the door knob slowly turning down from the outside, while a creepy pale silhouette identical to the student is visible through the door's frosted glass panel.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget"
+          ],
+          "suara": [
+            "pintu"
+          ],
+          "fokus": "kanan",
+          "dialog": {
+            "siapa": "hantu",
+            "kelamin": "pria"
+          }
+        },
+        {
+          "narasi": "Aku mundur perlahan saat melihat gagang pintuku mulai bergerak-gerak turun sendiri.",
+          "gambar": "Close-up of the door slowly creaking open into the dark room, exposing two glowing eyes standing outside in the hallway darkness.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "pintu"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        }
+      ]
+    }
+  ],
+  "tema": "konsep: Aturan Kos Bu Ratmi"
+}
