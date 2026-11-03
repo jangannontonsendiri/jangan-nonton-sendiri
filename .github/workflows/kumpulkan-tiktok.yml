@@ -1,0 +1,49 @@
+name: Kumpulkan video lama untuk TikTok
+
+# Sekali jalan: memindahkan video cerita yang sudah jadi (dari artifact) ke Releases
+# supaya bisa diunduh untuk posting manual di TikTok.
+on:
+  push:
+    paths:
+      - .github/workflows/kumpulkan-tiktok.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  kumpulkan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GH_TOKEN: ${{ github.token }}
+      REPO: ${{ github.repository }}
+      CERITA: grup-wa-keluarga
+    steps:
+      - name: Unduh semua artifact video
+        run: |
+          mkdir -p /tmp/art && cd /tmp/art
+          gh api "repos/$REPO/actions/artifacts?per_page=100" --jq '.artifacts[] | select(.expired==false) | .id' > ids.txt
+          for id in $(cat ids.txt); do
+            mkdir -p "$id"
+            gh api "repos/$REPO/actions/artifacts/$id/zip" > "$id.zip" && unzip -oq "$id.zip" -d "$id" || true
+            rm -f "$id.zip"
+          done
+          find /tmp/art -name "*.mp4" | sort
+
+      - name: Buat Release TikTok per part
+        run: |
+          for n in 1 2 3; do
+            F=$(find /tmp/art -name "*-$CERITA-part$n.mp4" | sort | tail -1)
+            [ -z "$F" ] && { echo "Part $n tidak ditemukan"; continue; }
+            NAMA=$(basename "$F" .mp4); TXT="${F%.mp4}.txt"
+            TAG="tiktok-$NAMA"
+            gh release view "$TAG" -R "$REPO" >/dev/null 2>&1 && { echo "$TAG sudah ada"; continue; }
+            mkdir -p /tmp/tt && cp "$F" "/tmp/tt/$NAMA.mp4"
+            if [ -f "$TXT" ]; then cp "$TXT" /tmp/tt/caption.txt; else echo "Grup WA Keluarga — Part $n/3 #ceritahoror #horor" > /tmp/tt/caption.txt; fi
+            { echo "Posting di TikTok berurutan dari yang paling lama. Jadwal: 18.00 dan 21.00 WIB."; echo; echo "CAPTION (salin semua di bawah ini):"; echo; cat /tmp/tt/caption.txt; } > /tmp/tt/catatan.md
+            gh release create "$TAG" "/tmp/tt/$NAMA.mp4" /tmp/tt/caption.txt -R "$REPO" \
+              --title "TikTok | Grup WA Keluarga Part $n-3" --notes-file /tmp/tt/catatan.md
+            sleep 2
+          done
