@@ -45,7 +45,7 @@
   ],
   "adegan": [
     {
-      "narasi": "Tujuh hari setelah kakakku dimakamkan, suaminya membeli mobil baru. Bayar tunai.",
+      "narasi": "Tujuh hari setelah kakakku dimakamkan, suaminya membeli mobil baru, dibayar tunai.",
       "gambar": "a man proudly smiling beside a brand new shiny white car parked in front of a modest Javanese village house, withered funeral wreaths still leaning at the gate, grey overcast afternoon",
       "tokoh": [
         "dimas"
@@ -232,8 +232,9 @@
       "fokus": "tengah"
     },
     {
-      "narasi": "Tetangga mulai berbisik. Seorang ibu menarik tanganku, hati-hati, Nduk. Rezeki yang datang tanpa keringat, biasanya ada tagihannya.",
+      "narasi": "Tetangga mulai berbisik. Seorang ibu menarik tanganku. “Hati-hati, Nduk. Rezeki yang datang tanpa keringat, biasanya ada tagihannya.”",
       "gambar": "an old village woman with a headscarf gripping a young woman's wrist and whispering urgently into her ear, the young woman looking frightened",
+      "dialog": {"suara": "tetangga"},
       "tokoh": [
         "laras"
       ],
