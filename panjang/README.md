@@ -12,6 +12,15 @@ Cerita ditaruh sebagai file JSON di folder `cerita_panjang/`, lalu nama filenya 
   `efek`, `suara`, `fokus`, `dialog` — sama seperti video pendek.
   Kalimat tokoh lain ditulis dalam tanda kutip ganda supaya dibacakan dengan suara berbeda.
 
+Beberapa tokoh dengan wajah tetap dan suara berbeda:
+
+- `narator`: `"perempuan"` atau `"laki"` (bawaan `"laki"`).
+- `tokoh`: daftar `{"id", "nama", "deskripsi" (Inggris, dipakai identik di semua adegan), "suara", "ref" (opsional)}`.
+  Tiap tokoh dibuatkan satu gambar acuan wajah. Tokoh yang sama dengan penampilan berbeda (mis. hantu) dibuat sebagai tokoh terpisah.
+  `suara` salah satu dari: `pria`, `perempuan`, `perempuan_jawa`, `hantu_pria`, `hantu_perempuan`, `hantu_perempuan_jawa`.
+  Suara Jawa memakai Edge TTS jv-ID; kalau gagal atau `SUARA_JAWA=0`, otomatis pakai suara Indonesia dengan nada & tempo berbeda.
+- di tiap adegan: `"tokoh": ["id1", "id2"]` (maks 3) dan, bila ada kalimat dalam tanda kutip, `"dialog": {"tokoh": "id"}`.
+
 Target durasi 12–13 menit: sekitar 60–75 adegan dengan narasi 18–28 kata per adegan.
 
 Uji tanpa internet: `MOCK=1 python panjang_main.py` (atau centang `mock` di workflow).

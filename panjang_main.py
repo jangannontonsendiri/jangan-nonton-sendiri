@@ -7,9 +7,8 @@ MOCK=1 untuk uji tanpa internet (gambar & suara palsu): MOCK=1 python panjang_ma
 """
 import json, os, re, shutil, sys, zlib
 
-import gambar as gambar_modul          # dipakai ulang: pembuat gambar (Cloudflare) + gaya gambar
 import suara                           # dipakai ulang: narator, suara tokoh, musik, efek suara
-import panjang_suara, panjang_video
+import panjang_gambar, panjang_suara, panjang_video   # versi video panjang; memakai gambar.py & suara.py di dalamnya
 
 AKAR = os.path.dirname(os.path.abspath(__file__))
 HASIL = os.path.join(AKAR, "hasil_panjang")
@@ -19,7 +18,7 @@ MOCK = os.environ.get("MOCK") == "1"
 GERAK = ["zoom_in", "zoom_out", "pan_up", "pan_down", "pan_left", "pan_right"]
 EFEK = ["flicker", "shake", "cctv", "kabut", "kaget", "hujan"]
 FOKUS = ["atas", "tengah", "bawah", "kiri", "kanan"]
-LEBAR, TINGGI = 1344, 768     # ukuran gambar 16:9 yang diminta ke generator gambar
+LEBAR, TINGGI = panjang_gambar.LEBAR, panjang_gambar.TINGGI
 
 
 def slug(teks):
@@ -39,7 +38,7 @@ def muat_cerita(path):
             raise ValueError("setiap adegan wajib punya 'narasi' dan 'gambar'")
         if a.get("gerak") not in GERAK: a["gerak"] = GERAK[len(a["narasi"]) % len(GERAK)]
         a["efek"] = [e for e in a.get("efek", []) if e in EFEK]
-        a["tokoh"] = bool(a.get("tokoh")); a["petunjuk"] = bool(a.get("petunjuk"))
+        a["petunjuk"] = bool(a.get("petunjuk"))
         if "suara" in a: a["suara"] = [x for x in a["suara"] if x in suara.SFX][:2]
         else: a["suara"] = suara.tebak_sfx(a["narasi"])
         if a.get("fokus") not in FOKUS: a["fokus"] = "tengah"
@@ -49,6 +48,22 @@ def muat_cerita(path):
     c["adegan"] = adegan
     c.setdefault("judul", "Cerita Horor")
     c.setdefault("tokoh_utama", "Indonesian person, short black hair, plain dark clothes")
+    # daftar tokoh: [{"id","nama","deskripsi","suara","ref"(opsional)}]; tanpa daftar = satu tokoh "utama"
+    daftar = c.get("tokoh")
+    if isinstance(daftar, list) and daftar and isinstance(daftar[0], dict):
+        tokoh = {t["id"]: t for t in daftar}
+    else:
+        tokoh = {"utama": {"id": "utama", "nama": "tokoh utama", "deskripsi": c["tokoh_utama"], "ref": c.get("tokoh_ref")}}
+    for t in tokoh.values():
+        if t.get("suara") and t["suara"] not in panjang_suara.JENIS:
+            raise ValueError(f"suara tokoh '{t['id']}' tidak dikenal: {t['suara']} (pilihan: {list(panjang_suara.JENIS)})")
+    for a in adegan:
+        v = a.get("tokoh")
+        ids = [next(iter(tokoh))] if v is True else [x for x in v] if isinstance(v, list) else []
+        for x in ids:
+            if x not in tokoh: raise ValueError(f"adegan memakai tokoh '{x}' yang tidak ada di daftar tokoh")
+        a["tokoh"] = ids[:panjang_gambar.MAKS_ACUAN]
+    c["_tokoh"] = tokoh
     return c
 
 
@@ -78,20 +93,16 @@ def suara_palsu(path, kata):
                     "-c:a", "libmp3lame", path], check=True)
 
 
-def gambar_adegan_lebar(a, tokoh_utama, ref_tokoh, path, seed):
-    """Sama seperti gambar.gambar_adegan, tetapi komposisi mendatar 16:9."""
-    p = f"{gambar_modul.GAYA}. Wide cinematic 16:9 landscape shot. {a['gambar']}"
-    if "kaget" in a.get("efek", []):
-        p += (" Terrifying close-up reveal of the supernatural entity, clearly visible, unsettling and uncanny,"
-              " deep shadows, stylized horror, no blood, no gore.")
-    if a.get("petunjuk"):
-        p += (" Include the described hidden creepy detail subtly in the background or a reflection,"
-              " small and easy to miss at first glance but clearly there when you look closely.")
-    ref = None
-    if a.get("tokoh"):
-        p += f" The main character: {tokoh_utama}. Keep the same face, hair and clothing as the person in image 0."
-        ref = ref_tokoh
-    return gambar_modul.buat_gambar(p, path, width=LEBAR, height=TINGGI, referensi=ref, seed=seed)
+def jenis_dialog(a, tokoh):
+    """Pilih suara untuk kalimat dalam tanda kutip: dari tokoh yang berbicara, atau tebakan seperti video pendek."""
+    d = a.get("dialog")
+    if isinstance(d, dict):
+        if d.get("tokoh") in tokoh and tokoh[d["tokoh"]].get("suara"):
+            return tokoh[d["tokoh"]]["suara"]
+        if d.get("suara") in panjang_suara.JENIS:
+            return d["suara"]
+    d = tebak_dialog(a)
+    return ("hantu_" if d.get("siapa") == "hantu" else "") + ("pria" if d.get("kelamin") == "pria" else "perempuan")
 
 
 def main():
@@ -107,26 +118,30 @@ def main():
     os.makedirs(kerja); os.makedirs(HASIL, exist_ok=True)
     print(f"Membuat video panjang: {c['judul']} ({len(adegan)} adegan){' [MOCK]' if MOCK else ''}")
 
-    # 1. tokoh utama: pakai gambar tokoh yang sudah ada (tokoh_ref) supaya wajahnya sama, atau buat baru
-    ref = os.path.join(kerja, "tokoh.png")
-    acuan = c.get("tokoh_ref")
-    if acuan and os.path.exists(os.path.join(AKAR, acuan)):
-        shutil.copy(os.path.join(AKAR, acuan), ref)
-    elif MOCK:
-        gambar_palsu(ref, "tokoh", (512, 512))
-    else:
-        gambar_modul.gambar_tokoh(c["tokoh_utama"], ref)
+    # 1. gambar acuan wajah tiap tokoh (supaya wajah sama di semua adegan); boleh pakai gambar yang sudah ada ('ref')
+    benih = zlib.crc32(cid.encode()) % 100000
+    tokoh = c["_tokoh"]
+    refs = {}
+    for n, (tid, t) in enumerate(tokoh.items()):
+        ref = os.path.join(kerja, f"tokoh_{tid}.png")
+        if t.get("ref") and os.path.exists(os.path.join(AKAR, t["ref"])):
+            shutil.copy(os.path.join(AKAR, t["ref"]), ref)
+        elif MOCK:
+            gambar_palsu(ref, "tokoh " + tid, (512, 512))
+        else:
+            panjang_gambar.potret_tokoh(t["deskripsi"], ref, seed=benih + 7000 + n)
+        refs[tid] = ref
+    print(f"  gambar acuan {len(refs)} tokoh siap: {', '.join(tokoh)}", flush=True)
 
     # 2. gambar + 3. suara tiap adegan
-    benih = zlib.crc32(cid.encode()) % 100000
     gambar_list, audio_list, dur_list = [], [], []
     for i, a in enumerate(adegan):
         g = os.path.join(kerja, f"g{i:03d}.png"); au = os.path.join(kerja, f"n{i:03d}.mp3")
         if MOCK:
             gambar_palsu(g, a["gambar"]); suara_palsu(au, len(a["narasi"].split()))
         else:
-            gambar_adegan_lebar(a, c["tokoh_utama"], ref, g, seed=benih + i)
-            panjang_suara.narasi(a["narasi"], au, tebak_dialog(a))
+            panjang_gambar.adegan_lebar(a, [(tokoh[x]["deskripsi"], refs[x]) for x in a["tokoh"]], g, seed=benih + i)
+            panjang_suara.narasi(a["narasi"], au, jenis_dialog(a, tokoh), narator=c.get("narator", "laki"))
         gambar_list.append(g); audio_list.append(au)
         dur_list.append(suara.durasi(au) + panjang_video.JEDA)
         if (i + 1) % 5 == 0 or i == len(adegan) - 1:

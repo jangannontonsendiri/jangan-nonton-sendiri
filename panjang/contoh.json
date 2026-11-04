@@ -3,39 +3,118 @@
   "suasana": "hujan",
   "tokoh_utama": "Indonesian man around 22 years old, short messy black hair, thin face, dark grey hoodie, backpack",
   "deskripsi": "Contoh cerita untuk uji MODE VIDEO PANJANG.",
-  "hashtag": ["#ceritahoror", "#horor", "#jangannontonsendiri"],
+  "hashtag": [
+    "#ceritahoror",
+    "#horor",
+    "#jangannontonsendiri"
+  ],
   "adegan": [
     {
       "narasi": "Kamar nomor tujuh harganya cuma setengah dari kamar lain. Aku baru tahu alasannya di malam pertama.",
       "gambar": "narrow old boarding house hallway at night, door number 7 at the end",
-      "tokoh": true, "gerak": "zoom_in", "efek": ["flicker", "hujan"], "suara": ["langkah"]
+      "tokoh": [
+        "aku"
+      ],
+      "gerak": "zoom_in",
+      "efek": [
+        "flicker",
+        "hujan"
+      ],
+      "suara": [
+        "langkah"
+      ]
     },
     {
       "narasi": "Ibu kos cuma pesan satu hal. \"Jangan buka jendela lewat jam dua belas malam,\" katanya pelan.",
       "gambar": "old woman silhouette standing in a lit doorway",
-      "tokoh": false, "gerak": "pan_up", "efek": [], "suara": [],
-      "dialog": {"siapa": "orang", "kelamin": "wanita"}
+      "tokoh": [
+        "ibu_kos"
+      ],
+      "gerak": "pan_up",
+      "efek": [],
+      "suara": [],
+      "dialog": {
+        "tokoh": "ibu_kos"
+      }
     },
     {
       "narasi": "Malam itu aku nggak bisa tidur. Jam di meja menunjukkan dua belas lewat satu menit. Hujan makin deras di luar sana.",
       "gambar": "small bedroom at night, moonlight through window, digital clock",
-      "tokoh": true, "gerak": "pan_left", "efek": ["kabut"], "suara": ["detak"]
+      "tokoh": [
+        "aku"
+      ],
+      "gerak": "pan_left",
+      "efek": [
+        "kabut"
+      ],
+      "suara": [
+        "detak"
+      ]
     },
     {
       "narasi": "Kamera di lorong merekam sesuatu berdiri di depan pintuku. Diam. Lama sekali.",
       "gambar": "CCTV view of hallway, tall shadow figure in front of door",
-      "tokoh": false, "gerak": "zoom_in", "efek": ["cctv"], "suara": []
+      "tokoh": [],
+      "gerak": "zoom_in",
+      "efek": [
+        "cctv"
+      ],
+      "suara": []
     },
     {
       "narasi": "Tok. Tok. Tok. Ada yang mengetuk jendela. Padahal kamarku di lantai tiga.",
       "gambar": "pale hand pressed against window glass from outside",
-      "tokoh": false, "gerak": "zoom_in", "efek": ["kaget", "shake"], "suara": ["ketukan", "kaca"]
+      "tokoh": [
+        "sosok"
+      ],
+      "gerak": "zoom_in",
+      "efek": [
+        "kaget",
+        "shake"
+      ],
+      "suara": [
+        "ketukan",
+        "kaca"
+      ]
     },
     {
       "narasi": "Lalu suara itu memanggil namaku. \"Bukain dong...\" Masalahnya, aku belum kasih tahu namaku ke siapa pun.",
       "gambar": "two glowing eyes behind curtains",
-      "tokoh": false, "gerak": "zoom_out", "efek": ["flicker"], "suara": ["bisikan"],
-      "dialog": {"siapa": "hantu", "kelamin": "wanita"}
+      "tokoh": [
+        "aku",
+        "sosok"
+      ],
+      "gerak": "zoom_out",
+      "efek": [
+        "flicker"
+      ],
+      "suara": [
+        "bisikan"
+      ],
+      "dialog": {
+        "tokoh": "sosok"
+      }
+    }
+  ],
+  "narator": "perempuan",
+  "tokoh": [
+    {
+      "id": "aku",
+      "nama": "Aku",
+      "deskripsi": "Indonesian young woman, about 22, shoulder-length black hair, round face, grey hoodie",
+      "suara": "perempuan"
+    },
+    {
+      "id": "ibu_kos",
+      "nama": "Ibu kos",
+      "deskripsi": "elderly Indonesian woman, grey hair in a bun, deep wrinkles, dark batik blouse",
+      "suara": "perempuan_jawa"
+    },
+    {
+      "id": "sosok",
+      "nama": "Sosok",
+      "deskripsi": "pale ghostly woman, long wet black hair covering most of her face, white dress",
+      "suara": "hantu_perempuan_jawa"
     }
   ]
 }
