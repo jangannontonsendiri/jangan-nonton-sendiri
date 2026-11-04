@@ -16,8 +16,6 @@ NARATOR = {"laki": ("id-ID-ArdiNeural", "-14%", "-6Hz", AMAN),
 # Mas Dimas: nada TIDAK dipaksa diubah; hanya efek halus ala Mbak Rina (sedikit berat, sedikit gema, pelan)
 DIMAS = ("aresample=44100,highpass=f=70,lowpass=f=6500,equalizer=f=150:t=q:w=1:g=3,"
          "aecho=0.8:0.85:75:0.2,volume=0.9")
-# jeda alami (detik) setelah tiap potongan kalimat, menurut tanda bacanya
-JEDA_TITIK, JEDA_TANYA, JEDA_TITIKTIGA, JEDA_SELA = 0.45, 0.5, 0.7, 0.25
 JENIS = {
     "pria": ("id-ID-ArdiNeural", "-10%", "+0Hz", DIMAS),          # Mas Dimas (misterius, bukan nada paksaan)
     "narator": None,                                              # tokoh sampingan: diganti suara narator (lihat _spec)
@@ -58,42 +56,38 @@ def _sintesis(teks, keluar, jenis, spec):
     return spec
 
 
-def _potong(teks):
-    """Pecah narasi di tanda baca -> [(potongan, jeda_setelahnya)] supaya terdengar seperti orang bercerita."""
-    hasil = []
-    for kal in re.split(r"(?<=[.!?…])\s+", teks.strip()):
-        for k, sub in enumerate(re.split(r"\s+[—–]\s+|;\s+|:\s+", kal)):
-            sub = sub.strip()
-            if not sub: continue
-            hasil.append([sub, JEDA_SELA])
-        if not hasil: continue
-        akhir = kal.rstrip()
-        hasil[-1][1] = (JEDA_TITIKTIGA if akhir.endswith(("...", "…")) else
-                        JEDA_TANYA if akhir.endswith(("?", "!")) else JEDA_TITIK)
-    return [(t, j) for t, j in hasil if re.search(r"\w", t)]
+# Suasana narasi per adegan: 0 = biasa, 1 = tegang (lebih pelan), 2 = sangat tegang (pelan, lirih).
+# (kecepatan, nada, volume, jeda tambahan di akhir adegan). Rata-rata kecepatan tetap sekitar 1.25x.
+TINGKAT = {0: ("+16%", "-2Hz", 1.0, 0.0),
+           1: ("+6%", "-4Hz", 0.9, 0.3),
+           2: ("+0%", "-5Hz", 0.8, 0.6)}
+KATA_TEGANG = ("lorong", "lubang kunci", "cermin", "komat-kamit", "bersila", "menginap", "gelap", "kamar mbak rina", "kamar yang terkunci", "sarung hitam", "rambutnya", "hantu", "kamar mandi")
+SFX_TEGANG = ("bisikan", "detak", "pukulan", "langkah")
 
 
-def _ucap(isi, wav, spec, jeda_akhir=0.25, dasar=None):
-    """Ucapkan isi dengan spec (suara, rate, nada, filter), jeda di tanda baca, hasil WAV mono 44.1 kHz."""
-    dasar = dasar or wav
-    bagian = _potong(isi) or [(isi, JEDA_TITIK)]
-    potongan = []
-    for k, (t, jeda) in enumerate(bagian):
-        mentah = f"{dasar}.s{k}.mp3"; jadi = f"{dasar}.s{k}.wav"
-        suara._tts(t, mentah, *spec[:3])
-        pad = jeda if k < len(bagian) - 1 else jeda_akhir
-        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", mentah, "-af",
-                        f"{spec[3]},aformat=sample_rates=44100:channel_layouts=mono,apad=pad_dur={pad}", jadi], check=True)
-        potongan.append(jadi)
-    if len(potongan) == 1:
-        os.replace(potongan[0], wav); return wav
-    ins = sum([["-i", p] for p in potongan], [])
-    filt = "".join(f"[{i}:a]" for i in range(len(potongan))) + f"concat=n={len(potongan)}:v=0:a=1[a]"
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", *ins, "-filter_complex", filt, "-map", "[a]", wav], check=True)
+def tingkat_adegan(a):
+    """Tentukan suasana adegan dari efek, suara, dan kata kunci. Bisa dipaksa lewat kolom \"nada\": 0/1/2 di adegan."""
+    if a.get("nada") in (0, 1, 2):
+        return a["nada"]
+    efek, sfx, teks = a.get("efek", []), a.get("suara", []), a.get("narasi", "").lower()
+    if "kaget" in efek:
+        return 2
+    skor = (("flicker" in efek) + ("shake" in efek) + 0.5 * ("kabut" in efek) + sum(x in SFX_TEGANG for x in sfx)
+            + sum(k in teks for k in KATA_TEGANG))
+    return 2 if skor >= 3 else 1 if skor >= 1 else 0
+
+
+def _ucap(isi, wav, sp, tingkat):
+    """Bacakan SELURUH isi sekaligus (TTS mengatur jeda alaminya), sesuai suasana. Hasil WAV mono 44.1 kHz."""
+    rate, nada, vol, _ = TINGKAT[tingkat]
+    mentah = wav + ".mp3"
+    suara._tts(isi, mentah, sp[0], rate, nada)
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", mentah, "-af",
+                    f"{sp[3]},volume={vol},aformat=sample_rates=44100:channel_layouts=mono,apad=pad_dur=0.25", wav], check=True)
     return wav
 
 
-def narasi(teks, path, jenis=None, narator="laki"):
+def narasi(teks, path, jenis=None, narator="laki", tingkat=0):
     """Narasi satu adegan. Kalimat dalam tanda kutip dibacakan dengan suara tokoh (jenis), sisanya oleh narator."""
     narator = narator if narator in NARATOR else "laki"
     bagian = suara.pecah_dialog(teks)
@@ -102,11 +96,11 @@ def narasi(teks, path, jenis=None, narator="laki"):
     for k, (isi, peran) in enumerate(bagian):
         jadi = f"{path}.{k}.wav"
         if peran == "narator":
-            _ucap(isi, jadi, sp_n, dasar=f"{path}.{k}")
+            _ucap(isi, jadi, sp_n, tingkat)
         else:
             j, sp = _spec(jenis, narator)
             if j == "narator":                                     # tokoh sampingan: suara narator biasa
-                _ucap(isi, jadi, sp, dasar=f"{path}.{k}")
+                _ucap(isi, jadi, sp, tingkat)
             else:
                 mentah = f"{path}.{k}.mp3"
                 sp = _sintesis(isi, mentah, j, sp)
@@ -114,7 +108,7 @@ def narasi(teks, path, jenis=None, narator="laki"):
                                 f"{sp[3]},aformat=sample_rates=44100:channel_layouts=mono,apad=pad_dur=0.25", jadi], check=True)
         potongan.append(jadi)
     ins = sum([["-i", p] for p in potongan], [])
-    filt = "".join(f"[{i}:a]" for i in range(len(potongan))) + f"concat=n={len(potongan)}:v=0:a=1[a]"
+    filt = "".join(f"[{i}:a]" for i in range(len(potongan))) + f"concat=n={len(potongan)}:v=0:a=1[a0];[a0]apad=pad_dur={TINGKAT[tingkat][3]}[a]"   # jeda tambahan hanya di akhir adegan
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", *ins, "-filter_complex", filt, "-map", "[a]",
                     "-c:a", "libmp3lame", "-b:a", "160k", path], check=True)
     return path
