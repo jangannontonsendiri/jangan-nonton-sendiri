@@ -1,0 +1,778 @@
+{
+  "judul": "Kakakku Meninggal, Tapi Suaminya Malah Kaya Mendadak",
+  "suasana": "jangkrik",
+  "narator": "perempuan",
+  "deskripsi": "Tujuh hari setelah kakaknya dimakamkan, suaminya membeli mobil baru dan membayarnya tunai. Laras menginap di rumah kakaknya dan menemukan rahasia di balik kamar yang terkunci. Cerita horor pesugihan dari kampung Jawa, dibacakan pelan untuk menemani malammu.",
+  "hashtag": [
+    "#ceritahoror",
+    "#pesugihan",
+    "#horor",
+    "#ceritaseram",
+    "#jangannontonsendiri",
+    "#horornusantara"
+  ],
+  "tokoh": [
+    {
+      "id": "laras",
+      "nama": "Laras",
+      "suara": "perempuan",
+      "deskripsi": "Laras, Indonesian woman about 20 years old, shoulder-length straight black hair with a side part, oval face, soft brown eyes with dark circles, small nose, light brown skin, wearing a plain grey cardigan over a white t-shirt"
+    },
+    {
+      "id": "rina",
+      "nama": "Mbak Rina (hidup)",
+      "suara": "perempuan_jawa",
+      "deskripsi": "Mbak Rina, Indonesian woman about 30 years old, long straight black hair past her shoulders, gentle oval face, kind dark eyes, small mole under her left eye, light brown skin, wearing a pale green blouse"
+    },
+    {
+      "id": "rina_hantu",
+      "nama": "Mbak Rina (hantu)",
+      "suara": "hantu_perempuan_jawa",
+      "deskripsi": "ghost of Mbak Rina, Indonesian woman about 30 years old, deathly pale grey skin, very long wet black hair hanging down over most of her face hiding her eyes and nose with only pale lips visible, wearing a soaked long white daster dress clinging to her body, water dripping from hair and hem, standing unnaturally still"
+    },
+    {
+      "id": "dimas",
+      "nama": "Mas Dimas",
+      "suara": "pria",
+      "deskripsi": "Mas Dimas, Indonesian man about 35 years old, short neat black hair, thin mustache, square jaw, broad shoulders, dark narrow eyes, light brown skin, wearing a plain white collared shirt"
+    },
+    {
+      "id": "dimas_ritual",
+      "nama": "Mas Dimas (ritual)",
+      "suara": "pria",
+      "deskripsi": "Mas Dimas, Indonesian man about 35 years old, short neat black hair, thin mustache, square jaw, broad shoulders, dark narrow eyes, light brown skin, bare-chested wearing a dark plaid sarong, sitting cross-legged"
+    }
+  ],
+  "adegan": [
+    {
+      "narasi": "Tujuh hari setelah kakakku dimakamkan, suaminya membeli mobil baru. Bayar tunai.",
+      "gambar": "a man proudly smiling beside a brand new shiny white car parked in front of a modest Javanese village house, withered funeral wreaths still leaning at the gate, grey overcast afternoon",
+      "tokoh": [
+        "dimas"
+      ],
+      "gerak": "zoom_in",
+      "efek": [],
+      "suara": [],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Namaku Laras. Aku dua puluh tahun, masih kuliah. Ini cerita yang nggak pernah berani kuceritakan ke siapa pun.",
+      "gambar": "a young woman sitting alone on a wooden bench on a village house veranda at dusk, looking straight at the viewer with tired eyes, warm orange lamp light behind her",
+      "tokoh": [
+        "laras"
+      ],
+      "gerak": "pan_right",
+      "efek": [],
+      "suara": [],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Kakakku, Mbak Rina, meninggal mendadak. Katanya sakit lambung. Padahal dua minggu sebelumnya, dia masih tertawa sambil menggoreng tempe.",
+      "gambar": "warm nostalgic memory: a woman laughing happily while frying tempeh in a wok in a simple village kitchen with a clay stove, soft golden light, steam rising",
+      "tokoh": [
+        "rina"
+      ],
+      "gerak": "zoom_in",
+      "efek": [],
+      "suara": [],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Rumah kami ada di ujung kampung. Di belakangnya cuma kebun pisang dan sawah, yang gelap sekali kalau malam.",
+      "gambar": "an old Javanese village house at the very edge of the village at night, banana trees and dark rice fields behind it, a single yellow lamp on the porch, moon behind thin clouds",
+      "tokoh": [],
+      "gerak": "pan_up",
+      "efek": [
+        "kabut"
+      ],
+      "suara": [],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Dan semua keanehannya, dimulai dari hari pemakaman.",
+      "gambar": "a funeral procession on a narrow village path toward a graveyard with frangipani trees, mourners in black carrying a wooden bier with a green cloth, a young woman walking behind them with red swollen eyes",
+      "tokoh": [
+        "laras"
+      ],
+      "gerak": "zoom_out",
+      "efek": [
+        "kabut"
+      ],
+      "suara": [],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Hari itu mendung. Semua orang menangis. Ibuku pingsan dua kali. Aku sendiri lemas, bahkan untuk berdiri.",
+      "gambar": "a village burial at a graveyard under a heavy grey sky, villagers in black weeping around a fresh grave, an elderly woman fainting and held up by neighbors, a young woman crying in the foreground",
+      "tokoh": [
+        "laras"
+      ],
+      "gerak": "pan_left",
+      "efek": [
+        "kabut"
+      ],
+      "suara": [],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Tapi ada satu orang yang berdiri tegak di samping makam. Mas Dimas, suami kakakku. Wajahnya datar. Matanya kering.",
+      "gambar": "a man standing stiff and upright beside the fresh grave with a completely blank cold expression and dry eyes while crowds weep blurred behind him",
+      "tokoh": [
+        "dimas"
+      ],
+      "gerak": "zoom_in",
+      "efek": [],
+      "suara": [],
+      "fokus": "atas"
+    },
+    {
+      "narasi": "Aku lihat sendiri, waktu tanah mulai ditimbun, dia malah melirik jam tangannya. Seperti nggak sabar mau pulang.",
+      "gambar": "extreme close-up of a man's face glancing down impatiently at his wristwatch while soil is shoveled behind him at the graveside",
+      "tokoh": [
+        "dimas"
+      ],
+      "gerak": "zoom_in",
+      "efek": [],
+      "suara": [],
+      "fokus": "atas"
+    },
+    {
+      "narasi": "Sepulang dari makam, Mas Dimas langsung mengunci kamar Mbak Rina. Kuncinya dia simpan sendiri.",
+      "gambar": "a man in a dim hallway of an old Javanese house locking an old wooden door with a brass key and slipping the key into his pocket, an oil-lamp glow",
+      "tokoh": [
+        "dimas"
+      ],
+      "gerak": "zoom_in",
+      "efek": [],
+      "suara": [
+        "pintu"
+      ],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Katanya, jangan ada yang masuk, biar kenangan Mbak Rina nggak berantakan. Alasannya masuk akal, tapi nadanya terlalu tegas.",
+      "gambar": "a man standing in front of a locked door holding up one hand firmly in a stop gesture while a young woman and an old woman stand behind him looking uneasy",
+      "tokoh": [
+        "dimas",
+        "laras"
+      ],
+      "gerak": "pan_left",
+      "efek": [],
+      "suara": [],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Malam itu aku nggak bisa tidur. Waktu lewat depan kamar itu mau ke dapur, langkahku berhenti sendiri.",
+      "gambar": "a young woman in a dark hallway at night frozen in front of a closed old wooden door, bare feet on cold tile floor, weak yellow bulb flickering overhead",
+      "tokoh": [
+        "laras"
+      ],
+      "gerak": "zoom_in",
+      "efek": [
+        "flicker"
+      ],
+      "suara": [
+        "langkah"
+      ],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Dari sela bawah pintu, tercium bau melati. Pekat sekali. Padahal Mbak Rina nggak pernah menanam melati.",
+      "gambar": "close-up of the gap under an old wooden door with faint white mist curling out and fresh jasmine petals scattered on the tile floor",
+      "tokoh": [],
+      "gerak": "pan_down",
+      "efek": [
+        "kabut"
+      ],
+      "suara": [],
+      "fokus": "bawah"
+    },
+    {
+      "narasi": "Aku mundur pelan-pelan. Dan sejak malam itu, aku mulai memperhatikan Mas Dimas.",
+      "gambar": "a young woman slowly backing away down a dark hallway while a faint orange glow leaks from under the locked door behind her",
+      "tokoh": [
+        "laras"
+      ],
+      "gerak": "zoom_out",
+      "efek": [
+        "flicker"
+      ],
+      "suara": [],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Seminggu kemudian, mobil itu datang. Putih, mengkilap, masih bau plastik. Harganya ratusan juta, dibayar tunai.",
+      "gambar": "neighbors crowding around a brand new white SUV in the yard of a village house in daylight, a man holding the car key and smiling smugly, kids touching the shiny car",
+      "tokoh": [
+        "dimas"
+      ],
+      "gerak": "pan_left",
+      "efek": [],
+      "suara": [],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Lalu rumah itu direnovasi. Cat baru, keramik baru, pagar tinggi. Tukang bekerja dari pagi sampai malam.",
+      "gambar": "construction workers renovating the village house with bamboo scaffolding, stacks of new ceramic tiles, fresh white paint, a tall new fence being built",
+      "tokoh": [],
+      "gerak": "pan_right",
+      "efek": [],
+      "suara": [],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Utang Mbak Rina yang dulu bikin dia menangis diam-diam, lunas semua. Hanya dalam satu minggu.",
+      "gambar": "a man handing a thick envelope of cash to a stern creditor standing in the doorway of the house, the creditor staring greedily at the money",
+      "tokoh": [
+        "dimas"
+      ],
+      "gerak": "pan_left",
+      "efek": [],
+      "suara": [],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Tetangga mulai berbisik. Seorang ibu menarik tanganku, hati-hati, Nduk. Rezeki yang datang tanpa keringat, biasanya ada tagihannya.",
+      "gambar": "an old village woman with a headscarf gripping a young woman's wrist and whispering urgently into her ear, the young woman looking frightened",
+      "tokoh": [
+        "laras"
+      ],
+      "gerak": "zoom_in",
+      "efek": [],
+      "suara": [],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Aku jadi teringat sesuatu. Sebulan sebelum meninggal, Mbak Rina pernah bicara denganku di dapur, malam-malam, suaranya pelan sekali.",
+      "gambar": "memory of two sisters talking in a dim kitchen late at night, the older sister leaning close and whispering with a worried face while the younger listens, one hanging bulb",
+      "tokoh": [
+        "rina",
+        "laras"
+      ],
+      "gerak": "zoom_in",
+      "efek": [],
+      "suara": [],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Katanya, Mas Dimas sering pergi tiap malam Jumat, tanpa pamit. Pulang menjelang subuh, bajunya bau asap dan bunga.",
+      "gambar": "a man's silhouette sneaking out through the village yard gate at midnight carrying a small cloth bundle, moonlight, dark banana trees",
+      "tokoh": [
+        "dimas"
+      ],
+      "gerak": "pan_right",
+      "efek": [
+        "kabut"
+      ],
+      "suara": [
+        "langkah"
+      ],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Waktu itu aku cuma bilang, ah, mungkin ikut kumpulan bapak-bapak. Sekarang aku menyesal. Mbak Rina sedang minta tolong, dan aku nggak mendengarnya.",
+      "gambar": "a young woman sitting alone on a bed in a dark room holding a framed photo of her older sister, head bowed in regret, tears on her cheeks",
+      "tokoh": [
+        "laras"
+      ],
+      "gerak": "zoom_in",
+      "efek": [],
+      "suara": [],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Dua minggu setelah pemakaman, aku kembali ke rumah itu. Ibu belum sanggup pulang, jadi aku yang disuruh membereskan barang-barang Mbak Rina.",
+      "gambar": "a young woman with a backpack arriving at dusk at the renovated village house with a new white car in the yard, the house looking too new and cold",
+      "tokoh": [
+        "laras"
+      ],
+      "gerak": "pan_left",
+      "efek": [],
+      "suara": [],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Sore itu Mas Dimas bilang dia ada urusan di luar kota. Aku menginap sendirian. Katanya, anggap saja rumah sendiri.",
+      "gambar": "a man driving away in a white car with the window down, smiling oddly at the viewer, a young woman standing on the porch watching him go in the evening light",
+      "tokoh": [
+        "dimas",
+        "laras"
+      ],
+      "gerak": "pan_right",
+      "efek": [],
+      "suara": [],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Malamnya aku masak mi instan, menonton televisi, sambil sesekali melirik lorong menuju kamar yang terkunci itu.",
+      "gambar": "a young woman sitting on the floor at a low table eating instant noodles with the television glowing, glancing nervously toward a dark hallway behind her at night",
+      "tokoh": [
+        "laras"
+      ],
+      "gerak": "pan_left",
+      "efek": [
+        "flicker"
+      ],
+      "suara": [],
+      "fokus": "kiri"
+    },
+    {
+      "narasi": "Jam sebelas lewat, listrik berkedip. Televisi mati sendiri. Dan semua suara jangkrik di luar, tiba-tiba berhenti.",
+      "gambar": "the living room plunged into darkness, television just switched off, a ceiling lamp flickering, a young woman frozen with terror, window showing the dark yard",
+      "tokoh": [
+        "laras"
+      ],
+      "gerak": "zoom_out",
+      "efek": [
+        "flicker"
+      ],
+      "suara": [],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Lalu aku mendengar suara perempuan, pelan sekali, memanggil namaku. “Laras... Laras...” Dari arah kamar yang terkunci.",
+      "gambar": "a young woman standing in the hallway turned toward a locked door at the far end, a thin line of pale light under it, cold mist at her feet",
+      "tokoh": [
+        "laras"
+      ],
+      "gerak": "zoom_in",
+      "efek": [
+        "flicker",
+        "kabut"
+      ],
+      "suara": [
+        "bisikan"
+      ],
+      "fokus": "tengah",
+      "dialog": {
+        "tokoh": "rina_hantu"
+      }
+    },
+    {
+      "narasi": "Aku memberanikan diri berjalan ke lorong. Lantainya dingin. Setiap langkahku terdengar terlalu keras.",
+      "gambar": "a young woman walking barefoot down a long dark hallway toward a locked wooden door at the end, her shadow stretching on the wall",
+      "tokoh": [
+        "laras"
+      ],
+      "gerak": "pan_up",
+      "efek": [
+        "kabut"
+      ],
+      "suara": [
+        "langkah"
+      ],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Di depan pintu, ada secangkir kopi pahit yang masih mengepul, dan bunga-bunga di atas piring kecil. Padahal tadi siang nggak ada. Dan ini malam Jumat.",
+      "gambar": "close-up of an offering on the floor in front of a locked door: a steaming cup of black coffee and jasmine and kantil flowers on a small plate, a thin trail of incense smoke",
+      "tokoh": [],
+      "gerak": "zoom_in",
+      "efek": [
+        "kabut"
+      ],
+      "suara": [],
+      "fokus": "bawah"
+    },
+    {
+      "narasi": "Suara itu memanggil lagi, lebih dekat, seperti tepat di balik pintu. “Laras... tolong aku...”",
+      "gambar": "a young woman with her face very close to a wooden door listening, tears streaming, the door slightly vibrating with a pale glow along its edges",
+      "tokoh": [
+        "laras"
+      ],
+      "gerak": "zoom_in",
+      "efek": [
+        "flicker"
+      ],
+      "suara": [
+        "bisikan"
+      ],
+      "fokus": "atas",
+      "dialog": {
+        "tokoh": "rina_hantu"
+      }
+    },
+    {
+      "narasi": "Di tengah pintu ada lubang kunci tua dari kuningan. Aku berlutut, menahan napas, dan mengintip.",
+      "gambar": "a young woman kneeling at an old wooden door bending her face down to an antique brass keyhole, holding her breath",
+      "tokoh": [
+        "laras"
+      ],
+      "gerak": "zoom_in",
+      "efek": [],
+      "suara": [],
+      "fokus": "bawah"
+    },
+    {
+      "narasi": "Gelap. Gelap sekali. Satu detik. Dua detik. Tiga detik...",
+      "gambar": "first-person view looking through an old brass keyhole, a circle of almost complete blackness with a faint dim glimmer deep inside",
+      "tokoh": [],
+      "gerak": "zoom_in",
+      "efek": [],
+      "suara": [
+        "detak"
+      ],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Tiba-tiba, ada mata yang balas mengintip dari dalam.",
+      "gambar": "extreme close-up through the keyhole of one huge pale white eye staring directly at the viewer from just behind the hole, strands of wet black hair across it, terrifying and uncanny",
+      "tokoh": [
+        "rina_hantu"
+      ],
+      "gerak": "zoom_in",
+      "efek": [
+        "kaget",
+        "shake"
+      ],
+      "suara": [
+        "pukulan"
+      ],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Aku terjatuh ke belakang tanpa suara. Mata itu nggak berkedip. Lalu sebuah bisikan, dekat sekali. “Jangan percaya dia.”",
+      "gambar": "a young woman fallen on the floor scooting backward in horror away from a locked door, pale light seeping from its keyhole, mist swirling",
+      "tokoh": [
+        "laras"
+      ],
+      "gerak": "zoom_out",
+      "efek": [
+        "flicker"
+      ],
+      "suara": [
+        "bisikan"
+      ],
+      "fokus": "tengah",
+      "dialog": {
+        "tokoh": "rina_hantu"
+      }
+    },
+    {
+      "narasi": "Paginya, aku mulai membereskan lemari Mbak Rina. Di balik tumpukan kain, ada buku catatan kecil bersampul biru.",
+      "gambar": "a young woman pulling a small blue notebook from under stacks of folded clothes in an old wooden wardrobe, morning light",
+      "tokoh": [
+        "laras"
+      ],
+      "gerak": "zoom_in",
+      "efek": [],
+      "suara": [],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Catatan itu dimulai enam bulan sebelum dia meninggal. Tentang Mas Dimas yang berubah. Tentang bau kemenyan di bajunya.",
+      "gambar": "a hand holding an open blue notebook with pages of neat sloping handwriting, a pressed dried jasmine flower between the pages",
+      "tokoh": [
+        "laras"
+      ],
+      "gerak": "pan_down",
+      "efek": [],
+      "suara": [],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Halaman-halaman berikutnya, tulisannya makin berantakan. Dia menulis, “Mas Dimas bukan lagi suamiku. Ada yang lain di matanya.”",
+      "gambar": "close-up of shaky messy handwriting scribbled across a notebook page, ink smudged, a trembling thumb holding the paper",
+      "tokoh": [],
+      "gerak": "zoom_in",
+      "efek": [],
+      "suara": [],
+      "fokus": "tengah",
+      "dialog": {
+        "tokoh": "rina"
+      }
+    },
+    {
+      "narasi": "Jumat malam, Mas Dimas pulang. Dia pura-pura ramah, menanyakan aku sudah makan atau belum. Aku pura-pura tidur.",
+      "gambar": "a man smiling fakely at the doorway carrying a plastic bag at night, a young woman lying on a sofa with her eyes tightly shut pretending to sleep",
+      "tokoh": [
+        "dimas",
+        "laras"
+      ],
+      "gerak": "pan_left",
+      "efek": [],
+      "suara": [],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Tengah malam, kudengar bunyi kunci diputar. Aku mengendap ke lorong, dan pintu kamar Mbak Rina sedikit terbuka.",
+      "gambar": "a young woman tiptoeing down a dark hallway toward a door that is slightly open with warm orange candlelight and smoke leaking out of the gap",
+      "tokoh": [
+        "laras"
+      ],
+      "gerak": "zoom_in",
+      "efek": [
+        "kabut"
+      ],
+      "suara": [
+        "pintu"
+      ],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Dari celahnya, aku melihat Mas Dimas duduk bersila memakai sarung hitam. Di depannya ada sesajen, kopi pahit, dan kemenyan berasap tebal.",
+      "gambar": "view through a door crack: a man sitting cross-legged in a dark sarong before a low altar covered with offerings, black coffee, seven-kind flowers, burning candles and thick incense smoke, clearly visible",
+      "tokoh": [
+        "dimas_ritual"
+      ],
+      "gerak": "zoom_in",
+      "efek": [
+        "kabut"
+      ],
+      "suara": [],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Bibirnya komat-kamit, bicara pada kegelapan di depannya. Dan dari kegelapan itu, sesuatu menjawab dengan suara berat, bukan suara manusia.",
+      "gambar": "a man chanting before an altar facing a dark corner where a towering shadowy demonic figure with faint glowing red eyes looms inside thick incense smoke, clearly visible and menacing",
+      "tokoh": [
+        "dimas_ritual"
+      ],
+      "gerak": "zoom_in",
+      "efek": [
+        "flicker",
+        "kabut"
+      ],
+      "suara": [
+        "bisikan"
+      ],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Aku mendengar Mas Dimas berkata pelan, “Sudah satu. Tinggal yang kedua. Beri aku sedikit waktu lagi.”",
+      "gambar": "close-up of a man's face lit by candlelight, eyes narrow and greedy, whispering with a thin cruel smile, incense smoke curling around him",
+      "tokoh": [
+        "dimas_ritual"
+      ],
+      "gerak": "zoom_in",
+      "efek": [
+        "flicker"
+      ],
+      "suara": [],
+      "fokus": "atas",
+      "dialog": {
+        "tokoh": "dimas_ritual"
+      }
+    },
+    {
+      "narasi": "Aku mundur tanpa suara, lalu membuka halaman paling akhir buku catatan itu. Hanya ada satu kalimat, tintanya hampir menembus kertas.",
+      "gambar": "a young woman in a dark guest room reading the last page of a notebook by the dim light of her phone, her hands trembling",
+      "tokoh": [
+        "laras"
+      ],
+      "gerak": "zoom_in",
+      "efek": [],
+      "suara": [],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "“Kalau aku pergi duluan, jaga Laras. Dia yang berikutnya.”",
+      "gambar": "close-up of the last page of a notebook with one line of heavy pressed handwriting, ink almost tearing the paper, a single tear drop on it",
+      "tokoh": [],
+      "gerak": "zoom_in",
+      "efek": [],
+      "suara": [],
+      "fokus": "tengah",
+      "dialog": {
+        "tokoh": "rina"
+      }
+    },
+    {
+      "narasi": "Paginya, Mas Dimas membangunkanku dengan wajah yang cerah. Terlalu cerah. Dia membawakan nasi pecel dan teh manis.",
+      "gambar": "a man smiling too brightly carrying a tray with rice pecel and sweet tea toward a young woman waking up in bed, morning sunlight, unsettling atmosphere",
+      "tokoh": [
+        "dimas",
+        "laras"
+      ],
+      "gerak": "pan_right",
+      "efek": [],
+      "suara": [],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Dia bilang aku nggak perlu kembali ke kos. Tinggal saja di sini, biaya kuliahku dia yang tanggung. Aku cuma tersenyum, padahal seluruh tubuhku menjerit.",
+      "gambar": "a man and a young woman sitting across a dining table, he smiles warmly with folded hands and a generous gesture, she forces a polite smile with frightened eyes",
+      "tokoh": [
+        "dimas",
+        "laras"
+      ],
+      "gerak": "zoom_in",
+      "efek": [],
+      "suara": [],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Malam itu aku diam-diam mengemasi tas. Dompet, ponsel, dan buku catatan biru itu. Malam ini juga, aku pergi.",
+      "gambar": "a young woman quickly packing a backpack in a dim room by lamplight, a blue notebook on the bed, glancing at the door",
+      "tokoh": [
+        "laras"
+      ],
+      "gerak": "pan_right",
+      "efek": [
+        "flicker"
+      ],
+      "suara": [],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Aku membuka pintu kamar pelan-pelan. Lorong itu gelap. Lalu aku melihatnya. Di ujung lorong, berdiri seorang perempuan.",
+      "gambar": "a long dark hallway, at its far end a ghostly woman in a long white dress standing perfectly still, a young woman in the foreground seen from behind frozen at her bedroom door",
+      "tokoh": [
+        "laras",
+        "rina_hantu"
+      ],
+      "gerak": "zoom_in",
+      "efek": [
+        "kabut",
+        "flicker"
+      ],
+      "suara": [],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Rambutnya panjang, basah, menutupi wajahnya. Dasternya putih, meneteskan air ke lantai. Tapi aku tahu itu Mbak Rina.",
+      "gambar": "medium shot of the ghost of a woman in a soaked white dress with long wet black hair covering most of her face, water dripping onto the tile floor, cold mist around her feet",
+      "tokoh": [
+        "rina_hantu"
+      ],
+      "gerak": "zoom_in",
+      "efek": [
+        "kabut"
+      ],
+      "suara": [],
+      "fokus": "atas"
+    },
+    {
+      "narasi": "Dia nggak mendekat. Dia hanya menggeleng pelan. Sekali. Dua kali. Seolah bilang, jangan lewat pintu depan.",
+      "gambar": "the ghostly woman with hair over her face slowly shaking her head side to side in a dark hallway, one pale hand lifted gently pointing toward the back of the house",
+      "tokoh": [
+        "rina_hantu"
+      ],
+      "gerak": "pan_right",
+      "efek": [
+        "kabut"
+      ],
+      "suara": [],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Dari ruang tamu terdengar langkah Mas Dimas mendekat. Panik, aku berlari ke kamar mandi dan mengunci pintunya.",
+      "gambar": "a young woman rushing into an old village bathroom with a water basin, concrete tiles and a dim bulb, locking the door behind her with panic",
+      "tokoh": [
+        "laras"
+      ],
+      "gerak": "pan_left",
+      "efek": [],
+      "suara": [
+        "langkah"
+      ],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Aku menatap cermin di atas bak. Wajahku pucat sekali. Lampu mulai berkedip, dan tengkukku terasa dingin.",
+      "gambar": "a young woman looking into a small bathroom mirror above a concrete water basin, her pale reflection, the bulb flickering, a faint dark shape behind her shoulder",
+      "tokoh": [
+        "laras"
+      ],
+      "gerak": "zoom_in",
+      "efek": [
+        "flicker"
+      ],
+      "suara": [
+        "detak"
+      ],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Dan di cermin itu, tepat di belakang bahuku, ada wajah pucat Mbak Rina.",
+      "gambar": "bathroom mirror reflection: a young woman's frightened face and right behind her shoulder the deathly pale face of a ghost woman with wet black hair parted just enough to show hollow dark eyes, very close to her ear, terrifying",
+      "tokoh": [
+        "laras",
+        "rina_hantu"
+      ],
+      "gerak": "zoom_in",
+      "efek": [
+        "kaget",
+        "flicker",
+        "shake"
+      ],
+      "suara": [
+        "pukulan"
+      ],
+      "fokus": "atas"
+    },
+    {
+      "narasi": "Dia nggak menakutiku. Matanya sendu. Bibirnya bergerak, pelan sekali. “Lewat dapur. Sekarang.”",
+      "gambar": "calm sorrowful close-up of the ghost woman's pale face beside a young woman's shoulder in the mirror, hair slightly parted showing sad eyes, soft cold light",
+      "tokoh": [
+        "rina_hantu"
+      ],
+      "gerak": "zoom_in",
+      "efek": [],
+      "suara": [],
+      "fokus": "atas",
+      "dialog": {
+        "tokoh": "rina_hantu"
+      }
+    },
+    {
+      "narasi": "Aku berlari lewat dapur, kebun pisang, dan sawah yang gelap, tanpa menoleh. Pagi itu, kuceritakan semuanya pada ibu. Ibu menangis lama.",
+      "gambar": "a young woman running across a dark rice field at night past banana trees, moonlight, backpack bouncing, the house far behind her with a faint pale figure at a window",
+      "tokoh": [
+        "laras"
+      ],
+      "gerak": "pan_right",
+      "efek": [
+        "kabut"
+      ],
+      "suara": [
+        "langkah"
+      ],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Seminggu kemudian, Mas Dimas mengirim uang dalam jumlah besar ke rumah bibi. Katanya, tanda sayang. Ibu menerimanya, karena nggak tahu apa-apa.",
+      "gambar": "an elderly woman at the door of a small village house holding a thick envelope of cash handed by a delivery rider, her face confused and grateful, dusk",
+      "tokoh": [],
+      "gerak": "pan_left",
+      "efek": [],
+      "suara": [],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Sejak malam itu, ibu mulai sakit. Demamnya naik turun, matanya cekung, dan tiap malam Jumat dia memanggil nama Mbak Rina.",
+      "gambar": "an elderly woman lying weak in bed with sunken eyes and a feverish sweat, a candle on the bedside, scattered jasmine petals on the pillow, quiet sad mood",
+      "tokoh": [],
+      "gerak": "zoom_in",
+      "efek": [
+        "flicker"
+      ],
+      "suara": [],
+      "fokus": "tengah"
+    },
+    {
+      "narasi": "Kemarin pagi, di depan pintu rumah bibi, tempat kami sekarang bersembunyi, aku menemukan secangkir kopi pahit. Dan setangkai melati.",
+      "gambar": "a small plate with a cup of black coffee and a single jasmine flower on a doorstep at dawn, mist, still and quiet",
+      "tokoh": [],
+      "gerak": "zoom_in",
+      "efek": [
+        "kabut"
+      ],
+      "suara": [],
+      "fokus": "bawah"
+    },
+    {
+      "narasi": "Aku nggak tahu siapa yang menaruhnya. Dan aku nggak tahu... giliran siapa yang sedang dipanggil.",
+      "gambar": "a young woman sitting alone by a window at dawn, hands around her knees, looking out at the misty yard where a faint pale figure in white stands far away among the trees",
+      "tokoh": [
+        "laras"
+      ],
+      "gerak": "zoom_out",
+      "efek": [
+        "kabut"
+      ],
+      "suara": [],
+      "fokus": "tengah"
+    }
+  ]
+}
