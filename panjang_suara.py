@@ -16,7 +16,12 @@ NARATOR = {"laki": ("id-ID-ArdiNeural", "-14%", "-6Hz", AMAN),
 # Mas Dimas: nada TIDAK dipaksa diubah; hanya efek halus ala Mbak Rina (sedikit berat, sedikit gema, pelan)
 DIMAS = ("aresample=44100,highpass=f=70,lowpass=f=6500,equalizer=f=150:t=q:w=1:g=3,"
          "aecho=0.8:0.85:75:0.2,volume=0.9")
+# Ibu tetangga: perempuan Sunda (su-ID), nada tidak dipaksa; pelan, setengah berbisik, dengan gema tipis
+TETANGGA = ("aresample=44100,highpass=f=100,lowpass=f=5500,aecho=0.8:0.85:60:0.15,volume=0.75")
+# kamus ejaan: kata kiri DIBACA seperti kata kanan oleh TTS; tulisan subtitle tidak berubah
+EJAAN = {"cat": "cet"}
 JENIS = {
+    "tetangga": ("su-ID-TutiNeural", "-18%", "+0Hz", TETANGGA),
     "pria": ("id-ID-ArdiNeural", "-10%", "+0Hz", DIMAS),          # Mas Dimas (misterius, bukan nada paksaan)
     "narator": None,                                              # tokoh sampingan: diganti suara narator (lihat _spec)
     "perempuan": ("id-ID-GadisNeural", "-12%", "+8Hz", HANGAT),
@@ -28,6 +33,13 @@ JENIS = {
 # suara Jawa (jv-ID) terdengar kurang bagus -> TIDAK dipakai secara bawaan; SUARA_JAWA=1 untuk mencobanya lagi.
 # Tokoh bersuara "..._jawa" otomatis memakai suara Indonesia yang terpilih
 CADANGAN = {"perempuan_jawa": "perempuan", "hantu_perempuan_jawa": "hantu_perempuan"}
+
+
+def ejaan(teks):
+    """Terapkan kamus ejaan hanya untuk bahan TTS (huruf besar-kecil awal kata dijaga)."""
+    for asal, baca in EJAAN.items():
+        teks = re.sub(r"(?<!\w)" + asal + r"(?!\w)", lambda m: baca.capitalize() if m.group(0)[0].isupper() else baca, teks, flags=re.I)
+    return teks
 
 
 def _pakai_jawa():
@@ -45,14 +57,16 @@ def _spec(jenis, narator):
 
 
 def _sintesis(teks, keluar, jenis, spec):
+    teks = ejaan(teks)
     try:
         suara._tts(teks, keluar, *spec[:3])
     except Exception as e:
-        if jenis not in CADANGAN:
+        lain = {**CADANGAN, "tetangga": "perempuan"}
+        if jenis not in lain:
             raise
-        print(f"  suara Jawa gagal ({str(e)[:80]}), pakai suara cadangan", flush=True)
-        suara._tts(teks, keluar, *JENIS[CADANGAN[jenis]][:3])
-        spec = JENIS[CADANGAN[jenis]]
+        print(f"  suara {jenis} gagal ({str(e)[:80]}), pakai suara cadangan", flush=True)
+        suara._tts(teks, keluar, *JENIS[lain[jenis]][:3])
+        spec = JENIS[lain[jenis]]
     return spec
 
 
@@ -81,7 +95,7 @@ def _ucap(isi, wav, sp, tingkat):
     """Bacakan SELURUH isi sekaligus (TTS mengatur jeda alaminya), sesuai suasana. Hasil WAV mono 44.1 kHz."""
     rate, nada, vol, _ = TINGKAT[tingkat]
     mentah = wav + ".mp3"
-    suara._tts(isi, mentah, sp[0], rate, nada)
+    suara._tts(ejaan(isi), mentah, sp[0], rate, nada)
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", mentah, "-af",
                     f"{sp[3]},volume={vol},aformat=sample_rates=44100:channel_layouts=mono,apad=pad_dur=0.25", wav], check=True)
     return wav
