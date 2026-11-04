@@ -1,7 +1,7 @@
 """Suara untuk MODE VIDEO PANJANG: memakai ulang suara.py (Edge TTS, filter suara hantu/orang, musik, efek),
 dengan tempo narasi lebih pelan, narator bisa perempuan, dan suara tokoh lain dibedakan per tokoh.
 File suara.py asli TIDAK diubah."""
-import os, subprocess
+import os, re, subprocess
 import suara
 
 BATAS_SFX = 0.45     # puncak efek suara (termasuk jumpscare) selalu di bawah narator
@@ -10,10 +10,17 @@ AMAN = "aresample=44100"
 HANGAT = "aresample=44100,highpass=f=80,lowpass=f=7500,equalizer=f=220:t=q:w=1:g=2,aecho=0.8:0.88:55:0.18,volume=1.1"
 
 # (suara Edge TTS, kecepatan, nada, filter). Semua lebih pelan dari video pendek.
+# Narator perempuan sekitar 1.25x lebih cepat dari sebelumnya (-10% -> +12%: 0.90 x 1.25 = 1.125)
 NARATOR = {"laki": ("id-ID-ArdiNeural", "-14%", "-6Hz", AMAN),
-           "perempuan": ("id-ID-GadisNeural", "-10%", "-2Hz", HANGAT)}
+           "perempuan": ("id-ID-GadisNeural", "+12%", "-2Hz", HANGAT)}
+# Mas Dimas: nada TIDAK dipaksa diubah; hanya efek halus ala Mbak Rina (sedikit berat, sedikit gema, pelan)
+DIMAS = ("aresample=44100,highpass=f=70,lowpass=f=6500,equalizer=f=150:t=q:w=1:g=3,"
+         "aecho=0.8:0.85:75:0.2,volume=0.9")
+# jeda alami (detik) setelah tiap potongan kalimat, menurut tanda bacanya
+JEDA_TITIK, JEDA_TANYA, JEDA_TITIKTIGA, JEDA_SELA = 0.45, 0.5, 0.7, 0.25
 JENIS = {
-    "pria": ("id-ID-ArdiNeural", "-12%", "+4Hz", suara.FILTER_ORANG),
+    "pria": ("id-ID-ArdiNeural", "-10%", "+0Hz", DIMAS),          # Mas Dimas (misterius, bukan nada paksaan)
+    "narator": None,                                              # tokoh sampingan: diganti suara narator (lihat _spec)
     "perempuan": ("id-ID-GadisNeural", "-12%", "+8Hz", HANGAT),
     "perempuan_jawa": ("jv-ID-SitiNeural", "-12%", "+0Hz", suara.FILTER_ORANG),
     "hantu_pria": ("id-ID-ArdiNeural", "-32%", "-12Hz", suara.FILTER_HANTU),
@@ -30,6 +37,8 @@ def _pakai_jawa():
 
 
 def _spec(jenis, narator):
+    if jenis == "narator":
+        return "narator", NARATOR[narator]
     if not jenis:
         jenis = "pria" if narator == "perempuan" else "perempuan"
     if jenis in CADANGAN and not _pakai_jawa():
@@ -49,23 +58,60 @@ def _sintesis(teks, keluar, jenis, spec):
     return spec
 
 
+def _potong(teks):
+    """Pecah narasi di tanda baca -> [(potongan, jeda_setelahnya)] supaya terdengar seperti orang bercerita."""
+    hasil = []
+    for kal in re.split(r"(?<=[.!?…])\s+", teks.strip()):
+        for k, sub in enumerate(re.split(r"\s+[—–]\s+|;\s+|:\s+", kal)):
+            sub = sub.strip()
+            if not sub: continue
+            hasil.append([sub, JEDA_SELA])
+        if not hasil: continue
+        akhir = kal.rstrip()
+        hasil[-1][1] = (JEDA_TITIKTIGA if akhir.endswith(("...", "…")) else
+                        JEDA_TANYA if akhir.endswith(("?", "!")) else JEDA_TITIK)
+    return [(t, j) for t, j in hasil if re.search(r"\w", t)]
+
+
+def _ucap(isi, wav, spec, jeda_akhir=0.25, dasar=None):
+    """Ucapkan isi dengan spec (suara, rate, nada, filter), jeda di tanda baca, hasil WAV mono 44.1 kHz."""
+    dasar = dasar or wav
+    bagian = _potong(isi) or [(isi, JEDA_TITIK)]
+    potongan = []
+    for k, (t, jeda) in enumerate(bagian):
+        mentah = f"{dasar}.s{k}.mp3"; jadi = f"{dasar}.s{k}.wav"
+        suara._tts(t, mentah, *spec[:3])
+        pad = jeda if k < len(bagian) - 1 else jeda_akhir
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", mentah, "-af",
+                        f"{spec[3]},aformat=sample_rates=44100:channel_layouts=mono,apad=pad_dur={pad}", jadi], check=True)
+        potongan.append(jadi)
+    if len(potongan) == 1:
+        os.replace(potongan[0], wav); return wav
+    ins = sum([["-i", p] for p in potongan], [])
+    filt = "".join(f"[{i}:a]" for i in range(len(potongan))) + f"concat=n={len(potongan)}:v=0:a=1[a]"
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", *ins, "-filter_complex", filt, "-map", "[a]", wav], check=True)
+    return wav
+
+
 def narasi(teks, path, jenis=None, narator="laki"):
     """Narasi satu adegan. Kalimat dalam tanda kutip dibacakan dengan suara tokoh (jenis), sisanya oleh narator."""
     narator = narator if narator in NARATOR else "laki"
     bagian = suara.pecah_dialog(teks)
     sp_n = NARATOR[narator]
-    if len(bagian) == 1 and bagian[0][1] == "narator":
-        suara._tts(teks, path, *sp_n[:3]); return path
     potongan = []
     for k, (isi, peran) in enumerate(bagian):
-        mentah = f"{path}.{k}.mp3"; jadi = f"{path}.{k}.wav"
+        jadi = f"{path}.{k}.wav"
         if peran == "narator":
-            filt = sp_n[3]; suara._tts(isi, mentah, *sp_n[:3])
+            _ucap(isi, jadi, sp_n, dasar=f"{path}.{k}")
         else:
             j, sp = _spec(jenis, narator)
-            sp = _sintesis(isi, mentah, j, sp); filt = sp[3]
-        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", mentah, "-af",
-                        f"{filt},aformat=sample_rates=44100:channel_layouts=mono,apad=pad_dur=0.25", jadi], check=True)
+            if j == "narator":                                     # tokoh sampingan: suara narator biasa
+                _ucap(isi, jadi, sp, dasar=f"{path}.{k}")
+            else:
+                mentah = f"{path}.{k}.mp3"
+                sp = _sintesis(isi, mentah, j, sp)
+                subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", mentah, "-af",
+                                f"{sp[3]},aformat=sample_rates=44100:channel_layouts=mono,apad=pad_dur=0.25", jadi], check=True)
         potongan.append(jadi)
     ins = sum([["-i", p] for p in potongan], [])
     filt = "".join(f"[{i}:a]" for i in range(len(potongan))) + f"concat=n={len(potongan)}:v=0:a=1[a]"
