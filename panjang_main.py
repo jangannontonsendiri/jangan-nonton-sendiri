@@ -121,8 +121,7 @@ def jenis_dialog(a, tokoh):
             return tokoh[d["tokoh"]]["suara"]
         if d.get("suara") in panjang_suara.JENIS:
             return d["suara"]
-    d = tebak_dialog(a)
-    return ("hantu_" if d.get("siapa") == "hantu" else "") + ("pria" if d.get("kelamin") == "pria" else "perempuan")
+    return "narator"          # tokoh sampingan / tidak jelas: dibacakan dengan suara narator biasa
 
 
 def main():
