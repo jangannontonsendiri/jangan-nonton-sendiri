@@ -189,7 +189,8 @@ def main():
                 catat(nama_g, "pengganti"); pengganti.append(i + 1)
                 print(f"  PERINGATAN: adegan {i + 1} ditolak filter, memakai gambar adegan sebelumnya", flush=True)
         if MOCK: suara_palsu(au, len(a["narasi"].split()))
-        else: panjang_suara.narasi(a["narasi"], au, jenis_dialog(a, tokoh), narator=c.get("narator", "laki"))
+        else: panjang_suara.narasi(a["narasi"], au, jenis_dialog(a, tokoh), narator=c.get("narator", "laki"),
+                                                    tingkat=panjang_suara.tingkat_adegan(a))
         gambar_list.append(g); audio_list.append(au)
         dur_list.append(suara.durasi(au) + panjang_video.JEDA)
         if (i + 1) % 5 == 0 or i == len(adegan) - 1:
