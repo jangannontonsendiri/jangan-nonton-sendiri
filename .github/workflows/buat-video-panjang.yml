@@ -59,11 +59,24 @@ jobs:
           gh run download "$RUN_ID" --name gambar-panjang --dir simpanan_panjang || echo "Tidak ada gambar tersimpan di run itu; mulai dari awal"
           find simpanan_panjang -type f | wc -l
 
+      - name: Cek kunci Cloudflare khusus video panjang
+        if: github.event.inputs.mock != 'true'
+        env:
+          TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN_PANJANG }}
+          AKUN: ${{ secrets.CLOUDFLARE_ACCOUNT_ID_PANJANG }}
+        run: |
+          if [ -z "$TOKEN" ] || [ -z "$AKUN" ]; then
+            echo "::error::Secret CLOUDFLARE_API_TOKEN_PANJANG atau CLOUDFLARE_ACCOUNT_ID_PANJANG kosong. Video panjang sengaja TIDAK memakai kunci video pendek, jadi berhenti di sini."
+            exit 1
+          fi
+          echo "Kunci Cloudflare video panjang terisi."
+
       - name: Buat video panjang
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          # akun Cloudflare KHUSUS video panjang (terpisah dari video pendek); nama variabel tetap karena kode membacanya
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN_PANJANG }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID_PANJANG }}
           FILE_CERITA: ${{ github.event.inputs.file_cerita }}
           MOCK: ${{ github.event.inputs.mock == 'true' && '1' || '' }}
         run: python panjang_main.py
