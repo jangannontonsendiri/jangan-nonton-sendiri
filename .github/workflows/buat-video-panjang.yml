@@ -1,0 +1,62 @@
+name: Buat video panjang
+
+# Hanya dijalankan MANUAL. Tidak ada jadwal otomatis, tidak mengunggah ke platform mana pun,
+# dan tidak mengubah isi repo. Hasilnya hanya disimpan di Artifacts untuk diunduh.
+on:
+  workflow_dispatch:
+    inputs:
+      file_cerita:
+        description: "File cerita, contoh: cerita_panjang/kamar-nomor-tujuh.json"
+        required: false
+        default: ""
+      mock:
+        description: "Uji coba tanpa internet (gambar & suara palsu, tidak memakai kuota)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: buat-video-panjang
+  cancel-in-progress: false
+
+jobs:
+  buat:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Pasang ffmpeg dan font
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          mkdir -p fonts
+          curl -sSfL -o fonts/Anton-Regular.ttf https://github.com/google/fonts/raw/main/ofl/anton/Anton-Regular.ttf || true
+          curl -sSfL -o fonts/Montserrat-ExtraBold.ttf https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/Montserrat-ExtraBold.ttf || true
+
+      - name: Pasang library Python
+        run: pip install -r requirements.txt
+
+      - name: Buat video panjang
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          FILE_CERITA: ${{ github.event.inputs.file_cerita }}
+          MOCK: ${{ github.event.inputs.mock == 'true' && '1' || '' }}
+        run: python panjang_main.py
+
+      - name: Simpan video untuk diunduh
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: video-panjang
+          path: hasil_panjang/
+          retention-days: 7
+          if-no-files-found: ignore
