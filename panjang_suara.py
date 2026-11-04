@@ -6,24 +6,27 @@ import suara
 
 BATAS_SFX = 0.45     # puncak efek suara (termasuk jumpscare) selalu di bawah narator
 AMAN = "aresample=44100"
+# narator perempuan terpilih (N2): suara lebih hangat dan sedikit berbayang seperti di ruangan
+HANGAT = "aresample=44100,highpass=f=80,lowpass=f=7500,equalizer=f=220:t=q:w=1:g=2,aecho=0.8:0.88:55:0.18,volume=1.1"
 
 # (suara Edge TTS, kecepatan, nada, filter). Semua lebih pelan dari video pendek.
 NARATOR = {"laki": ("id-ID-ArdiNeural", "-14%", "-6Hz", AMAN),
-           "perempuan": ("id-ID-GadisNeural", "-14%", "-4Hz", AMAN)}
+           "perempuan": ("id-ID-GadisNeural", "-10%", "-2Hz", HANGAT)}
 JENIS = {
     "pria": ("id-ID-ArdiNeural", "-12%", "+4Hz", suara.FILTER_ORANG),
-    "perempuan": ("id-ID-GadisNeural", "-12%", "+8Hz", suara.FILTER_ORANG),
+    "perempuan": ("id-ID-GadisNeural", "-12%", "+8Hz", HANGAT),
     "perempuan_jawa": ("jv-ID-SitiNeural", "-12%", "+0Hz", suara.FILTER_ORANG),
     "hantu_pria": ("id-ID-ArdiNeural", "-32%", "-12Hz", suara.FILTER_HANTU),
-    "hantu_perempuan": ("id-ID-GadisNeural", "-32%", "-12Hz", suara.FILTER_HANTU),
+    "hantu_perempuan": ("id-ID-GadisNeural", "-22%", "-8Hz", suara.FILTER_HANTU),   # suara Mbak Rina terpilih (R2)
     "hantu_perempuan_jawa": ("jv-ID-SitiNeural", "-30%", "-10Hz", suara.FILTER_HANTU),
 }
-# bila suara Jawa gagal / terdengar aneh: pakai suara Indonesia dengan nada & tempo berbeda
+# suara Jawa (jv-ID) terdengar kurang bagus -> TIDAK dipakai secara bawaan; SUARA_JAWA=1 untuk mencobanya lagi.
+# Tokoh bersuara "..._jawa" otomatis memakai suara Indonesia yang terpilih
 CADANGAN = {"perempuan_jawa": "perempuan", "hantu_perempuan_jawa": "hantu_perempuan"}
 
 
 def _pakai_jawa():
-    return os.environ.get("SUARA_JAWA", "1") != "0"      # SUARA_JAWA=0 -> langsung pakai cadangan
+    return os.environ.get("SUARA_JAWA", "0") == "1"
 
 
 def _spec(jenis, narator):

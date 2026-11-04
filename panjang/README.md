@@ -18,7 +18,7 @@ Beberapa tokoh dengan wajah tetap dan suara berbeda:
 - `tokoh`: daftar `{"id", "nama", "deskripsi" (Inggris, dipakai identik di semua adegan), "suara", "ref" (opsional)}`.
   Tiap tokoh dibuatkan satu gambar acuan wajah. Tokoh yang sama dengan penampilan berbeda (mis. hantu) dibuat sebagai tokoh terpisah.
   `suara` salah satu dari: `pria`, `perempuan`, `perempuan_jawa`, `hantu_pria`, `hantu_perempuan`, `hantu_perempuan_jawa`.
-  Suara Jawa memakai Edge TTS jv-ID; kalau gagal atau `SUARA_JAWA=0`, otomatis pakai suara Indonesia dengan nada & tempo berbeda.
+  `..._jawa` bawaannya memakai suara Indonesia terpilih (suara Jawa jv-ID dinilai kurang bagus; `SUARA_JAWA=1` untuk mencoba lagi).
 - di tiap adegan: `"tokoh": ["id1", "id2"]` (maks 3) dan, bila ada kalimat dalam tanda kutip, `"dialog": {"tokoh": "id"}`.
 
 Target durasi 12–13 menit: sekitar 60–75 adegan dengan narasi 18–28 kata per adegan.
