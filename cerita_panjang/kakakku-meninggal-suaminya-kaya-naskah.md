@@ -156,7 +156,7 @@ Keterangan: 🎙 = kalimat dalam tanda kutip dibacakan suara tokoh berbeda · �
 
 > Gambar: close-up of shaky messy handwriting scribbled across a notebook page, ink smudged, a trembling thumb holding the paper
 
-**36.** Jumat malam, Mas Dimas pulang. Dia pura-pura ramah, menanyakan aku sudah makan atau belum. Aku pura-pura tidur. _(⏱ 14 dtk)_
+**36.** Aku bertahan beberapa hari, pura-pura biasa saja. Sampai malam Jumat berikutnya, Mas Dimas pulang dan bersikap ramah. Aku pura-pura tidur. _(⏱ 16 dtk)_
 
 > Gambar: a man smiling fakely at the doorway carrying a plastic bag at night, a young woman lying on a sofa with her eyes tightly shut pretending to sleep
 
