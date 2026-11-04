@@ -13,9 +13,14 @@ on:
         description: "Uji coba tanpa internet (gambar & suara palsu, tidak memakai kuota)"
         type: boolean
         default: false
+      pakai_gambar_dari_run:
+        description: "Opsional: nomor run sebelumnya (angka di alamat run) untuk memakai ulang gambar yang sudah jadi"
+        required: false
+        default: ""
 
 permissions:
   contents: read
+  actions: read      # hanya untuk mengunduh gambar dari run sebelumnya
 
 concurrency:
   group: buat-video-panjang
@@ -43,6 +48,17 @@ jobs:
       - name: Pasang library Python
         run: pip install -r requirements.txt
 
+      - name: Ambil gambar dari run sebelumnya
+        if: github.event.inputs.pakai_gambar_dari_run != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_ID: ${{ github.event.inputs.pakai_gambar_dari_run }}
+        run: |
+          case "$RUN_ID" in (*[!0-9]*) echo "Nomor run harus berupa angka"; exit 1;; esac
+          mkdir -p simpanan_panjang
+          gh run download "$RUN_ID" --name gambar-panjang --dir simpanan_panjang || echo "Tidak ada gambar tersimpan di run itu; mulai dari awal"
+          find simpanan_panjang -type f | wc -l
+
       - name: Buat video panjang
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -59,4 +75,16 @@ jobs:
           name: video-panjang
           path: hasil_panjang/
           retention-days: 7
+          if-no-files-found: ignore
+
+      # Gambar disimpan walau proses gagal, supaya bisa dipakai ulang (hemat kuota Cloudflare)
+      - name: Simpan gambar yang sudah jadi
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gambar-panjang
+          path: simpanan_panjang/
+          retention-days: 14
+          overwrite: true
+          compression-level: 0
           if-no-files-found: ignore

@@ -13,6 +13,7 @@ import panjang_gambar, panjang_suara, panjang_video   # versi video panjang; mem
 AKAR = os.path.dirname(os.path.abspath(__file__))
 HASIL = os.path.join(AKAR, "hasil_panjang")
 KERJA_DIR = os.path.join(AKAR, "kerja_panjang")
+SIMPAN_DIR = os.path.join(AKAR, "simpanan_panjang")   # gambar yang sudah jadi; diunggah sebagai Artifacts walau proses gagal
 CONTOH = os.path.join(AKAR, "panjang", "contoh.json")
 MOCK = os.environ.get("MOCK") == "1"
 GERAK = ["zoom_in", "zoom_out", "pan_up", "pan_down", "pan_left", "pan_right"]
@@ -86,6 +87,25 @@ def gambar_palsu(path, teks, ukuran=(LEBAR, TINGGI)):
     im.save(path)
 
 
+_PERCOBAAN_PALSU = {}
+
+
+def _kirim_palsu(prompt, path, width, height, acuan, seed):
+    """Pengganti panggilan Cloudflare untuk MOCK. Simulasi (nomor adegan mulai 1):
+    MOCK_DITOLAK="3:1,5:99" -> adegan 3 ditolak filter 1x lalu lolos, adegan 5 selalu ditolak
+    MOCK_GAGAL_DI="4"       -> adegan 4 gagal karena galat jaringan (proses berhenti, gambar lain tetap tersimpan)"""
+    nama = os.path.basename(path)
+    m = re.match(r"g(\d+)\.png", nama)
+    nomor = int(m.group(1)) + 1 if m else None
+    _PERCOBAAN_PALSU[nama] = _PERCOBAAN_PALSU.get(nama, 0) + 1
+    if nomor is not None and str(nomor) == os.environ.get("MOCK_GAGAL_DI", ""):
+        raise RuntimeError("simulasi: jaringan putus")
+    tolak = dict(x.split(":") for x in os.environ.get("MOCK_DITOLAK", "").split(",") if ":" in x)
+    if nomor is not None and _PERCOBAAN_PALSU[nama] <= int(tolak.get(str(nomor), 0)):
+        raise panjang_gambar.Ditolak("simulasi: Your output has been flagged")
+    gambar_palsu(path, (nama + " " + prompt[-60:]) if nomor is not None else nama, (width, height))
+
+
 def suara_palsu(path, kata):
     import subprocess
     d = max(2.5, kata * 0.45)
@@ -116,6 +136,19 @@ def main():
     kerja = os.path.join(KERJA_DIR, cid)
     shutil.rmtree(kerja, ignore_errors=True)
     os.makedirs(kerja); os.makedirs(HASIL, exist_ok=True)
+    # gambar disimpan terpisah dari folder kerja (yang dihapus): tetap ada bila proses gagal, dan dipakai ulang bila diulang
+    simpan = os.path.join(SIMPAN_DIR, cid + ("-mock" if MOCK else ""))
+    os.makedirs(simpan, exist_ok=True)
+    status_path = os.path.join(simpan, "status.json")
+    try:
+        with open(status_path, encoding="utf-8") as f: status = json.load(f)
+    except (FileNotFoundError, ValueError):
+        status = {}
+    def catat(nama, nilai):
+        status[nama] = nilai
+        with open(status_path, "w", encoding="utf-8") as f: json.dump(status, f, ensure_ascii=False, indent=1)
+    if MOCK:
+        panjang_gambar._kirim = _kirim_palsu; panjang_gambar.JEDA_ULANG = 0
     print(f"Membuat video panjang: {c['judul']} ({len(adegan)} adegan){' [MOCK]' if MOCK else ''}")
 
     # 1. gambar acuan wajah tiap tokoh (supaya wajah sama di semua adegan); boleh pakai gambar yang sudah ada ('ref')
@@ -123,29 +156,49 @@ def main():
     tokoh = c["_tokoh"]
     refs = {}
     for n, (tid, t) in enumerate(tokoh.items()):
-        ref = os.path.join(kerja, f"tokoh_{tid}.png")
-        if t.get("ref") and os.path.exists(os.path.join(AKAR, t["ref"])):
+        ref = os.path.join(simpan, f"tokoh_{tid}.png")
+        if os.path.exists(ref):
+            pass                                              # sudah ada dari percobaan sebelumnya
+        elif t.get("ref") and os.path.exists(os.path.join(AKAR, t["ref"])):
             shutil.copy(os.path.join(AKAR, t["ref"]), ref)
-        elif MOCK:
-            gambar_palsu(ref, "tokoh " + tid, (512, 512))
         else:
-            panjang_gambar.potret_tokoh(t["deskripsi"], ref, seed=benih + 7000 + n)
+            try:
+                panjang_gambar.potret_tokoh(t["deskripsi"], ref, seed=benih + 7000 + n)
+            except panjang_gambar.Ditolak:
+                print(f"  PERINGATAN: gambar acuan '{tid}' ditolak filter; adegannya memakai deskripsi saja", flush=True)
+                ref = None
         refs[tid] = ref
     print(f"  gambar acuan {len(refs)} tokoh siap: {', '.join(tokoh)}", flush=True)
 
     # 2. gambar + 3. suara tiap adegan
     gambar_list, audio_list, dur_list = [], [], []
+    dipakai_ulang, pengganti = 0, []
     for i, a in enumerate(adegan):
-        g = os.path.join(kerja, f"g{i:03d}.png"); au = os.path.join(kerja, f"n{i:03d}.mp3")
-        if MOCK:
-            gambar_palsu(g, a["gambar"]); suara_palsu(au, len(a["narasi"].split()))
+        nama_g = f"g{i:03d}.png"
+        g = os.path.join(simpan, nama_g); au = os.path.join(kerja, f"n{i:03d}.mp3")
+        if os.path.exists(g) and status.get(nama_g) != "pengganti":
+            dipakai_ulang += 1                                # sudah jadi sebelumnya: tidak memakai kuota lagi
         else:
-            panjang_gambar.adegan_lebar(a, [(tokoh[x]["deskripsi"], refs[x]) for x in a["tokoh"]], g, seed=benih + i)
-            panjang_suara.narasi(a["narasi"], au, jenis_dialog(a, tokoh), narator=c.get("narator", "laki"))
+            try:
+                tingkat = panjang_gambar.adegan_lebar(a, [(tokoh[x]["deskripsi"], refs[x]) for x in a["tokoh"]], g, seed=benih + i)
+                catat(nama_g, tingkat)
+            except panjang_gambar.Ditolak:
+                # semua percobaan ditolak: pakai gambar adegan sebelumnya supaya video tetap jadi
+                sebelum = gambar_list[-1] if gambar_list else None
+                if sebelum: shutil.copy(sebelum, g)
+                else: gambar_palsu(g, "adegan " + str(i + 1), (LEBAR, TINGGI))
+                catat(nama_g, "pengganti"); pengganti.append(i + 1)
+                print(f"  PERINGATAN: adegan {i + 1} ditolak filter, memakai gambar adegan sebelumnya", flush=True)
+        if MOCK: suara_palsu(au, len(a["narasi"].split()))
+        else: panjang_suara.narasi(a["narasi"], au, jenis_dialog(a, tokoh), narator=c.get("narator", "laki"))
         gambar_list.append(g); audio_list.append(au)
         dur_list.append(suara.durasi(au) + panjang_video.JEDA)
         if (i + 1) % 5 == 0 or i == len(adegan) - 1:
             print(f"  adegan {i + 1}/{len(adegan)}: gambar & suara siap", flush=True)
+    if dipakai_ulang: print(f"  {dipakai_ulang} gambar dipakai ulang dari simpanan (tidak memakai kuota Cloudflare)")
+    if pengganti:
+        print(f"PERINGATAN: {len(pengganti)} adegan memakai gambar pengganti (ditolak filter): {pengganti}. "
+              f"Jalankan ulang dengan simpanan gambar ini untuk mencoba adegan tersebut lagi.")
 
     total = panjang_video.AWAL + sum(dur_list) + panjang_video.AKHIR
     menit = total / 60

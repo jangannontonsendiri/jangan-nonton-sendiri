@@ -21,6 +21,15 @@ Beberapa tokoh dengan wajah tetap dan suara berbeda:
   `..._jawa` bawaannya memakai suara Indonesia terpilih (suara Jawa jv-ID dinilai kurang bagus; `SUARA_JAWA=1` untuk mencoba lagi).
 - di tiap adegan: `"tokoh": ["id1", "id2"]` (maks 3) dan, bila ada kalimat dalam tanda kutip, `"dialog": {"tokoh": "id"}`.
 
+Gambar ditolak filter Cloudflare (kode 3030) dan melanjutkan setelah gagal:
+
+- Gambar yang ditolak dicoba ulang: seed lain, lalu kata-kata prompt yang lebih halus. Kalau tetap ditolak, adegan itu memakai gambar adegan sebelumnya supaya video tetap jadi (ada peringatan di log).
+- Semua gambar yang sudah jadi disimpan sebagai Artifacts bernama `gambar-panjang` walau proses gagal.
+- Untuk melanjutkan tanpa membuat ulang: jalankan workflow lagi dan isi `pakai_gambar_dari_run` dengan nomor run sebelumnya
+  (angka di akhir alamat run). Gambar yang sudah jadi dipakai ulang (tanpa kuota), adegan yang tadinya diganti dicoba lagi.
+- Uji simulasi tanpa internet: `MOCK=1 MOCK_DITOLAK="3:1,5:99" python panjang_main.py` (adegan 3 ditolak sekali, adegan 5 selalu ditolak)
+  atau `MOCK_GAGAL_DI=4` (adegan 4 gagal karena jaringan).
+
 Target durasi 12–13 menit: sekitar 60–75 adegan dengan narasi 18–28 kata per adegan.
 
 Uji tanpa internet: `MOCK=1 python panjang_main.py` (atau centang `mock` di workflow).
