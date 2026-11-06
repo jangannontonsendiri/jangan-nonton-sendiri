@@ -1,0 +1,494 @@
+{
+  "judul": "Orderan ke Alamat Sendiri",
+  "suasana": "sunyi",
+  "tokoh_utama": "A 25-year-old Indonesian male motorcycle taxi driver in a green ride-hailing jacket, short black hair, wearing dark trousers and black shoes.",
+  "part": [
+    {
+      "pertanyaan": "Kalau kamu dapat orderan ini, kamu ambil atau kabur?",
+      "caption": "Jam 1 malam dapat orderan ojol, titik jemputnya rumah sendiri dan nama pemesannya namaku sendiri...",
+      "hashtag": [
+        "#ceritahoror",
+        "#ojolhoror",
+        "#mistis",
+        "#kisahmisteri"
+      ],
+      "adegan": [
+        {
+          "narasi": "Jam satu malam aku dapat orderan ojol dengan titik jemput rumahku sendiri.",
+          "gambar": "Close-up of a smartphone screen held by a driver showing a ride-hailing app map pinpointing a residential house at 1:00 AM in dark ambient light.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Nama pemesannya persis namaku, Budi, tanpa beda satu huruf pun di layar.",
+          "gambar": "Close-up shot of the phone screen highlighting the passenger name profile matching the driver's name in glowing digital text.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Seharian ini ban belakang motorku memang terasa aneh saat melewati tikungan sepi.",
+          "gambar": "Medium shot of the rear motorcycle wheel parked on a dark asphalt road, dimly illuminated by a streetlamp.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku menekan tombol batalkan orderan, tapi aplikasi HP-ku mendadak membeku total.",
+          "gambar": "A thumb pressing hard on a smartphone screen, the ride-hailing application frozen with red error indicators.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "getar_hp"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Karena penasaran dan agak curiga, aku memutuskan langsung pulang ke rumah.",
+          "gambar": "Wide shot of a green jacket motorcycle driver riding fast along a empty suburban street under dim streetlights.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Jalanan kompleks sangat gelap dan sepi, tidak ada kendaraan lain sama sekali.",
+          "gambar": "Point of view shot looking down a quiet dark neighborhood alleyway, eerie fog hanging low on the ground.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [
+            "kabut"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Begitu sampai di depan pagar, aku kaget melihat lampu kamarku menyala.",
+          "gambar": "Eye-level view of a small two-story house with a bright yellow light glowing brightly from a second-floor window.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_up",
+          "efek": [],
+          "suara": [],
+          "fokus": "atas",
+          "dialog": null
+        },
+        {
+          "narasi": "Padahal aku tinggal sendirian dan ingat betul sudah mematikan seluruh lampu teras.",
+          "gambar": "Medium shot of the driver standing at the iron gate staring up at the lighted window with a shocked expression.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku menuntun motorku masuk ke halaman rumah tanpa berani membunyikan mesin.",
+          "gambar": "Wide shot of the driver pushing his motorcycle quietly into the dark yard. In the dark background behind the fence, a shadowy pale human shape stands silently watching him.",
+          "tokoh": true,
+          "petunjuk": true,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "kiri",
+          "dialog": null
+        },
+        {
+          "narasi": "Hawa dingin tiba-tiba berembus kencang membuat bulu kudukku berdiri seketika.",
+          "gambar": "Close-up on the driver's neck as goosebumps form on his skin under the green jacket collar.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku perlahan mendongak menatap kaca jendela lantai atas yang terbuka sedikit.",
+          "gambar": "Low angle shot looking up at the illuminated second floor window framed by dark roof shadows.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_up",
+          "efek": [],
+          "suara": [],
+          "fokus": "atas",
+          "dialog": null
+        },
+        {
+          "narasi": "Di dalam berdiri seseorang memakai jaket ojol persis denganku, sambil melambaikan tangan.",
+          "gambar": "Extreme close-up of the upper window showing a terrifying human figure wearing an identical green motorcycle jacket, smiling unnaturally and waving a slow hand.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget",
+            "flicker"
+          ],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        }
+      ]
+    },
+    {
+      "pertanyaan": "Menurut kalian, siapa sebenarnya yang ada di dalam rumah?",
+      "caption": "Lanjutan orderan misterius... Suara di telepon persis suaraku sendiri!",
+      "hashtag": [
+        "#ceritahoror",
+        "#alambawaflikir",
+        "#doppelganger",
+        "#seram"
+      ],
+      "adegan": [
+        {
+          "narasi": "Lanjutan orderan misterius, aku nekat menelpon nomor pemesan di aplikasi ojol.",
+          "gambar": "Close-up of the driver holding the phone to his ear in the dark yard, expression tense and terrified.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Sambungan terhubung, suara dari telepon berbisik, \"Udah sampai? Aku tunggu di dalam.\"",
+          "gambar": "Dark atmospheric shot of the phone screen showing an ongoing active call timer glowing in the pitch dark.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "hantu",
+            "kelamin": "pria"
+          }
+        },
+        {
+          "narasi": "Aku membeku di tempat karena suara itu persis sekali dengan suaraku sendiri.",
+          "gambar": "Close-up on the driver's wide eyes and pale face frozen in absolute disbelief and horror.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tangan gemetarku mendorong pintu depan rumah yang ternyata tidak terkunci sama sekali.",
+          "gambar": "Medium shot of a hand pushing open a wooden front door, revealing a pitch-black interior hallway.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [
+            "pintu"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku melangkah pelan menaiki tangga kayu yang berdecit di kegelapan malam.",
+          "gambar": "Low angle view of feet in boots slowly stepping up dark wooden stairs toward a dimly lit upper doorway.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_up",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Pintu kamar kubuka perlahan, tapi ruangan itu ternyata kosong tidak ada siapapun.",
+          "gambar": "Wide interior shot of a small tidy bedroom illuminated by a desk lamp, completely empty of people.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [
+            "pintu"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Kipas angin gantung berputar pelan memecah kesunyian kamar yang terasa sangat mencekam.",
+          "gambar": "Medium shot of the bedroom interior showing a desk. In the large standing wardrobe mirror on the right side, a tall dark figure's shadow is clearly reflected even though the room is empty.",
+          "tokoh": false,
+          "petunjuk": true,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [],
+          "fokus": "kanan",
+          "dialog": null
+        },
+        {
+          "narasi": "Namun di atas meja, helm cadanganku tampak sangat basah dan terasa masih hangat.",
+          "gambar": "Close-up of a dark motorcycle helmet sitting on a wooden desk, dripping wet with moisture beads glistening under lamp light.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Padahal malam ini tidak ada hujan dan helm itu disimpan di lemari.",
+          "gambar": "Medium shot of driver touching the wet helmet surface with trembling fingers, face filled with confusion.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Bau tanah basah yang menyengat mendadak memenuhi seluruh ruangan kamar tidurku.",
+          "gambar": "Driver sniffing the air nervously, looking around the room as thick spectral mist begins to curl near the floor.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [
+            "kabut"
+          ],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Jantungku berdebar kencang saat menyadari keanehan yang baru saja terjadi ini.",
+          "gambar": "Close-up shot of driver clutching his chest in fear, breathing heavily while looking towards the open doorway.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "HP-ku bergetar keras dan status aplikasi mendadak berubah menjadi \"Penumpang sudah naik.\"",
+          "gambar": "Extreme close-up of phone screen glowing red with app notification text reading passenger onboard status.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget",
+            "flicker"
+          ],
+          "suara": [
+            "getar_hp"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        }
+      ]
+    },
+    {
+      "pertanyaan": "Menurut kalian, apakah dia menyadari dirinya sudah menjadi hantu?",
+      "caption": "Part Akhir: Rute lokasi tujuan membawa ke bekas lokasi kecelakaan...",
+      "hashtag": [
+        "#ceritahoror",
+        "#twist",
+        "#kematian",
+        "#tamat"
+      ],
+      "adegan": [
+        {
+          "narasi": "Lanjutan malam mencekam, aku nekat mengendarai motor mengikuti rute lokasi tujuan.",
+          "gambar": "Point of view shot riding a motorcycle on a dark deserted rural road illuminated only by headlight beam.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Sepanjang perjalanan, jok belakang motorku terasa sangat berat seolah membonceng seseorang.",
+          "gambar": "Medium shot of the rear motorcycle seat pressing down low under invisible heavy weight while riding.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Kaca spion tidak memperlihatkan bayangan apapun, tapi napas dingin menembus jaket leherku.",
+          "gambar": "Close-up of side rearview mirror showing empty pitch dark road behind, contrasting with cold fog around driver's neck.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kabut"
+          ],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aplikasi menuntun jalanku menuju sebuah tikungan sepi yang sangat gelap di desa.",
+          "gambar": "Wide shot of a sharp dangerous road curve bounded by dense trees and a concrete utility pole at night.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Di lokasi itu, terlihat bekas gesekan ban motor yang masih baru di jalan.",
+          "gambar": "Close-up on black skid marks baked onto asphalt leading directly into a damaged concrete pole.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Sebuah karangan bunga duka cita tergeletak tepat di samping tiang listrik jalan.",
+          "gambar": "Medium shot of fresh funeral flowers lying at the foot of the electricity pole in dim moonlight.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku melangkah mendekat dan membaca pita duka bertuliskan namaku serta tanggal hari ini.",
+          "gambar": "Close-up of the ribbon on the funeral wreath showing driver's full name and today's date written clearly.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku mendadak teringat kecelakaan hebat yang menimpaku di tikungan ini sore tadi.",
+          "gambar": "Cinematic visual flash of a green motorcycle crashing hard into the pole under dark overcast sky.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "pukulan"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Jam di layarku menunjukkan tepat angka satu malam tanpa ada detik bergeser.",
+          "gambar": "Driver holding phone showing 01:00 AM. In the cracked motorcycle mirror behind his shoulder, a pale ghost figure wearing a matching jacket looks directly forward.",
+          "tokoh": true,
+          "petunjuk": true,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "kanan",
+          "dialog": null
+        },
+        {
+          "narasi": "Ternyata orderan misterius ini adalah jemputan ajalku yang tidak mau pergi sendirian.",
+          "gambar": "Wide eerie shot of the driver standing near the funeral flowers as shadowy specters surround the quiet road curve.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_up",
+          "efek": [
+            "kabut"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku berteriak hysteris saat menyadari kalau aku sudah tidak bernyawa lagi.",
+          "gambar": "Close-up of driver screaming in terror with mouth wide open, figure fading semi-transparent in moonlight.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget",
+            "flicker"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Sejak malam itu, setiap kali motorku berjalan, kursi belakang selalu terasa sangat berat.",
+          "gambar": "Dark silhouette of an empty motorcycle driving alone into an infinite foggy road, back seat sunk low.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [
+            "kabut"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        }
+      ]
+    }
+  ],
+  "tema": "konsep: Orderan ke Alamat Sendiri"
+}
