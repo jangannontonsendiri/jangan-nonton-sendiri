@@ -1,0 +1,489 @@
+{
+  "judul": "Voice Note Jam Tiga",
+  "suasana": "sunyi",
+  "tokoh_utama": "A 22-year-old Indonesian man with short messy black hair, wearing a dark blue t-shirt and grey sweatpants.",
+  "part": [
+    {
+      "pertanyaan": "Kalau kamu dapat voice note begini, kamu tanya pacarmu atau diam aja?",
+      "caption": "Mendapat pesan suara misterius jam 3 pagi yang durasinya berubah sendiri... Siapa yang merekam?",
+      "hashtag": [
+        "#ceritahoror",
+        "#voicenote",
+        "#hororindonesia",
+        "#kisahnyata",
+        "#creepy"
+      ],
+      "adegan": [
+        {
+          "narasi": "Pacarku mendadak kirim voice note jam tiga pagi saat kamarku sangat sepi.",
+          "gambar": "Close-up of a smartphone screen lying on a wooden desk in a dim bedroom showing a message app interface with a audio message received at 03:00 AM.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "getar_hp"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Durasi pesan suara itu cuma nol titik empat puluh tujuh detik, isinya suara napas.",
+          "gambar": "A young Indonesian man sitting on his bed in a dark bedroom, holding his glowing phone screen close to his face with a confused expression.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_up",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Pagi harinya dia bersumpah sudah tidur nyenyak dari jam sembilan malam kemarin.",
+          "gambar": "Split view: daylight room with young man texting on phone with worried face, contrasting with night memory.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [],
+          "fokus": "kiri",
+          "dialog": null
+        },
+        {
+          "narasi": "Penasaran, aku putar ulang pesan itu pakai headphone sambil menyalakan kipas angin.",
+          "gambar": "The young man sitting at his desk wearing headphones, dimly lit by desk lamp. In the background window gap, a tall faint shadowy silhouette stands outside.",
+          "tokoh": true,
+          "petunjuk": true,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Samar-samar di balik suara napas, terdengar suara langkah kaki pelan mendekat.",
+          "gambar": "Close-up of headphones lying on the wooden desk, glowing dark red atmosphere around the desk.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku merinding hebat saat sadar ritme langkah itu sangat mirip langkah kakiku.",
+          "gambar": "The young man pulling his headphones down to his neck, wide eyes filled with fear looking over his shoulder.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Keraguan membuatku membuka aplikasi pesan lagi untuk mengecek durasi file tersebut.",
+          "gambar": "Extreme close-up of fingers tapping the glowing phone screen displaying the chat window.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Anehnya, durasi voice note itu mendadak berubah sendiri jadi nol titik lima puluh dua.",
+          "gambar": "Extreme close-up of the phone screen showing audio length timestamp glitched from 0:47 to 0:52.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Jari jemariku gemetar hebat saat menekan tombol putar untuk yang terakhir kali.",
+          "gambar": "Trembling thumb pressing the play icon on the dark phone interface in the dim room.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Suara napas berat itu makin jelas, seolah pemiliknya berdiri tepat di sampingku.",
+          "gambar": "The young man frozen in terror, shadows stretching unnaturally on the wall right beside his shoulder.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tepat pada detik terakhir, terdengar suara bisikan dingin, \"Dia nggak sendirian.\"",
+          "gambar": "A pale, unnaturally wide-mouthed shadowy figure whispering right near the young man's ear from behind.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget"
+          ],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "kanan",
+          "dialog": {
+            "siapa": "hantu",
+            "kelamin": "wanita"
+          }
+        },
+        {
+          "narasi": "Bulu kudukku berdiri seraya menatap layar ponsel yang perlahan mati sendiri.",
+          "gambar": "The phone screen suddenly goes completely pitch black, reflecting the young man's terrified facial expression.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        }
+      ]
+    },
+    {
+      "pertanyaan": "Siapa yang merekam selama ini? Tulis tebakanmu.",
+      "caption": "Mendatangi kos pacar tapi HP-nya mati. Lalu dari mana voice note baru ini berasal?",
+      "hashtag": [
+        "#ceritahoror",
+        "#misteri",
+        "#alurberingat",
+        "#haunted",
+        "#scary"
+      ],
+      "adegan": [
+        {
+          "narasi": "Lanjutan. Tanpa berpikir panjang, aku langsung meluncur cepat menuju ke kos pacarku.",
+          "gambar": "A young man riding a automatic motorcycle on a dark empty city street under pale streetlights.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Sampai di sana, aku mengetuk pintu kamarnya dengan perasaan yang sangat cemas.",
+          "gambar": "The young man standing outside a boarding house room door in a narrow hallway, knocking frantically.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "ketukan"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Dia membuka pintu sambil mengucek mata, kaget melihatku datang mendadak tengah malam.",
+          "gambar": "A young Indonesian woman in sleepwear opening the door of her dimly lit room, rubbing her eye with a sleepy, confused face.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [
+            "pintu"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Dia menunjukkannya langsung: HP miliknya ternyata sudah mati kehabisan baterai sejak sore.",
+          "gambar": "Close-up of a dead black smartphone lying on a desk in the girl's room. Underneath the dark wooden bed frame in the background, a pale slender hand stretches out from the deep shadow.",
+          "tokoh": false,
+          "petunjuk": true,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "\"Aku beneran tidur dari tadi sore, kok,\" ucap pacarku dengan wajah bingung.",
+          "gambar": "The young woman gesturing with her hands while talking to the worried young man in her bedroom doorway.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "kiri",
+          "dialog": {
+            "siapa": "orang",
+            "kelamin": "wanita"
+          }
+        },
+        {
+          "narasi": "Tiba-tiba ponsel di genggamanku bergetar kencang menandakan ada notifikasi pesan baru.",
+          "gambar": "Close-up of the young man's hand holding his smartphone as it vibrates glowing with a new incoming audio message notification.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "getar_hp"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Ada pesan suara baru masuk, dikirim tepat dari nomor telepon milik pacarku.",
+          "gambar": "The phone screen showing a new incoming voice note notification from 'Pacar' sent right now.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Padahal ponsel milik pacarku jelas-jelas masih tergeletak mati di atas meja kos.",
+          "gambar": "Wide shot showing the dead phone on the desk while the young man holds his ringing phone, both looking shocked.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Dengan tangan gemetar, aku nekat menekan tombol putar pesan suara terbaru itu.",
+          "gambar": "Close-up of young man pressing play on the new voice note audio bar.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Di latar belakang voice note, terdengar jelas derum suara kipas angin berputar.",
+          "gambar": "The young man bringing the phone speaker closer to his ear with an expression of pure disbelief.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_up",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Bukan cuma itu, lagu favoritku yang sengaja kuputar di kamar juga terdengar.",
+          "gambar": "Extreme close-up of the young man's dilated eyes showing terror as he listens to the audio.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Pesan itu direkam dari dalam kamarku sendiri, padahal aku sedang di rumahnya.",
+          "gambar": "The young man dropping his jaw in terror, looking away toward the direction of his home.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        }
+      ]
+    },
+    {
+      "pertanyaan": "Pernah nggak kamu merasa ada yang memperhatikanmu saat tidur? Coba cerita!",
+      "caption": "Misteri HP tua di kamar dan rekaman selama satu bulan penuh. Siapa yang tidur di kolong kasur?",
+      "hashtag": [
+        "#ceritahoror",
+        "#twist",
+        "#klimaks",
+        "#hororindonesia",
+        "#seram"
+      ],
+      "adegan": [
+        {
+          "narasi": "Lanjutan. Aku langsung berlari keluar kos dan memacu motor kembali ke kamarku.",
+          "gambar": "The young man rushing frantically out of the building doorway into the night darkness.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Sampai di depan rumah, suasana sangat gelap dan pintu kamar sedikit terbuka.",
+          "gambar": "Exterior of a dimly lit Indonesian house at night, the bedroom door slightly ajar with dark ambient light inside.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "pintu"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Di dalam kamar, kipas angin menyala dan lagu favoritku masih terus berputar.",
+          "gambar": "Dark bedroom interior with an electric fan rotating on the floor. On the unlit blank TV screen in the corner, a faint pale face is reflected.",
+          "tokoh": false,
+          "petunjuk": true,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Di atas kasurku, tergeletak satu HP tua yang layarnya sedang menyala terang.",
+          "gambar": "An old black smartphone lying face-up on a messy mattress, screen glowing bright green with an audio recording interface.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Layar HP memperlihatkan aplikasi perekam suara yang masih aktif merekam kondisi kamar.",
+          "gambar": "Close-up of the screen showing an ongoing red recording timer actively counting seconds.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "cctv"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku mendekat perlahan dan memutar folder rekaman yang tersimpan di memori HP.",
+          "gambar": "The young man reaching out trembling hands towards the phone on his bed.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Jantungku serasa berhenti saat melihat puluhan file rekaman tersimpan rapi di sana.",
+          "gambar": "The phone screen displaying a long list of recorded audio files labeled with dates over the past month.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tanggal rekaman tertulis lengkap, terus berurutan setiap malam sejak satu bulan lalu.",
+          "gambar": "Close-up on file timestamps showing daily recordings starting from 30 days ago at exactly 03:00 AM.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku menekan salah satu file dan mendengarkannya dengan napas tersengal ketakutan.",
+          "gambar": "The young man holding the phone to his ear, sweat dripping down his pale terrified face.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Dari awal sampai akhir, isinya hanya suara napas beratku sendiri saat tidur.",
+          "gambar": "Shot of the young man looking down at the mattress, realization dawning upon him.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Seseorang selalu bersembunyi di kamarku, merekamku tidur nyenyak tiap jam tiga pagi.",
+          "gambar": "Low-angle shot looking under the bed frame into the pitch-black gap beneath the mattress.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Dan saat aku menengok ke bawah kasur, sepasang mata pucat menatapku balik.",
+          "gambar": "Extreme close-up under the bed: two glowing pale eyes staring out from absolute darkness right at the camera.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget"
+          ],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        }
+      ]
+    }
+  ],
+  "tema": "konsep: Voice Note Jam Tiga"
+}
