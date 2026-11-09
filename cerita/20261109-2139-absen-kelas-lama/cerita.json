@@ -1,0 +1,503 @@
+{
+  "judul": "Absen Kelas Lama",
+  "suasana": "sunyi",
+  "tokoh_utama": "A 22-year-old Indonesian man with short black hair, wearing a plain grey t-shirt, pale skin, thin build.",
+  "part": [
+    {
+      "pertanyaan": "Kalian masih ingat semua nama teman sekelas SD? Coba cek grup alumni kalian.",
+      "caption": "Grup SD yang sepi bertahun-tahun tiba-tiba ramai gara-gara foto absen tua. Tapi ada satu nama yang aneh...",
+      "hashtag": [
+        "#ceritahoror",
+        "#hororindonesia",
+        "#absenkelas",
+        "#kisahnyata",
+        "#viral"
+      ],
+      "adegan": [
+        {
+          "narasi": "Notifikasi HP-ku terus berbunyi nyaring, grup SD yang mati bertahun-tahun tiba-tiba ramai.",
+          "gambar": "Close-up of a smartphone on a wooden desk ringing with multiple chat notifications in a dimly lit bedroom.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "getar_hp"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Kipas angin kamar berderit pelan saat aku membuka foto lembar absen kusam itu.",
+          "gambar": "Main character sitting on his bed looking at his glowing smartphone screen in a dark room.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Semua nama terasa sangat akrab, kecuali nomor tujuh belas yang berada di paling bawah.",
+          "gambar": "An old yellowed paper attendance list sheet with handwritten names, number 17 is written in faint red ink.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku menekan tombol ketik di grup, \"Nomor tujuh belas ini anak mana sih?\"",
+          "gambar": "Main character typing furiously on his smartphone screen, looking confused and intrigued.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_up",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "orang",
+            "kelamin": "pria"
+          }
+        },
+        {
+          "narasi": "Temanku Budi membalas bercanda, \"Mungkin itu hantu penunggu ruang guru sekolah kita.\"",
+          "gambar": "Smartphone screen showing a chat bubble with text message in a dark environment.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "orang",
+            "kelamin": "pria"
+          }
+        },
+        {
+          "narasi": "Aku mengambil buku tahunan SD di lemari untuk mencocokkan nama teman-teman.",
+          "gambar": "A printed old elementary school class photo held by hands. In the back row, one child's face is completely blurred into a white eerie smudge staring straight at the camera.",
+          "tokoh": true,
+          "petunjuk": true,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tengah malam, notifikasi WA berbunyi. Budi mendadak keluar dari grup tanpa pesan apa pun.",
+          "gambar": "Smartphone screen displaying a system message that a member has left the group chat, night ambience.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [
+            "getar_hp"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku langsung menelepon nomor Budi, tapi hanya terdengar suara operator tidak aktif.",
+          "gambar": "Main character holding the phone to his ear with a concerned expression, dimly lit bedroom.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Besoknya aku mendatangi rumah Budi. Lampu teras rumahnya berkedip-kedip redup dan sepi.",
+          "gambar": "Exterior of a modest Indonesian suburban house at dusk, porch light flickering weirdly.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Ibu Budi menyapu halaman dan bingung, \"Saya nggak pernah punya anak cowok.\"",
+          "gambar": "An middle-aged Indonesian mother holding a broom outdoor looking confused at the main character.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "kanan",
+          "dialog": {
+            "siapa": "orang",
+            "kelamin": "wanita"
+          }
+        },
+        {
+          "narasi": "Tanganku mendadak dingin gemetaran saat membuka kembali aplikasi WA di HP-ku.",
+          "gambar": "Close-up of main character's trembling hands holding a smartphone displaying the chat app.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Foto absen dikirim ulang ke grup. Nama Budi hilang tanpa bekas dari lembaran itu!",
+          "gambar": "Extreme close-up of the old paper list photo on phone screen where Budi's name entry is completely blank white space.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        }
+      ]
+    },
+    {
+      "pertanyaan": "Menurut kalian, siapa sebenarnya nomor 17?",
+      "caption": "Satu per satu nama teman sekelas hilang dari foto absen, dan keberadaan mereka terhapus dari dunia...",
+      "hashtag": [
+        "#ceritahoror",
+        "#misteri",
+        "#alumni",
+        "#urbanlegend",
+        "#creepy"
+      ],
+      "adegan": [
+        {
+          "narasi": "Lanjutan... Setiap hari satu anggota grup keluar dan nomor HP mereka mati total.",
+          "gambar": "Main character looking horrified at a list of members in group chat leaving one after another.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku menghubungi keluarga teman lain yang hilang, tapi mereka sama sekali tak ingat.",
+          "gambar": "Main character standing outside a neighbor's gate looking pale and desperate.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [
+            "ketukan"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Nama-nama di foto absen kusam itu terhapus satu demi satu seperti dihitamkan.",
+          "gambar": "Close-up of the old attendance list photo, multiple names are now missing leaving eerie blank spaces.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku sadar, orang yang namanya hilang dari absen akan lenyap dari ingatan dunia.",
+          "gambar": "Main character sitting on floor clutching his head in panic, shadowy dark bedroom backdrop.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Lampu kamarku mendadak berkedip, detak jantungku berpacu kencang karena rasa takut hebat.",
+          "gambar": "Dimly lit bedroom illuminated only by a single hanging light bulb flickering softly.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_up",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [],
+          "fokus": "atas",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku membongkar gudang tua rumahku untuk mencari buku album foto SD asli.",
+          "gambar": "Main character digging through old cardboard boxes in a dusty dark attic room.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [
+            "pintu"
+          ],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Debu tebal menutupi sampul buku album yang tersimpan di dalam kardus cokelat.",
+          "gambar": "Dusty attic room. Main character holds a physical photo album. In the background door frame shadow, a tall eerie pale child figure stands motionless.",
+          "tokoh": true,
+          "petunjuk": true,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tanganku menggigil saat membuka halaman foto bersama seluruh murid kelas enam SD.",
+          "gambar": "Close-up of hands opening a thick physical photo album showing a printed class photo.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "shake"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku mencari posisi anak dengan nomor urut tujuh belas yang sangat misterius itu.",
+          "gambar": "Main character's finger scanning across the printed faces in the physical photograph album.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Mataku terbelalak melihat sosok anak bertubuh pucat dengan senyum ganjil tanpa ekspresi.",
+          "gambar": "Close-up of a pale child in the printed photo with unnaturally long limbs and an unnerving wide smile.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Anak berbaju lusuh itu berdiri tepat di barisan depan sebelah kiri fotoku.",
+          "gambar": "Medium shot of the physical photo showing the main character as a child standing next to the pale child.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [],
+          "fokus": "kiri",
+          "dialog": null
+        },
+        {
+          "narasi": "Di foto tua itu, anak nomor tujuh belas berdiri menempel dan memegang erat tanganku!",
+          "gambar": "Extreme close-up of the printed photo showing the pale ghost child's grey hand tightly gripping young main character's wrist.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget"
+          ],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        }
+      ]
+    },
+    {
+      "pertanyaan": "Kalau namamu tiba-tiba hilang dari absen kelas, apa yang akan kamu lakukan?",
+      "caption": "Part Akhir: Tinggal aku dan nomor 17 di dalam grup. Lalu ibuku menjawab telepon dengan kalimat itu...",
+      "hashtag": [
+        "#ceritahoror",
+        "#ending",
+        "#twist",
+        "#hororindonesia",
+        "#shorts"
+      ],
+      "adegan": [
+        {
+          "narasi": "Lanjutan... HP-ku bergetar hebat saat menyadari anggota grup alumni tinggal dua orang.",
+          "gambar": "Main character staring in horror at his glowing phone screen showing '2 participants left'.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "getar_hp"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Hanya tersisa nomor kontak pribadiku dan nomor asing milik si nomor tujuh belas.",
+          "gambar": "Close up of screen showing member list: Main Character's name and an unknown phone number.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Layar HP menyala redup di kegelapan kamar yang terasa makin membeku dingin.",
+          "gambar": "Dark bedroom scene, main character illuminated only by screen glow, looking panicked.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Nomor tujuh belas mengirimkan pesan teks pertama kali ke dalam grup sepi itu.",
+          "gambar": "Screen displaying a new incoming chat notification from number 17.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Pesan itu berbunyi dingin, \"Sekarang giliran kamu yang dilupakan oleh semua orang.\"",
+          "gambar": "Extreme close up of chat screen reading 'Sekarang giliran kamu yang dilupakan.'",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "shake"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "hantu",
+            "kelamin": "pria"
+          }
+        },
+        {
+          "narasi": "Foto profil WA nomor tujuh belas mendadak berubah menjadi foto kamarku sekarang.",
+          "gambar": "Main character looking at phone screen in dark room. In the dark room background behind him, pale creepy long fingers grip the wooden wardrobe edge.",
+          "tokoh": true,
+          "petunjuk": true,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "kanan",
+          "dialog": null
+        },
+        {
+          "narasi": "Panik setengah mati, aku langsung menekan tombol panggilan ke nomor HP ibuku.",
+          "gambar": "Main character frantically dialing phone contacts with terrified expression.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_up",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Panggilan terhubung suara desis aneh terdengar sebelum ibuku akhirnya menjawab telepon.",
+          "gambar": "Main character pressing phone tightly against his ear, dark scary room background.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku berteriak panik, \"Bu, tolong aku! Banyak hal aneh terjadi di kamarku!\"",
+          "gambar": "Main character shouting into phone screen in total terror and desperation.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "orang",
+            "kelamin": "pria"
+          }
+        },
+        {
+          "narasi": "Ibu menjawab polos dengan nada heran, \"Maaf, ini nomor siapa ya yang telepon?\"",
+          "gambar": "Main character's face freezing in shock, phone held next to ear, eyes wide open.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "orang",
+            "kelamin": "wanita"
+          }
+        },
+        {
+          "narasi": "Panggilanku terputus, namaku di lembar absen tua itu mulai memudar perlahan-lahan.",
+          "gambar": "Close-up of the old attendance list photo where the last name entry is physically dissolving into dust.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [
+            "kaca"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Kalau kalian punya grup alumni yang tiba-tiba ramai, coba cek daftar absennya.",
+          "gambar": "A dark empty bedroom with only a glowing smartphone abandoned on the bed under dim light.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        }
+      ]
+    }
+  ],
+  "tema": "konsep: Absen Kelas Lama"
+}
