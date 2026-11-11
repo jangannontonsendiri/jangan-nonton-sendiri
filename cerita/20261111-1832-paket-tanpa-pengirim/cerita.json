@@ -1,0 +1,507 @@
+{
+  "judul": "Paket Tanpa Pengirim",
+  "suasana": "sunyi",
+  "tokoh_utama": "An Indonesian man in his mid-20s with short messy black hair, wearing a gray t-shirt and dark casual trousers, anxious facial expression",
+  "part": [
+    {
+      "pertanyaan": "Kalau dapat paket misterius begini, kamu buka atau buang?",
+      "caption": "Misteri paket tanpa pengirim yang terus berdatangan tiap malam... Isinya bikin merinding!",
+      "hashtag": [
+        "#ceritahoror",
+        "#paketanomali",
+        "#hororindonesia",
+        "#kisahmisteri"
+      ],
+      "adegan": [
+        {
+          "narasi": "Jangan pernah buka paket misterius yang datang tanpa ada nama pengirimnya.",
+          "gambar": "A cardboard package lying on a dark wooden porch doorstep at night, illuminated by a flickering porch light, close-up shot.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tiap jam 12 malam, kotak kardus selalu tergeletak di teras rumahku.",
+          "gambar": "The main character standing at his open front door at midnight, looking down nervously at a small cardboard box on the doormat.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [
+            "pintu"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Paket pertama berisi jam tangan SMP-ku yang hilang belasan tahun lalu.",
+          "gambar": "Close-up of hands opening a cardboard box, revealing an old broken silver wristwatch inside, its hands stopped at midnight.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Malam berikutnya, datang lagi paket berisi gantungan kunci kayu milik almarhum Kakek.",
+          "gambar": "Hands holding a dusty carved wooden keychain taken from a second cardboard box on a wooden desk inside the house.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_up",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku mulai takut karena barang-barang kenangan ini harusnya sudah tidak ada.",
+          "gambar": "The main character holding the old keychain, looking terrified with sweat on his forehead in a dimly lit room.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku langsung memeriksa rekaman CCTV rumah lewat aplikasi di HP-ku.",
+          "gambar": "Close-up of a glowing smartphone screen held by hands, displaying a security camera feed interface.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "cctv"
+          ],
+          "suara": [
+            "getar_hp"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Anehnya, rekaman itu menunjukkan teras kosong tanpa ada kurir yang datang.",
+          "gambar": "CCTV camera view of an empty dark house porch at night, quiet and deserted with street lights in background.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [
+            "cctv"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Lampu teras berkedip pelan saat aku memperhatikan layar HP dengan teliti.",
+          "gambar": "Close-up of the smartphone screen showing CCTV feed. In the dark distance down the empty street, a faint small shadow of a young child stands watching.",
+          "tokoh": false,
+          "petunjuk": true,
+          "gerak": "zoom_in",
+          "efek": [
+            "cctv",
+            "flicker"
+          ],
+          "suara": [],
+          "fokus": "kanan",
+          "dialog": null
+        },
+        {
+          "narasi": "Jam tiga malam, suara ketukan pelan kembali terdengar dari pintu depan.",
+          "gambar": "The main character standing frozen in his dark hallway, looking towards the wooden front door in panic.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [
+            "ketukan"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku memberanikan diri membuka pintu dan mengambil kotak kardus kecil itu.",
+          "gambar": "The main character reaching down cautiously to pick up a small brown box from the porch floor in the cold night air.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tangan dingin menahan napas saat jemariku merobek plester pembungkus paketnya.",
+          "gambar": "Extreme close-up of trembling hands tearing open adhesive tape on a small cardboard package.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Isinya kunci kuningan berkarat, kunci rumah lamaku yang terbakar sepuluh tahun lalu.",
+          "gambar": "Close-up of an old rusty brass key with a burnt wooden tag resting inside the opened package box.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        }
+      ]
+    },
+    {
+      "pertanyaan": "Menurut kalian, siapa yang mengirim paket itu?",
+      "caption": "Paket kali ini tidak dikirim dari luar... Tapi dari DALAM RUMAH!",
+      "hashtag": [
+        "#ceritahoror",
+        "#misteriteror",
+        "#hororviraltiktok"
+      ],
+      "adegan": [
+        {
+          "narasi": "Lanjutan paket misterius. Kunci rumah terbakar itu bikin aku tidak bisa tidur.",
+          "gambar": "The main character sitting on his bed in a dimly lit bedroom at night, staring blankly with dark circles under his eyes.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Malam ini aku memutuskan begadang dan mengintip lewat lubang kecil pintu.",
+          "gambar": "The main character pressing his eye closely against the door peephole in a dark entrance hall.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Suasana luar sangat hening, hanya ada suara angin dan motor jauh.",
+          "gambar": "Peephole circular wide-angle perspective showing the empty dark porch outside the house at night.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku menempelkan mataku di lubang pintu dari jam satu sampai jam tiga.",
+          "gambar": "Side view of the main character standing motionless at the front door, looking through the peephole intently.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_up",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Sama sekali tidak ada orang atau bayangan yang mendekati teras rumah.",
+          "gambar": "Peephole perspective showing the deserted porch again under eerie moonlit darkness.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Merasa aman, aku berbalik badan untuk mengambil segelas air di dapur.",
+          "gambar": "The main character turning away from the front door into the dark living room hallway.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Langkahku terhenti seketika saat melihat meja ruang tamu di belakangku.",
+          "gambar": "The main character standing frozen in the dark living room. In the reflection of a dark turned-off TV screen on the wall, a creepy silhouette of a child is faintly visible standing behind the couch.",
+          "tokoh": true,
+          "petunjuk": true,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "kanan",
+          "dialog": null
+        },
+        {
+          "narasi": "Sebuah paket kardus baru sudah tergeletak manis di atas meja kayu.",
+          "gambar": "A fresh sealed cardboard package sitting neatly on top of the coffee table in the center of the dark living room.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Pengirimnya tidak lewat pintu depan, paket ini datang dari dalam rumah.",
+          "gambar": "Close-up of the main character looking down at the box on the table with wide terrified eyes.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Dengan gemetar, aku mendekati meja dan memotong solasi paket tersebut.",
+          "gambar": "Hands nervously cutting open the tape of the cardboard box with a small utility knife.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Di dalam kotak, ada sebuah foto Polaroid dengan warna agak kusam.",
+          "gambar": "Close-up inside the open cardboard box showing a single vintage Polaroid photograph lying face up.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Foto itu memperlihatkan diriku yang sedang tertidur lelap tadi malam.",
+          "gambar": "Extreme close-up of the Polaroid photo showing the main character sleeping peacefully in his bed, taken from high above his head.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        }
+      ]
+    },
+    {
+      "pertanyaan": "Kira-kira siapa anak kecil itu dan apa yang bakal terjadi selanjutnya?",
+      "caption": "Pesan terakhir di dalam paket bikin merinding disebujuk tubuh... Siapa sebenarnya dia?!",
+      "hashtag": [
+        "#ceritahoror",
+        "#twistending",
+        "#hororanimasi",
+        "#shorts"
+      ],
+      "adegan": [
+        {
+          "narasi": "Foto tidur itu membuat hatiku hancur dan seketika otakku berpikir keras.",
+          "gambar": "The main character dropping the Polaroid photo onto the table, clutching his head in panic.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tiba-tiba aku menyadari satu kenyataan mengerikan tentang semua barang misterius ini.",
+          "gambar": "Close-up of the main character's face illuminated by faint moonlight, realization and horror in his eyes.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Jam tangan, gantungan kunci, dan kunci rumah hilang pada malam yang sama.",
+          "gambar": "The three lost items—the watch, wooden keychain, and rusty key—arranged side-by-side on the table.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Yaitu malam sepuluh tahun lalu, ketika rumah lamaku habis dilalap kobaran api.",
+          "gambar": "A vivid memory flashback showing a wooden house engulfed in fierce orange flames and dark smoke at night.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kabut"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Lampu ruang tamu mendadak berkedip cepat lalu mati total menyisakan kegelapan.",
+          "gambar": "The living room hanging bulb flickering violently before turning completely pitch black.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [],
+          "fokus": "atas",
+          "dialog": null
+        },
+        {
+          "narasi": "Di atas meja, sebuah paket kardus terakhir sudah tergeletak begitu saja.",
+          "gambar": "A final open cardboard package on the living room table under dim eerie moonlight.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku mendekat dan mengambil selembar kertas lusuh dari dalam kotak kardus.",
+          "gambar": "The main character reaching out with trembling fingers to take an old yellowed paper from the package.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tulisan di kertas itu sangat kukenal, itu tulisan tangan khas diriku saat kecil.",
+          "gambar": "Close-up of handwritten messy child handwriting in dark ink on old burnt-edged paper.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Surat itu tertulis,",
+          "gambar": "The main character holding the letter up to read it, his shadow stretching long across the floor.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_up",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Surat itu berbunyi, \"Aku masih di rumah lama. Kenapa kamu pergi tanpa aku?\"",
+          "gambar": "Extreme close-up of the handwritten sentence on the paper: 'Aku masih di rumah lama. Kenapa kamu pergi tanpa aku?'",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "hantu",
+            "kelamin": "pria"
+          }
+        },
+        {
+          "narasi": "Napas dingin mendadak berembus tepat di belakangan leherku yang meremang.",
+          "gambar": "Close-up of the back of the main character's neck, goosebumps rising on his skin in the dark room.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Bayangan anak kecil hitam berjelaga perlahan muncul dari sudut ruangan gelap.",
+          "gambar": "A dark corner of the living room where a shadowy silhouette of a small soot-covered child stands silently, eyes dimly glowing.",
+          "tokoh": false,
+          "petunjuk": true,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget",
+            "kabut"
+          ],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Dan sekarang, pintu rumahku terkunci rapat, tak bisa dibuka lagi.",
+          "gambar": "Wide shot of the main character backing away towards the front door, grabbing the lock handles frantically in pitch darkness.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "pukulan"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        }
+      ]
+    }
+  ],
+  "tema": "konsep: Paket Tanpa Pengirim"
+}
