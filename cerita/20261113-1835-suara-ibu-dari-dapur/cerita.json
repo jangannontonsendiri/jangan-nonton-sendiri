@@ -1,0 +1,500 @@
+{
+  "judul": "Suara Ibu dari Dapur",
+  "suasana": "sunyi",
+  "tokoh_utama": "A 17-year-old Indonesian teenage boy with short black hair, wearing a casual dark grey t-shirt and shorts",
+  "part": [
+    {
+      "pertanyaan": "Di rumah kalian ada aturan aneh dari orang tua juga? Cerita di komen.",
+      "caption": "Jangan pernah langsung samperin kalau dipanggil dari dapur... Aturan rumah ini bikin merinding!",
+      "hashtag": [
+        "#ceritahoror",
+        "#aturananeh",
+        "#kisahnyata",
+        "#hororindonesia"
+      ],
+      "adegan": [
+        {
+          "narasi": "Ibuku punya satu aturan aneh sejak aku kecil saat di rumah.",
+          "gambar": "Interior of a modest Indonesian living room at night, warm dim lighting, cozy atmosphere with a wooden coffee table.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Ibu berkata, \"Kalau Ibu panggil dari dapur, wajib jawab dulu dari kamar, ya.\"",
+          "gambar": "An Indonesian mother in her 40s wearing a simple batik duster dress, sitting on a sofa talking to her son.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [],
+          "fokus": "kiri",
+          "dialog": {
+            "siapa": "orang",
+            "kelamin": "wanita"
+          }
+        },
+        {
+          "narasi": "Ibu bilang, \"Kalau beneran Ibu, Ibu pasti bakal jawab balik padamu.\"",
+          "gambar": "Close-up of the mother's face with a serious expression, looking directly at the young boy.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "orang",
+            "kelamin": "wanita"
+          }
+        },
+        {
+          "narasi": "Aku selalu menganggap larangan itu cuma bercandaan lama untuk menakut-nakuti saja.",
+          "gambar": "The 17-year-old Indonesian boy smiling and shaking his head dismissively sitting in the living room.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Malam Minggu itu, koper merah Ibu sudah rapi tergeletak dekat TV.",
+          "gambar": "A bright red packed travel suitcase standing next to an old television cabinet in the living room.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Ibu siap berangkat dinas luar kota besok pagi-pagi sekali dengan travel.",
+          "gambar": "The mother checking her travel document on the table while sitting beside her son.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Kami berdua santai nonton acara TV sambil menikmati camilan malam hangat.",
+          "gambar": "Wide shot of mother and son sitting together on the couch watching the glowing TV screen in the dark room.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Suasana sangat tenang, kipas angin tua di sudut ruang berputar pelan.",
+          "gambar": "An old standing electric fan oscillating slowly in the corner of the dimly lit living room.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_up",
+          "efek": [],
+          "suara": [],
+          "fokus": "kanan",
+          "dialog": null
+        },
+        {
+          "narasi": "Tiba-tiba notifikasi ponselku bergetar keras di atas meja kayu ruang tengah.",
+          "gambar": "A smartphone resting on the wooden coffee table lighting up with a bright screen vibration.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "getar_hp"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Suasana berubah merinding saat angin dingin terasa berhembus dari arah dapur.",
+          "gambar": "Living room view looking towards the dark kitchen doorway in the background. A pale, bony hand with long fingers is gripping the kitchen wooden doorframe sinisterly.",
+          "tokoh": true,
+          "petunjuk": true,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "kanan",
+          "dialog": null
+        },
+        {
+          "narasi": "Tiba-tiba dari dapur gelap terdengar suara yang sangat akrab memanggil namaku.",
+          "gambar": "The pitch-black opening of the kitchen doorway, eerie dim shadows looming inside.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Suara itu persis suara Ibu, \"Nak, sini bantuin Ibu di dapur sebentar.\"",
+          "gambar": "Extreme close-up on the teenage boy's shocked face staring wide-eyed toward the dark kitchen.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "hantu",
+            "kelamin": "wanita"
+          }
+        }
+      ]
+    },
+    {
+      "pertanyaan": "Kalau kamu jadi aku, kamu bakal menoleh ke dapur nggak?",
+      "caption": "Suara Ibu memanggil dari dapur, tapi Ibu asli ada di sebelahku... Siapa di sana?",
+      "hashtag": [
+        "#ceritahoror",
+        "#misteri",
+        "#malamjumat",
+        "#shorts"
+      ],
+      "adegan": [
+        {
+          "narasi": "Lanjutan. Aku kaget karena Ibu padahal sedang duduk tepat di sebelahku.",
+          "gambar": "The teenage boy turning his head rapidly to look at his mother sitting right next to him on the sofa.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Ibu mendadak memegang tanganku sangat kuat sampai jariku terasa begitu sakit.",
+          "gambar": "Close-up of the mother's hand tightly gripping her son's arm, knuckles turning white.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Ibu menatapku lurus dengan wajah pucat lalu berbisik, \"Jawab dari sini.\"",
+          "gambar": "The mother looking terrified, pale face, whispering closely to her son's ear.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "atas",
+          "dialog": {
+            "siapa": "orang",
+            "kelamin": "wanita"
+          }
+        },
+        {
+          "narasi": "Jantungku berdebar kencang, aku memberanikan diri berteriak, \"Iya Bu, sebentar lagi.\"",
+          "gambar": "The boy sweating, mouth open shouting nervously toward the hallway while trembling.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "orang",
+            "kelamin": "pria"
+          }
+        },
+        {
+          "narasi": "Sesaat setelah suara sahutanku, gema panggilan dari arah dapur langsung terhenti.",
+          "gambar": "Dead silence in the living room, shadows stretching long across the floor from the doorway.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Keheningan mencekam menyelimuti ruang tengah, bahkan suara kipas angin serasa lenyap.",
+          "gambar": "Wide shot of the dimly lit room, frozen in absolute tension as both look towards the hallway.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Lampu gantung di atas kami mendadak berkedip-kedip redup beberapa kali berturut-turut.",
+          "gambar": "Low angle view of a single ceiling light bulb flickering erratic yellowish light in the darkness.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_up",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [],
+          "fokus": "atas",
+          "dialog": null
+        },
+        {
+          "narasi": "Dari dalam lorong dapur gelap, terdengar bunyi langkah kaki perlahan mendekat.",
+          "gambar": "Dark hallway floor leading from the kitchen, heavy shadowy footsteps coming forward.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Pantulan layar TV mati memperlihatkan kegelapan ruangan yang sangat menegangkan malam itu.",
+          "gambar": "A reflection in the black glass screen of the turned-off TV: behind the boy and mother, a tall distorted shadowy silhouette with an inhumanly long neck is visible standing silently.",
+          "tokoh": true,
+          "petunjuk": true,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Langkah kaki itu makin dekat, melangkah berat menyeret sandal rumah milik Ibu.",
+          "gambar": "Close-up of human-like pale feet wearing rubber house slippers dragging slowly on the floor tiles.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Sosok itu perlahan berdiri tepat di ambang pintu dapur yang gelap gulita.",
+          "gambar": "A tall humanoid creature emerging partially from the kitchen doorway dark entrance.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Wajahnya mirip Ibu tapi bentuknya terlalu panjang ganjil dan tersenyum lebar.",
+          "gambar": "Terrifying close-up of a creature wearing the mother's face, but with abnormally stretched long jaw, wide uncanny staring eyes, and an unnaturally wide, malicious grin.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget",
+            "shake"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        }
+      ]
+    },
+    {
+      "pertanyaan": "Menurut kalian, apa sebenarnya yang ada di dalam kamar Ibu?",
+      "caption": "Ibu sudah pergi ke luar kota... tapi kenapa suaranya ada di dalam kamar?",
+      "hashtag": [
+        "#ceritahoror",
+        "#twist",
+        "#penampakan",
+        "#viral"
+      ],
+      "adegan": [
+        {
+          "narasi": "Lanjutan. Ibu langsung menepuk pundakku dan berbisik, \"Baca doa, jangan menoleh.\"",
+          "gambar": "Mother covering her son's eyes with her trembling hands, whispering intensely in his ear.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "orang",
+            "kelamin": "wanita"
+          }
+        },
+        {
+          "narasi": "Aku memejamkan mata rapat-rapat sambil merapalkan doa dengan badan gemetaran hebat.",
+          "gambar": "Close-up of the boy squeezing his eyes shut tight, lips moving rapidly in desperate prayer.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Langkah sosok ganjil itu perlahan menjauh kembali menembus kegelapan lorong dapur.",
+          "gambar": "The creepy long silhouette receding back into the dark kitchen doorway, fading into shadows.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "kanan",
+          "dialog": null
+        },
+        {
+          "narasi": "Suasana akhirnya kembali hening sampai fajar menyingsing membiaskan cahaya pagi terang.",
+          "gambar": "Morning sunlight streaming brightly through the living room window, illuminating the safe clean house.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_up",
+          "efek": [],
+          "suara": [],
+          "fokus": "atas",
+          "dialog": null
+        },
+        {
+          "narasi": "Pagi harinya saat sarapan, Ibu menceritakan kisah lama keluarga kami padaku.",
+          "gambar": "The boy and his mother sitting at the kitchen table in daylight with tea cups, talking calmly.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Dulu nenek juga punya aturan ketat yang sama persis di rumahnya.",
+          "gambar": "An old framed black and white photograph of an elderly Indonesian grandmother on the wall.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "\"Ada hal lain yang suka meniru suara kita,\" kata Ibu menenangkan.",
+          "gambar": "Mother smiling softly, patting her son's hand over the dining table warmly.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "orang",
+            "kelamin": "wanita"
+          }
+        },
+        {
+          "narasi": "Aku merasa lega mendengarnya dan mengantar Ibu naik travel luar kota.",
+          "gambar": "The boy waving goodbye to a travel van leaving down the suburban street outside his house.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [],
+          "fokus": "kiri",
+          "dialog": null
+        },
+        {
+          "narasi": "Malam harinya aku sendirian di rumah, suasana sunyi menyelimuti seluruh ruangan.",
+          "gambar": "The teenage boy sitting alone on the living room couch at night, holding his smartphone in silence.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Saat aku lewat depan kamar Ibu yang terkunci, bulu kudukku mendadak berdiri.",
+          "gambar": "The boy walking down the dark hallway past his mother's locked bedroom door, freezing in place.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Celah bawah pintu kamar Ibu yang gelap memperlihatkan bayangan berdiri diam.",
+          "gambar": "Close-up of the gap under the locked wooden bedroom door. Through the dark crack, two pale long gray toes and an unnatural glowing eye are visible pressed flat against the floor.",
+          "tokoh": false,
+          "petunjuk": true,
+          "gerak": "zoom_in",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Dari dalam kamar kosong itu terdengar suara Ibu, \"Nak, kok nggak jawab dulu?\"",
+          "gambar": "Close-up shot of the locked door brass handle slowly turning by itself from inside the pitch-black bedroom.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget",
+            "shake"
+          ],
+          "suara": [
+            "pintu"
+          ],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "hantu",
+            "kelamin": "wanita"
+          }
+        }
+      ]
+    }
+  ],
+  "tema": "konsep: Suara Ibu dari Dapur"
+}
