@@ -1,0 +1,517 @@
+{
+  "judul": "Lift Lantai 13",
+  "suasana": "sunyi",
+  "tokoh_utama": "A 25-year-old Indonesian male office worker with short messy black hair, wearing a navy blue button-up shirt with rolled sleeves, work ID card on a red lanyard around his neck, carrying a leather backpack and holding a smartphone.",
+  "part": [
+    {
+      "pertanyaan": "Kalau tombol 13 nyala sendiri, kamu turun di lantai 12 atau ikut naik?",
+      "caption": "Jangan sekali-kali pencet tombol lift yang muncul di tengah malam...",
+      "hashtag": [
+        "#ceritahoror",
+        "#misteri",
+        "#liftlantai13",
+        "#urbanlegend"
+      ],
+      "adegan": [
+        {
+          "narasi": "Apartemen tempat tinggalku sama sekali tidak memiliki lantai 13.",
+          "gambar": "Apartment lobby elevator area late at night, quiet dimly lit interior with elevator door.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tapi setiap jam 12 malam tepat, tombol angka 13 mendadak muncul.",
+          "gambar": "Close-up of modern metallic elevator wall panel showing button numbers 1 to 12.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Pak satpam cuma tertawa santai saat kutanya, \"Itu paling cuma stiker iseng.\"",
+          "gambar": "Friendly middle-aged security guard in uniform laughing near apartment reception desk.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [],
+          "fokus": "kiri",
+          "dialog": {
+            "siapa": "orang",
+            "kelamin": "pria"
+          }
+        },
+        {
+          "narasi": "Malam ini aku pulang lembur dari kantor sekitar jam 12 lewat sedikit.",
+          "gambar": "Male worker walking along quiet outdoor corridor of apartment building late at night.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Lobi apartemen sangat sepi, aku melangkah masuk sambil sibuk mengetik pesan ponsel.",
+          "gambar": "Male worker standing in empty apartment elevator hallway looking down typing on smartphone.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "getar_hp"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Pintu lift stainless steel terbuka lebar, meniupkan udara dingin yang sangat aneh.",
+          "gambar": "Stainless steel elevator doors opening wide into bright interior, cold mist swirling out.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kabut"
+          ],
+          "suara": [
+            "pintu"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku masuk ke dalam lift sendirian dan langsung menekan tombol lantai 12.",
+          "gambar": "Inside elevator, male worker pressing button 12. In the reflective stainless steel wall, a shadowy identical male duplicate is visible standing right behind him.",
+          "tokoh": true,
+          "petunjuk": true,
+          "gerak": "pan_up",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tiba-tiba tombol angka 13 di papan lift menyala merah redup sendiri.",
+          "gambar": "Close-up of elevator button panel, button 13 glowing dim red automatically.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku panik menekan tombol batal berulang kali, tapi tombol itu tetap menyala.",
+          "gambar": "Close-up of male worker's hand frantically tapping cancel button on glowing elevator panel.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Lift bergerak naik melampaui lantai 12 tanpa menunjukkan tanda-tanda akan berhenti.",
+          "gambar": "Digital floor indicator inside elevator passing number 12 and continuing upward movement.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_up",
+          "efek": [],
+          "suara": [],
+          "fokus": "atas",
+          "dialog": null
+        },
+        {
+          "narasi": "Dentang lift berbunyi nyaring ketika indikator angka di atas pintu menunjukkan 13.",
+          "gambar": "Digital floor indicator above elevator door shining brightly with red number 13.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "atas",
+          "dialog": null
+        },
+        {
+          "narasi": "Pintu terbuka perlahan, menampilkan lorong gelap dengan semua pintu nomor 1313.",
+          "gambar": "Elevator doors opening to reveal pitch black creepy apartment hallway with door numbers all reading 1313.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget"
+          ],
+          "suara": [
+            "pintu"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        }
+      ]
+    },
+    {
+      "pertanyaan": "Menurut kalian, siapa yang sekarang tinggal di unitku?",
+      "caption": "Ternyata aku tidak sendirian di lantai 13...",
+      "hashtag": [
+        "#ceritahoror",
+        "#misteri",
+        "#hororindonesia",
+        "#creepypasta"
+      ],
+      "adegan": [
+        {
+          "narasi": "Lanjutan... Lorong lantai 13 itu terasa sangat kaku dan berbau tanah basah.",
+          "gambar": "Dark narrow apartment hallway on 13th floor, peeling yellowed wallpaper and damp ceiling stains.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku segera keluar dari lift untuk mencari pintu tangga darurat terdekat.",
+          "gambar": "Male worker stepping out of elevator cautiously into dark eerie corridor looking around.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Gagang pintu tangga darurat ternyata terkunci rapat dan tidak bisa digerakkan.",
+          "gambar": "Close-up of male worker trying to turn heavy rusty emergency staircase door handle.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "pukulan"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Dari ujung lorong yang remang, aku melihat sesosok penghuni berdiri diam.",
+          "gambar": "Dim hallway view showing a tall shadowy figure standing motionless at the far dark end.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "kanan",
+          "dialog": null
+        },
+        {
+          "narasi": "Orang itu berdiri sangat kaku sambil menempelkan dahi dan wajahnya ke tembok.",
+          "gambar": "Creepy male resident standing unnaturally stiff, face pressed completely flat against hallway wall.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku mendekat perlahan dan bertanya gemetar, \"Permisi, tangga darurat sebelah mana ya?\"",
+          "gambar": "Male worker approaching creepy resident facing wall. On the wall, the resident's shadow shows abnormally long thin fingers clutching the wallpaper.",
+          "tokoh": true,
+          "petunjuk": true,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tanpa menoleh sedikit pun, suara beratnya berbisik kaku dari balik tembok.",
+          "gambar": "Extreme close-up of back of creepy resident's pale neck and disheveled dark hair pressed against wall.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Pria itu berbisik pelan, \"Jangan naik lift lagi. Aku sudah tujuh tahun di sini.\"",
+          "gambar": "Side angle of creepy resident's face pressed to wall, mouth barely moving, pale skin.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "hantu",
+            "kelamin": "pria"
+          }
+        },
+        {
+          "narasi": "Bulu kudukku berdiri seketika, udara di sekitar terasa makin membeku dan mencekam.",
+          "gambar": "Close-up of male worker's face pale with utter terror and eyes wide in panic.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tiba-tiba dentang lift di belakangku berbunyi nyaring memecah kesunyian lorong.",
+          "gambar": "Elevator door behind male worker glowing with bright chime indicator light turning on.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [
+            "pintu"
+          ],
+          "fokus": "kiri",
+          "dialog": null
+        },
+        {
+          "narasi": "Pintu lift terbuka lebar perlahan-lahan secara otomatis tanpa ada yang memanggil.",
+          "gambar": "Elevator doors opening slowly, bright overhead interior light flooding dark hallway.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "pintu"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Di dalam lift berdiri diriku sendiri yang sedang menunduk sibuk main HP.",
+          "gambar": "Inside elevator stands an exact duplicate of the male worker wearing navy shirt, red lanyard, looking down at smartphone.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        }
+      ]
+    },
+    {
+      "pertanyaan": "Menurutmu, gimana cara membedakan aku yang asli dengan yang palsu?",
+      "caption": "Jangan pernah masuk lift bareng aku kalau aku nggak menyapa...",
+      "hashtag": [
+        "#ceritahoror",
+        "#twist",
+        "#doppelganger",
+        "#hororanimasi"
+      ],
+      "adegan": [
+        {
+          "narasi": "Lanjutan... Aku melotot tak percaya melihat kembaranku berdiri santai di dalam lift.",
+          "gambar": "Male worker staring in complete disbelief at duplicate clone standing inside open elevator.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tanpa berpikir panjang, aku langsung berlari kencang berusaha menerobos masuk lift.",
+          "gambar": "Male worker sprinting desperately towards open elevator door with outstretched arm.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_left",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Namun kembaranku perlahan menengadah perlahan, menatap mataku dengan tatapan kosong.",
+          "gambar": "Close-up of clone inside elevator raising head slowly, revealing pitch black hollow eyes.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Dia menekan tombol tutup pintu sambil mengukir senyuman yang sangat lebar.",
+          "gambar": "Clone inside elevator smiling unnaturally wide while pressing door close button on elevator panel.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Pintu lift tertutup rapat persis di depan mukaku sebelum aku sempat menyentuhnya.",
+          "gambar": "Elevator doors slamming shut right in front of male worker's outstretched hand.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "pintu"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Lampu lorong lantai 13 mendadak padam satu per satu, menyisakanku dalam kegelapan.",
+          "gambar": "Corridor ceiling lights shutting off sequentially, plunging male worker into terrifying dark.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Pagi harinya, tetangga lantai 12 melihatku keluar dari lift seperti biasa.",
+          "gambar": "CCTV camera perspective of elevator door opening on bright floor 12 in morning light. In dark crack above open elevator door, a pale creepy clawed hand is clinging inside.",
+          "tokoh": true,
+          "petunjuk": true,
+          "gerak": "pan_down",
+          "efek": [
+            "cctv"
+          ],
+          "suara": [
+            "pintu"
+          ],
+          "fokus": "atas",
+          "dialog": null
+        },
+        {
+          "narasi": "Tetanggaku menyapa ramah, \"Pagi Mas, kok tumben mukanya pucat banget begitu?\"",
+          "gambar": "Friendly middle-aged male neighbor smiling and greeting fake male worker in sunlit hallway.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [],
+          "fokus": "kiri",
+          "dialog": {
+            "siapa": "orang",
+            "kelamin": "pria"
+          }
+        },
+        {
+          "narasi": "Kembaranku tidak menjawab sedikit pun dan terus melangkah kaku menunduk main HP.",
+          "gambar": "Fake male worker walking stiffly past neighbor without looking up from smartphone.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Sosok asliku sebenarnya masih terjebak di lorong 1313 untuk selamanya.",
+          "gambar": "Real male worker sitting curled up on damp dark floor of hallway 1313 in pitch blackness.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Kalau kalian ketemu aku di lift lantai 12 dan aku nggak menyapa...",
+          "gambar": "Close-up profile of fake male worker inside elevator, cold emotionless eyes.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Jangan pernah masuk ke dalam lift itu bareng aku.",
+          "gambar": "Elevator doors closing slowly, darkness engulfing the cold unblinking face of the clone.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        }
+      ]
+    }
+  ],
+  "tema": "konsep: Lift Lantai 13"
+}
