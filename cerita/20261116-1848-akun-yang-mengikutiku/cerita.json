@@ -1,0 +1,463 @@
+{
+  "judul": "Akun yang Mengikutiku",
+  "suasana": "sunyi",
+  "tokoh_utama": "A 23-year-old Indonesian woman with shoulder-length black hair, wearing a dark green hoodie and jeans.",
+  "part": [
+    {
+      "pertanyaan": "Kalau kamu jadi aku, kamu bakal lapor polisi atau balas DM akun itu?",
+      "caption": "Makin hari foto yang diunggah akun misterius ini makin dekat... Sampai tadi jam 2 pagi. #ceritahoror #misteri",
+      "hashtag": [
+        "#ceritahoror",
+        "#misteri",
+        "#stalker",
+        "#kisahnyata",
+        "#seram"
+      ],
+      "adegan": [
+        {
+          "narasi": "Ada akun Instagram tanpa nama yang mendadak posting foto-foto diriku dari belakang.",
+          "gambar": "A glowing smartphone screen displaying an anonymous Instagram profile feed showing candid pictures of a young woman taken from behind.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Foto pertama diambil dari seberang jalan kantor, pas aku nunggu jemputan ojek online.",
+          "gambar": "POV from across a busy street looking at the main character standing on the sidewalk at dusk waiting for her ride.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Foto kedua diposting besok malamnya, diambil dari sudut parkiran motor yang sangat sepi.",
+          "gambar": "Dim underground basement parking lot. On the wet concrete floor, a dirty water puddle clearly reflects a tall, unnaturally thin pale figure holding up a smartphone, pointing at the main character.",
+          "tokoh": true,
+          "petunjuk": true,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku mulai merasa risih dan ketakutan, lalu memutuskan buru-buru pulang ke rumah kos.",
+          "gambar": "Main character walking rapidly down a quiet, dimly lit narrow alley looking back over her shoulder with an anxious expression.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Sesampainya di gerbang kosan, aku langsung masuk dan mengunci pagar tinggi-tinggi.",
+          "gambar": "Close-up of the main character hastily locking a tall black iron gate of a boarding house at night.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "pintu"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Saat aku sedang menyeduh mie instan di kamar, ponselku mendadak bergetar kencang.",
+          "gambar": "A cozy small bedroom desk with a steaming cup of instant noodles beside a smartphone glowing brightly.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Foto ketiga diunggah, memperlihatkan diriku yang baru saja membuka pintu gerbang kosan.",
+          "gambar": "Smartphone screen showing a dark photo of the main character unlocking the iron gate from a close street perspective.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Akun misterius ini tanpa nama, tanpa followers, dan hanya mengikuti akun pribadiku saja.",
+          "gambar": "Close-up of Instagram account profile page showing no profile picture, 0 followers, 0 posts, and following only 1 account.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "atas",
+          "dialog": null
+        },
+        {
+          "narasi": "Karena makin panik, aku mengunci pintu kamar rapat-rapat dan memasang gerendel tambahan.",
+          "gambar": "Main character locking her wooden bedroom door from inside and sliding a heavy metal latch locked tight.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_up",
+          "efek": [],
+          "suara": [
+            "pintu"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tepat jam dua pagi, ponselku kembali bergetar menandakan ada unggahan foto terbaru.",
+          "gambar": "Dark bedroom lit only by the glowing blue screen of a smartphone buzzing violently on the bed sheet at 02:00 AM.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "getar_hp"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Foto keempat diambil dari lorong kosan gelap, tepat berada di depan pintu kamarku!",
+          "gambar": "Terrifying photo displayed on smartphone screen showing the main character's bedroom wooden door from the dark hallway outside.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget",
+            "flicker"
+          ],
+          "suara": [
+            "ketukan"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        }
+      ]
+    },
+    {
+      "pertanyaan": "Ada yang sadar sosok di pantulan genangan? Ngaku di komen.",
+      "caption": "Aku kira nginep di rumah temen bakal aman. Ternyata foto baru ini bikin makin merinding... #ceritahoror #part2",
+      "hashtag": [
+        "#ceritahoror",
+        "#stalker",
+        "#hororindonesia",
+        "#seram",
+        "#viral"
+      ],
+      "adegan": [
+        {
+          "narasi": "Lanjutan. Tanpa pikir panjang, paginya aku packing dan kabur menginap di rumah temanku.",
+          "gambar": "Main character hastily packing clothes into a duffel bag inside her bedroom under bright morning sunlight.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Siska menyambutku hangat dan berkata, \"Tenang aja, di rumahku kamu pasti aman kok.\"",
+          "gambar": "A friendly female friend welcoming the main character warmly at the front door of a suburban house.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "orang",
+            "kelamin": "wanita"
+          }
+        },
+        {
+          "narasi": "Hari pertama di rumah Siska berlalu tenang tanpa ada notifikasi foto baru.",
+          "gambar": "Main character sitting relaxed on a living room couch drinking tea next to her friend during daytime.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Memasuki hari kedua situasi masih sangat aman, membuat hatiku merasa agak lega.",
+          "gambar": "Main character smiling softly while looking at her quiet phone screen sitting near a sunlit window.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Malam harinya kami menonton televisi bersama di ruang tamu sampai larut malam.",
+          "gambar": "Living room late at night with TV screen casting dim blue light on main character and her friend sitting together.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Sekitar jam sebelas malam, aku pamit tidur di kamar tamu lantai bawah.",
+          "gambar": "Main character walking into a cozy guest bedroom on the ground floor carrying a pillow.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [
+            "pintu"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Kipas angin tua berputar pelan, disertai lampu kamar teras yang mendadak kedap-kedip.",
+          "gambar": "Guest bedroom interior with an old standing fan. In the shadow behind the bedroom window glass, two faint glowing eyes and a sinister silhouette silently watch inside.",
+          "tokoh": true,
+          "petunjuk": true,
+          "gerak": "zoom_in",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [],
+          "fokus": "kanan",
+          "dialog": null
+        },
+        {
+          "narasi": "Baru sebentar memejamkan mata, ponsel di sebelah bantal mendadak bergetar sangat kuat.",
+          "gambar": "Main character opening her eyes suddenly in dark bedroom as her phone screen flashes brightly on the mattress.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "getar_hp"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Sebuah notifikasi Instagram muncul, akun misterius itu menandai namaku di postingan baru.",
+          "gambar": "Close-up of smartphone screen displaying an Instagram notification pop-up stating 'You were tagged in a photo'.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Dengan jari gemetaran dan jantung berdebar kencang, aku memberanikan diri membuka fotonya.",
+          "gambar": "Trembling hands of the main character holding the illuminated smartphone in the pitch black bedroom.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Foto terbaru memperlihatkan aku sedang tertidur di kasur, diambil tepat dari atas plafon!",
+          "gambar": "Shocking photo on smartphone screen depicting an overhead high-angle view of the main character lying asleep on her bed inside this exact room.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        }
+      ]
+    },
+    {
+      "pertanyaan": "Kalau HP berdering di kolong kasurmu, kamu bakal kabur atau intip?",
+      "caption": "Jangan pernah buka postingan terakhir... Sosok di pantulan kaca itu ternyata ada di dekatku. #ceritahoror #tamat",
+      "hashtag": [
+        "#ceritahoror",
+        "#twist",
+        "#tamat",
+        "#seram",
+        "#misteri"
+      ],
+      "adegan": [
+        {
+          "narasi": "Lanjutan. Aku mendadak melompat dari kasur dengan napas memburu dan rasa takut luar biasa.",
+          "gambar": "Main character jumping off her bed in utter panic, standing in the middle of the dark room breathing heavily.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Dengan tangan gemetar, aku mencoba memperbesar foto-foto lama dari akun teror tersebut.",
+          "gambar": "Extreme close-up of main character pinch-zooming into older photo uploads on her smartphone screen.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Saat aku perbesar foto di parkiran, ada detail mengerikan di genangan air bawah motor.",
+          "gambar": "Close-up of smartphone screen zooming into a dirty puddle reflection showing a blurred silhouette holding a phone.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Di genangan itu terpantul sosok pria sangat kurus, tinggi ganjil, sedang memegang ponsel.",
+          "gambar": "High contrast view of the reflection showing a scary, unnaturally elongated pale humanoid creature holding a smartphone.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Belum sempat aku memanggil Siska, ponselku kembali memunculkan notifikasi postingan foto terbaru.",
+          "gambar": "Main character frozen in fear as a new post push notification flashes across her screen.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_up",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku menyentuh layar ponsel, melihat foto yang baru saja diunggah beberapa detik lalu.",
+          "gambar": "Main character tapping the screen while staring with wide terrified eyes.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Foto itu menampilkan sudut pandang dari bawah dipan kasur, melihat ke arah kakiku.",
+          "gambar": "Screen showing a dark low-angle perspective shot from under a bed wooden frame looking up at feet. In the dark gap under the bed frame, long pale bony fingers stretch out touching the floor tiles.",
+          "tokoh": false,
+          "petunjuk": true,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Di layar terlihat sepasang kakiku berdiri di samping tempat tidur dengan latar gelap.",
+          "gambar": "Photo on phone showing main character's legs in dark green pants and bare feet standing near the bed edge.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Caption foto terbaru itu tertulis singkat dan sangat jelas: 'Jangan noleh ke bawah.'",
+          "gambar": "Close-up of text caption on Instagram reading 'Jangan noleh ke bawah.' in stark white text.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Seluruh tubuhku langsung kaku seketika, udara terasa membeku di dalam kamar ini.",
+          "gambar": "Main character standing paralyzed in middle of room staring down with horror in absolute dark atmosphere.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Detik berikutnya, suara dering panggilan ponsel mendadak nyaring terdengar dari kolong kasur.",
+          "gambar": "Scary close-up shot of the pitch black gap underneath the bed frame as a muffled phone ringtone originates from deep beneath.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget",
+            "flicker"
+          ],
+          "suara": [
+            "getar_hp"
+          ],
+          "fokus": "bawah",
+          "dialog": null
+        }
+      ]
+    }
+  ],
+  "tema": "konsep: Akun yang Mengikutiku"
+}
