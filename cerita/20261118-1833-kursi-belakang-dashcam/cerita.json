@@ -1,0 +1,510 @@
+{
+  "judul": "Kursi Belakang Dashcam",
+  "suasana": "sunyi",
+  "tokoh_utama": "A 25-year-old Indonesian man with short messy black hair, wearing a casual grey t-shirt.",
+  "part": [
+    {
+      "pertanyaan": "Kalau kamu yang beli mobil itu, kamu jual lagi atau tetap pakai?",
+      "caption": "Beli mobil bekas murah banget, tapi isi dashcam pemilik lamanya bikin merinding.",
+      "hashtag": [
+        "#ceritahoror",
+        "#dashcam",
+        "#hororindonesia",
+        "#kisahnyata"
+      ],
+      "adegan": [
+        {
+          "narasi": "Jangan pernah tergiur beli mobil bekas murah tanpa cek isi memori dashcam-nya.",
+          "gambar": "Close-up of a hand holding a dusty memory card next to a car dashboard.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Kemarin aku beli sedan tua ini seharga sepuluh juta saja dari penjual online.",
+          "gambar": "An old silver sedan parked in front of a modest Indonesian house at dusk.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Pas aku keliling malam hari, aku sengaja menyalakan memori dashcam bawaan pemilik lama.",
+          "gambar": "Interior of a car at night, a small glowing dashcam screen mounted on the windshield.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "cctv"
+          ],
+          "suara": [],
+          "fokus": "atas",
+          "dialog": null
+        },
+        {
+          "narasi": "Di rekaman itu, pemilik lama menyetir sendirian menembus jalanan desa yang sangat gelap.",
+          "gambar": "Dashcam video perspective showing a narrow dark asphalt road surrounded by dense banana trees.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "cctv"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Pria itu terus melirik spion tengah dengan wajah pucat dan sangat ketakutan.",
+          "gambar": "Inside the video playback, a nervous middle-aged driver glances anxiously at the rearview mirror.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "cctv"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "atas",
+          "dialog": null
+        },
+        {
+          "narasi": "Berulang kali dia gemetar dan berbisik ke belakang, \"Tolong turun.\"",
+          "gambar": "Close-up on the previous driver's mouth trembling inside the dark car interior.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "cctv"
+          ],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "orang",
+            "kelamin": "pria"
+          }
+        },
+        {
+          "narasi": "Padahal kursi belakang mobil itu benar-benar kosong, tidak ada siapa-siapa di sana.",
+          "gambar": "Camera view angle showing completely empty black fabric backseats illuminated faintly by streetlights.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_left",
+          "efek": [
+            "cctv"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku cuma tertawa menganggap pemilik lama itu cuma bikin konten rekayasa belaka.",
+          "gambar": "The main protagonist sitting in driver seat laughing while holding his smartphone playback, reflected in the rearview mirror where two glowing eyes lurk faintly in the dark backseat.",
+          "tokoh": true,
+          "petunjuk": true,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "atas",
+          "dialog": null
+        },
+        {
+          "narasi": "Tapi rasa penasaran membuatku mengecek rekaman dashcam milikku sendiri tadi pagi.",
+          "gambar": "Protagonist sitting at a desk in his bedroom, inserting a micro SD card into a laptop screen.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "kaca"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Rekaman itu memperlihatkan aku menyetir pulang sendirian menembus gerimis semalam.",
+          "gambar": "Dashcam view from protagonist's car driving through rain-slicked city streets at night.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "cctv",
+            "hujan"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tiba-tiba di menit kelima, suaraku sendiri terdengar gemetar di dalam rekaman.",
+          "gambar": "Laptop screen displaying video wave audio spikes sharply in the middle of playback.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku mendengar diriku sendiri berbisik pelan, \"Tolong turun.\"",
+          "gambar": "Close-up of protagonist's pale face on laptop screen, looking terrified in the video playback.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "cctv",
+            "kaget"
+          ],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "orang",
+            "kelamin": "pria"
+          }
+        },
+        {
+          "narasi": "Padahal aku sama sekali tidak ingat pernah mengucapkan kalimat itu semalam.",
+          "gambar": "Protagonist staring horror-stricken at his laptop screen in a dim room.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        }
+      ]
+    },
+    {
+      "pertanyaan": "Ada yang lihat mata di spion? Di detik keberapa?",
+      "caption": "Makin aneh, sabuk pengaman belakang narik sendiri padahal nggak ada orang.",
+      "hashtag": [
+        "#ceritahoror",
+        "#dashcam",
+        "#misteri",
+        "#seram"
+      ],
+      "adegan": [
+        {
+          "narasi": "Lanjutan kemarin, aku langsung memasang kamera tambahan yang mengarah tepat ke kursi belakang.",
+          "gambar": "Hands mounting a small secondary action camera onto the car ceiling facing back seats.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku berniat membuktikan kalau mobil ini aman dan cuma halusinasiku saja.",
+          "gambar": "Protagonist adjusting steering wheel with a determined expression inside car daytime.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Malamnya aku sengaja menyetir sendirian keliling kompleks perumahan yang sepi.",
+          "gambar": "Car driving slowly down an empty suburban residential street with dim streetlights.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Saat mengecek hasil rekaman, kursi belakang memang terlihat benar-benar kosong melompong.",
+          "gambar": "Video footage showing empty car backseat illuminated by red brake lights outside window.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "cctv"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tapi anehnya, setiap kali aku menginjak rem, ada kejadian yang bikin merinding.",
+          "gambar": "Close-up of protagonist's foot pressing hard on the car brake pedal.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Sabuk pengaman kursi belakang tiba-tiba tertarik kencang seperti menahan beban tubuh manusia.",
+          "gambar": "Rear seatbelt pulled completely tight diagonally across an empty seat as if wrapped around invisible body.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "cctv",
+            "shake"
+          ],
+          "suara": [
+            "pukulan"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tali sabuk itu menegang keras seolah ada penumpang yang terdorong ke depan.",
+          "gambar": "Extreme close-up of the mechanical seatbelt buckle stretched to its maximum limit.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "cctv"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku mencoba menenangkan diri dan lanjut memutar video detik demi detik.",
+          "gambar": "Protagonist leaning close to video player, while outside the car window behind him, a shadowy gaunt silhouette sits blurred in the background light.",
+          "tokoh": true,
+          "petunjuk": true,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tiba-tiba notifikasi ponselku berbunyi kencang, temanku mengirim pesan menyuruhku menjual mobil itu.",
+          "gambar": "Smartphone screen glowing in dark car displaying text message: 'Jual mobil itu sekarang!'",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [
+            "getar_hp"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tanganku makin gemetar saat memutar bagian akhir dari rekaman video tersebut.",
+          "gambar": "Protagonist's trembling hands holding phone screen displaying video frame.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Kamera tambahan di dashboard menangkap detail yang membuat jantungku serasa berhenti.",
+          "gambar": "CCTV angle from dashcam looking towards the front seats from behind.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "cctv"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Di sudut bawah rekaman, tampak sepasang jari tangan pucat memegang erat sandaran kursiku.",
+          "gambar": "Close-up of long, pale grey creepy fingers gripping tightly onto the top headrest of the driver's seat.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "cctv",
+            "kaget"
+          ],
+          "suara": [],
+          "fokus": "atas",
+          "dialog": null
+        }
+      ]
+    },
+    {
+      "pertanyaan": "Menurut kalian, kenapa sosok itu ikut pindah ke motor?",
+      "caption": "Terornya nggak berhenti walaupun mobilnya udah dijual!",
+      "hashtag": [
+        "#ceritahoror",
+        "#twist",
+        "#tamat",
+        "#hantu"
+      ],
+      "adegan": [
+        {
+          "narasi": "Lanjutan kemarin, aku nekat mencari tahu alamat rumah pemilik lama mobil ini.",
+          "gambar": "Protagonist standing outside a modest old green house in a quiet neighborhood.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Keluarganya menangis dan bilang pemilik lama sudah hilang misterius tiga bulan lalu.",
+          "gambar": "An elderly woman crying at her porch door, wiping tears with a handkerchief.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Mobil itu dulu ditemukan di tepi hutan, mesin masih menyala dan pintu belakang terbuka.",
+          "gambar": "Flashback view of an abandoned car parked at night by dense dark forest trees, rear door wide open.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [
+            "kabut"
+          ],
+          "suara": [
+            "pintu"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Ibunya berbisik pelan denganku, \"Dia selalu bawa penumpang misterius dari jalan raya.\"",
+          "gambar": "Close-up of the elderly woman leaning forward near protagonist with a terrified face.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "orang",
+            "kelamin": "wanita"
+          }
+        },
+        {
+          "narasi": "Tanpa berpikir panjang, aku langsung menjual mobil murahan itu hari itu juga.",
+          "gambar": "Protagonist handing over car keys to a buyer, sedan parked in background.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku merasa lega dan memutuskan kembali memakai sepeda motor kesayanganku untuk bekerja.",
+          "gambar": "Protagonist putting on a black helmet next to his automatic scooter motorcycle outdoors.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_up",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Mengingat detail kecil di mobil, sosok itu ternyata menempel pada siapa pun pengendaranya.",
+          "gambar": "Protagonist riding his motorcycle down an empty city highway under morning sun.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Pagi ini aku mengecek rekaman helm camera atau dashcam motorku saat jalanan sepi.",
+          "gambar": "Small camera mounted on top of motorcycle handlebars recording forward road, while in motorcycle side mirror, two grey pale hands wrap around protagonist's waist.",
+          "tokoh": true,
+          "petunjuk": true,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "kiri",
+          "dialog": null
+        },
+        {
+          "narasi": "Layar monitor menampilkan perjalanan kuliahku tadi pagi yang tampak biasa saja.",
+          "gambar": "Smartphone playing back smooth clear camera footage of city road during commute.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Namun saat motor berhenti di lampu merah, bayangan di kaca spion terlihat ganjil.",
+          "gambar": "Footage pauses at a red traffic light, camera angled slightly towards motorcycle rearview mirror.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "cctv"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tepat di jok belakang motorku, ada sosok pucat sedang duduk menempel rapat di punggungku.",
+          "gambar": "Close-up on motorcycle passenger seat in video footage, showing a tall pale scary figure with hollow dark eyes sitting right behind driver.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "cctv",
+            "kaget"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        }
+      ]
+    }
+  ],
+  "tema": "konsep: Kursi Belakang Dashcam"
+}
