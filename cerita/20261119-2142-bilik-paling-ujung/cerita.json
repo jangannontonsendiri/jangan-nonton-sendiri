@@ -1,0 +1,509 @@
+{
+  "judul": "Bilik Paling Ujung",
+  "suasana": "sunyi",
+  "tokoh_utama": "A 25-year-old Indonesian male office worker with short black hair, wearing a white button-up shirt with sleeves rolled up, dark navy trousers, and sleek black dress shoes.",
+  "part": [
+    {
+      "pertanyaan": "Kalian berani lembur sendirian di kantor? Kantor kalian ada cerita serupa?",
+      "caption": "Jangan pernah ke toilet kantor sendirian kalau sudah di atas jam 8 malam... #ceritahoror #hororkantor",
+      "hashtag": [
+        "#ceritahoror",
+        "#hororkantor",
+        "#kisahnyata",
+        "#misteri"
+      ],
+      "adegan": [
+        {
+          "narasi": "Di kantorku, bilik toilet paling ujung lantai empat selalu terkunci erat dari dalam.",
+          "gambar": "Dimly lit modern office restroom interior, row of wooden toilet stalls, the last stall at the end is firmly closed under a harsh ceiling light.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Pak Teguh si OB bilang bilik itu sudah lama rusak dan tidak pernah digunakan.",
+          "gambar": "An elderly Indonesian office janitor holding a mop, pointing towards a dark corridor with a subtle warning expression.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [],
+          "fokus": "kiri",
+          "dialog": null
+        },
+        {
+          "narasi": "Malam itu jam delapan pas, aku terpaksa lembur sendirian di kubikel ruang kerja.",
+          "gambar": "The protagonist sitting alone at a desk in a spacious empty office room at night, glowing blue laptop screen lighting his face.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Notifikasi laptop berbunyi, perutku mendadak mulas karena terlalu banyak minum kopi hitam dingin.",
+          "gambar": "Close up of a cold coffee cup on an office desk next to a glowing laptop showing overtime work files.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku berjalan menyusuri lorong kantor yang terasa makin dingin menuju pintu toilet wanita-pria.",
+          "gambar": "The protagonist walking down a narrow grey office hallway at night, fluorescent overhead lights humming quietly.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Saat masuk toilet, aku kaget melihat lampu bilik paling ujung menyala sangat terang.",
+          "gambar": "Restroom doorway view showing bright yellow light spilling from underneath the last closed toilet stall door.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [],
+          "fokus": "kanan",
+          "dialog": null
+        },
+        {
+          "narasi": "Di bawah celah pintu bilik ujung, terlihat sepasang sepatu kantor pria menghadap ke dalam.",
+          "gambar": "Extreme low angle shot under a wooden stall door, showing formal black leather shoes standing pointing inward towards the toilet bowl.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku berbisik santai pada diri sendiri, \"Wah, ternyata ada karyawan lain yang lembur.\"",
+          "gambar": "The protagonist looking at the stall door while entering the neighboring empty stall, looking relieved.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "orang",
+            "kelamin": "pria"
+          }
+        },
+        {
+          "narasi": "Selesai buang air, aku berjalan santai menuju wastafel untuk mencuci tangan yang kotor.",
+          "gambar": "The protagonist stepping out of the stall and approaching the porcelain sink under flickering lights.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku memutar kran air, mendengarkan gemericik air jernih yang terasa sangat dingin mengalir.",
+          "gambar": "The protagonist washing hands under running sink water. In the large mirror reflection behind him, the far-end stall door is slightly open showing a tall dark shadowy figure standing inside, but the protagonist is only looking down at his hands.",
+          "tokoh": true,
+          "petunjuk": true,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "kaca"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Saat mendongak menatap cermin, mataku tanpa sengaja melirik celah bawah pintu bilik ujung.",
+          "gambar": "Close-up of protagonist's shocked reflection in the mirror, eyes wide open looking down towards the background reflection.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Jantungku serasa berhenti, sepasang sepatu kantor di bilik itu sekarang sudah berbalik menghadap keluar.",
+          "gambar": "Close-up bottom gap of the stall door, the black office shoes are now pointing directly outward toward the sink.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget"
+          ],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        }
+      ]
+    },
+    {
+      "pertanyaan": "Kalau kamu jadi aku, kamu ketuk bilik itu atau langsung pulang?",
+      "caption": "Misteri lima tahun lalu yang sengaja ditutupi manajemen kantor... #part2 #ceritahoror",
+      "hashtag": [
+        "#ceritahoror",
+        "#hororkantor",
+        "#misteri",
+        "#penampakan"
+      ],
+      "adegan": [
+        {
+          "narasi": "Lanjutan bilik misterius, keesokan harinya aku masih sangat kepikiran dengan kejadian aneh semalam.",
+          "gambar": "Morning sunlight entering the office building lobby, protagonist standing near the reception desk looking pale and tired.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku nekat mendatangi pos satpam untuk memeriksa buku catatan absensi lembur manual kantor.",
+          "gambar": "The security guard desk with dusty binder logbooks, protag searching through old attendance sheets.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Mataku teliti menyisir kolom absensi lama dari lembar-lembar kertas yang sudah menguning kusam.",
+          "gambar": "Close-up of yellowed paper attendance sheets with handwritten names, dates, and sign-in sign-out times.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Ada satu nama mantan karyawan bernama Wisnu yang kolom absen pulangnya tidak pernah terisi.",
+          "gambar": "A specific row on the logbook showing the name 'Wisnu' with a sign-in time of 20:00, but the sign-out column is blank.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Pak Teguh mendadak berbisik pelan, \"Wisnu hilang misterius lima tahun lalu pas lembur sendirian.\"",
+          "gambar": "Pak Teguh the janitor leaning in close to the protagonist, whispering with a serious shadowy face.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "kiri",
+          "dialog": {
+            "siapa": "orang",
+            "kelamin": "pria"
+          }
+        },
+        {
+          "narasi": "Rasa penasaranku makin menjadi-jadi, padahal jam dinding kantor sudah menunjukkan pukul sembilan malam.",
+          "gambar": "Wall clock inside the office showing 21:00 in dimly lit surrounding workspace.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Malam ini aku terpaksa lembur lagi untuk menyelesaikan dokumen laporan bulanan yang menumpuk.",
+          "gambar": "The protagonist working frantically on his computer desk, stacks of paper surrounding his workspace.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Sebelum kembali ke lantai empat, aku menghampiri papan absensi lembur di dekat tangga.",
+          "gambar": "Protagonist walking towards a wooden clipboard hanging on the wall near a dark stairwell entrance.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Kertas absensi malam ini terpasang rapi di papan kayu dekat lorong tangga yang gelap.",
+          "gambar": "Close-up of the clipboard hanging on the wall. In the background stairwell shadow, a tall eerie shadowy human figure with red glowing eyes stands watching, unnoticed by protagonist.",
+          "tokoh": true,
+          "petunjuk": true,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tanganku gemetar hebat saat membaca deretan nama karyawan di kertas absensi malam ini.",
+          "gambar": "Protagonist's shaky hand holding the clipboard under weak fluorescent hallway lighting.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "shake"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Di daftar lembur malam ini, namaku tertulis tepat di posisi bawah nama Wisnu.",
+          "gambar": "Close-up of the paper showing 'Wisnu' written first, and directly below it is the protagonist's name.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tulisan namaku dibuat menggunakan tinta merah pudar oleh tulisan tangan yang bukan milikku.",
+          "gambar": "Macro view of the protagonist's name written in faded dark red ink with sharp erratic handwriting.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        }
+      ]
+    },
+    {
+      "pertanyaan": "Kira-kira apa yang akan terjadi kalau aku pakai sepatu di bilik itu?",
+      "caption": "Pesan terakhir dari lantai empat kantor... Jangan pernah lembur sendirian! #part3 #ending",
+      "hashtag": [
+        "#ceritahoror",
+        "#hororkantor",
+        "#ending",
+        "#urbanlegend"
+      ],
+      "adegan": [
+        {
+          "narasi": "Lanjutan terror lantai empat, aku nekat berjalan menuju toilet dengan jantung berdebar keras.",
+          "gambar": "Protagonist walking cautiously in the dark restroom hallway, clutching his cell phone tightly.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [
+            "langkah",
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Lampu bilik paling ujung masih menyala, memancarkan cahaya kekuningan yang sangat samar-samar.",
+          "gambar": "Restroom view focusing on the dim yellow light leaking around the edges of the end toilet stall.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [],
+          "fokus": "kanan",
+          "dialog": null
+        },
+        {
+          "narasi": "Sambil menahan napas, aku memberanikan diri mengetuk pintu kayu bilik itu tiga kali.",
+          "gambar": "Protagonist's hand raised, knocking on the dark worn wooden door of the end stall.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "ketukan"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Suara ketukan menggema kasar di dalam ruangan toilet yang sangat dingin dan membisu.",
+          "gambar": "Shot of the empty bathroom mirrors reflecting the back of the protagonist standing right outside the locked stall.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tiba-tiba dari dalam bilik terdengar suara parau berbisik, \"Udah boleh pulang belum?\"",
+          "gambar": "Extreme close-up of the keyhole on the wooden door, pitch blackness visible inside.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "hantu",
+            "kelamin": "pria"
+          }
+        },
+        {
+          "narasi": "Gagang pintu bergerak sendiri, lalu pintu bilik perlahan terbuka lebar tanpa ada dorongan.",
+          "gambar": "The door handle turning downward by itself, the door slowly swinging open inward into darkness.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "pintu"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Di balik pintu yang terbuka, cermin memperlihatkan pantulan sosok berjas lusuh tepat di sampingku.",
+          "gambar": "Wide shot of open stall door. In the wall mirror reflection, a ghostly pale man in a tattered business suit is standing right beside the protagonist, while in reality the space next to him is empty.",
+          "tokoh": true,
+          "petunjuk": true,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [
+            "kaca"
+          ],
+          "fokus": "kiri",
+          "dialog": null
+        },
+        {
+          "narasi": "Ruangan bilik itu ternyata benar-benar kosong melompong, tidak ada siapa-siapa di dalamnya.",
+          "gambar": "Inside view of the stall illuminated by overhead light, empty toilet bowl and clean tiled walls.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Namun di atas lantai keramik dingin, tergeletak sepasang sepatu kantor hitam yang baru.",
+          "gambar": "High angle shot of a brand new pair of sleek black office dress shoes sitting on the tiled floor of the stall.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku melotot panik, itu sepatu persis milikku lengkap dengan ukuran nomor kakiku.",
+          "gambar": "Close-up of protagonist looking down in sheer terror, realizing the shoes are identical to his own pair down to the brand logo.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Ponselku bergetar hebat, ada pesan dari nomor asing: \"Sepatumu sudah diganti, mau pulang?\"",
+          "gambar": "Close-up of Smartphone screen in protagonist's hand displaying a WhatsApp text from an unknown number: 'Sepatumu sudah diganti, mau pulang?'",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "getar_hp"
+          ],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "hantu",
+            "kelamin": "pria"
+          }
+        },
+        {
+          "narasi": "Aku lari terbirit-birit ketakutan; kalau lembur, jangan pernah jadi orang terakhir di kantor.",
+          "gambar": "Protagonist sprinting down the dark office hallway toward the exit doors in complete panic.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        }
+      ]
+    }
+  ],
+  "tema": "konsep: Bilik Paling Ujung"
+}
