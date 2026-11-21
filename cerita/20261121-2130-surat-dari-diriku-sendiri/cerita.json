@@ -1,0 +1,495 @@
+{
+  "judul": "Surat dari Diriku Sendiri",
+  "suasana": "sunyi",
+  "tokoh_utama": "A 22-year-old Indonesian young man, wearing a plain black t-shirt, messy short black hair, anxious expression, medium brown skin.",
+  "part": [
+    {
+      "pertanyaan": "Kalau kamu jadi aku, kamu angkat telepon dari Ayah atau nurut surat itu?",
+      "caption": "Membuka surat kapsul waktu 5 tahun lalu, tapi malah nemu ramalan kematian dan kejadian aneh minggu ini...",
+      "hashtag": [
+        "#ceritahoror",
+        "#hororindonesia",
+        "#suratrahasia",
+        "#creepy"
+      ],
+      "adegan": [
+        {
+          "narasi": "Lima tahun lalu aku nulis surat kapsul waktu buat diriku sendiri.",
+          "gambar": "A young man sitting at a wooden desk in a dimly lit bedroom, writing on a piece of paper with a pen under warm yellow lamplight.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Amplop cokelat kusam itu aku simpan rapat di dalam laci kamar.",
+          "gambar": "Close-up of a dusty vintage brown paper envelope stored inside a dark wooden drawer.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Hari ini aku membukanya, berharap nemu kenangan manis masa SMA dulu.",
+          "gambar": "The young man opening the old brown envelope with curious and nostalgic expression.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Isinya memang mimpi konyol, tapi ada daftar aneh di bagian bawah.",
+          "gambar": "Over-the-shoulder shot showing a yellowed paper filled with childish handwriting and a strange list handwritten at the bottom.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tulisan tangan itu mirip milikku, \"Senin, kucing tetangga mati di pagar.\"",
+          "gambar": "Extreme close-up of handwritten text on paper reading an unsettling note in Indonesian handwriting style.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku merinding karena persis hari Senin kemarin kejadian itu beneran terjadi.",
+          "gambar": "Point of view looking out a front house gate at night, a lifeless black cat lying near the fence in dark atmosphere.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Baris kedua tertulis jelas, \"Selasa malam, bohlam dapur bakal mendadak pecah.\"",
+          "gambar": "Close-up of the second line of handwriting on the paper, shaky handwriting with dark ink.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Kemarin malam bohlam dapur rumahku memang meledak berkeping-keping tanpa sebab.",
+          "gambar": "A dimly lit kitchen where a light bulb overhead suddenly shatters with sparks falling to the ground.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_up",
+          "efek": [
+            "flicker",
+            "kaget"
+          ],
+          "suara": [
+            "kaca"
+          ],
+          "fokus": "atas",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku mulai panik karena sama sekali tidak ingat pernah menulis prediksi itu.",
+          "gambar": "The young man staring at the paper in shock, wide pale eyes, sweat on forehead.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku memegang kertas itu erat-erat dengan perasaan makin tidak enak.",
+          "gambar": "The young man holding the paper with both hands in front of him. On the wall behind him, a dark eerie shadow of a hand holding a quill pen is cast clearly, even though no one is holding a pen.",
+          "tokoh": true,
+          "petunjuk": true,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [],
+          "fokus": "kanan",
+          "dialog": null
+        },
+        {
+          "narasi": "Jantungku berdebar kencang saat mataku menatap baris ketiga tulisan tangan tersebut.",
+          "gambar": "Close-up of the young man's nervous trembling hand gripping the corner of the aged paper.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Di sana tertulis tegas, \"Rabu, jangan pernah angkat telepon dari Ayah.\"",
+          "gambar": "Close-up on the paper revealing the terrifying bold line of handwriting warning not to answer Dad's phone call.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget"
+          ],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        }
+      ]
+    },
+    {
+      "pertanyaan": "Menurut kalian, siapa yang menulis lanjutan surat itu?",
+      "caption": "Ayahku sudah lama meninggal, tapi Rabu malam kontak 'Ayah' mendadak menelepon HP-ku...",
+      "hashtag": [
+        "#pesanrahasia",
+        "#teleponseram",
+        "#kisahhoror",
+        "#almarhum"
+      ],
+      "adegan": [
+        {
+          "narasi": "Lanjutan surat itu bikin aku syok karena Ayahku sudah meninggal lama.",
+          "gambar": "Lanjutan part 1. The young man looking terrified in his dark bedroom, holding the letter with trembling hands.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Mana mungkin Ayah yang sudah tiada tiba-tiba bisa menelepon HP milikku.",
+          "gambar": "A framed old photograph of a father and son sitting on a side table in the dimly lit bedroom.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_up",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Rabu malam suasana rumah mendadak dingin dan kipas angin terhenti sendiri.",
+          "gambar": "A standing electric fan in the bedroom slowly coming to a complete stop, shadows stretching cold across the floor.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tepat jam dua belas malam, layar HP milikku menyala di meja.",
+          "gambar": "A smartphone resting on a dark nightstand suddenly illuminating bright blue light in the dark room.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Kontak nama \"Ayah\" muncul di layar telepon yang terus berdering nyaring.",
+          "gambar": "Close-up of the smartphone screen displaying incoming call from contact named 'Ayah' with incoming call UI active.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "getar_hp"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Telepon itu berdering sampai tiga puluh kali tanpa henti dalam kegelapan.",
+          "gambar": "Wide shot of the dark bedroom with the smartphone glowing brightly, vibrating intensely on the desk.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [],
+          "fokus": "kiri",
+          "dialog": null
+        },
+        {
+          "narasi": "Mengingat peringatan di surat, aku cuma bisa terdiam menahan napas takut.",
+          "gambar": "The young man curled up on his bed, covering his mouth in pure horror, refusing to reach for the phone.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Panggilan itu akhirnya terputus, tapi notifikasi pesan suara baru langsung masuk.",
+          "gambar": "Smartphone screen showing the call ended, instantly followed by a pop-up banner: 'New Voicemail Received'.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tanganku gemetaran membuka pesan suara itu sambil memandang ke luar jendela.",
+          "gambar": "The young man tapping the phone screen near the bedroom window. Outside the dark window glass behind him, a pale tall uncanny silhouette with faint white eyes is staring inside.",
+          "tokoh": true,
+          "petunjuk": true,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Dari speaker HP-ku, terdengar jelas suara berat khas milik almarhum Ayah.",
+          "gambar": "Extreme close-up of the smartphone speaker with audio wave animation active on screen.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Suara Ayah berbisik, \"Kenapa kamu nurutin surat itu? Yang nulis bukan kamu.\"",
+          "gambar": "The young man staring in absolute terror at his phone, jaw dropped, pale face in blue screen light.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget",
+            "shake"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "hantu",
+            "kelamin": "pria"
+          }
+        },
+        {
+          "narasi": "Tubuhku langsung membeku kaku mendengar peringatan mengerikan dari pesan suara itu.",
+          "gambar": "Overhead shot of the young man sitting frozen on his bed, isolated in a dark cold room.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        }
+      ]
+    },
+    {
+      "pertanyaan": "Kalau handle pintu rumahmu mendadak bergerak sendiri, apa yang bakal kamu lakukan?",
+      "caption": "Surat itu menulis sendiri kalimat baru di depan mataku! Dan sekarang ada ketukan di pintu...",
+      "hashtag": [
+        "#twist",
+        "#malamjumat",
+        "#suaraasing",
+        "#klimaks"
+      ],
+      "adegan": [
+        {
+          "narasi": "Lanjutan pesan suara Ayah membuatku panik dan langsung mengambil surat itu.",
+          "gambar": "Lanjutan part 2. The young man frantically snatching the mysterious letter back off the desk.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku periksa lembaran surat itu lagi dengan penerangan lampu kamar remang.",
+          "gambar": "Close-up of the paper under dim yellow lamp light, showing the bottom lines of writing.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tulisan di bagian bawah ternyata bertambah dan tintanya masih terlihat basah.",
+          "gambar": "Macro shot of fresh, glossy black ink glistening on the surface of the paper.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Di depan mataku sendiri, goresan tinta hitam muncul membentuk kalimat baru.",
+          "gambar": "Paper magically forming black ink strokes on its own as if written by an invisible hand.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "shake"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Surat itu menulis sendiri secara perlahan, \"Kamis, buka pintu untuk Ayah.\"",
+          "gambar": "Close-up of the newly formed line reading 'Kamis, buka pintu untuk Ayah' written in fresh wet ink.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tiba-tiba terdengar ketukan keras dari balik pintu depan rumahku yang sepi.",
+          "gambar": "The front door of the house seen from a dark living room hallway, illuminated by faint street light.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "ketukan"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku berjalan pelan mendekati pintu sambil menggenggam erat kertas ramalan itu.",
+          "gambar": "The young man walking slowly down the dark hallway toward the front door holding the paper. In the dark corner behind a pillar, a distorted shadow figure with an unnaturally wide pale smile lurks silently.",
+          "tokoh": true,
+          "petunjuk": true,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Suara dari balik pintu memanggil lembut, Ayah berkata, \"Nak, buka pintunya.\"",
+          "gambar": "Close-up of the wooden front door surface, dark shadows lingering on the outside.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "hantu",
+            "kelamin": "pria"
+          }
+        },
+        {
+          "narasi": "Tapi saat mataku melihat celah bawah pintu, tidak ada bayangan kaki manusia.",
+          "gambar": "Low angle close-up looking at the narrow gap under the front door, revealing complete emptiness and dark mist on the outside threshold.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [
+            "kabut"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Surat di tanganku mendadak berubah tulisan, \"Jangan buka, yang di balik pintu bukan Ayah.\"",
+          "gambar": "Close-up of the paper in hand where text rapidly morphs into terrifying warning in red-tinged ink.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget",
+            "shake"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Jadi siapa sosok yang berdiri di luar dan siapa pembuat surat ini?",
+          "gambar": "The young man taking a step back in pure shock, horror reflected in his wide eyes.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Handle pintu depan mulai bergerak turun perlahan dari luar ruangan.",
+          "gambar": "Extreme close-up of the metal front door handle slowly clicking and turning downward by itself.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "pintu"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        }
+      ]
+    }
+  ],
+  "tema": "konsep: Surat dari Diriku Sendiri"
+}
