@@ -1,0 +1,522 @@
+{
+  "judul": "Nenek di Kursi Bus",
+  "suasana": "sunyi",
+  "tokoh_utama": "A 22-year-old Indonesian man with short straight black hair, light brown skin, wearing a dark green zipped jacket over a plain white t-shirt and a backpack.",
+  "part": [
+    {
+      "pertanyaan": "Kalau ditanya 'turun di mana' sama nenek itu, kalian jawab apa?",
+      "caption": "Jangan pernah jawab pertanyaan orang asing di bus malam mudik... akibatnya bisa fatal!",
+      "hashtag": [
+        "#ceritahoror",
+        "#busmalam",
+        "#mudik",
+        "#kisahnyata",
+        "#hororindonesia"
+      ],
+      "adegan": [
+        {
+          "narasi": "Di bus malam mudik, nenek di kursi sebelahku bertanya hal sama setiap jam.",
+          "gambar": "Dim interior of an intercity night bus. A young Indonesian man in a dark green jacket sits next to an eerie old woman with deep wrinkles and pale skin staring at him.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Nenek tua berwajah pucat itu berbisik pelan, \"Turun di mana, Nak?\"",
+          "gambar": "Close-up of an old Indonesian woman with hollow dark eyes, pale grey skin, whispering closely with a creepy blank expression.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "kiri",
+          "dialog": {
+            "siapa": "hantu",
+            "kelamin": "wanita"
+          }
+        },
+        {
+          "narasi": "Aku merapikan tas punggungku dan menjawab sopan, \"Turun di Kota Seberang, Nek.\"",
+          "gambar": "The young Indonesian man adjusting his backpack strap, replying politely to the old woman beside him inside the dimly lit bus.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [],
+          "fokus": "kanan",
+          "dialog": {
+            "siapa": "orang",
+            "kelamin": "pria"
+          }
+        },
+        {
+          "narasi": "Anehnya, setiap kali aku menjawab, bus mendadak berhenti di pinggir jalan sepi.",
+          "gambar": "Looking out from the bus windshield, showing a pitch-black deserted country road framed by tall creepy trees at night.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [
+            "kabut"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Seorang penumpang berdiri dari kursinya lalu turun ke kegelapan tanpa suara.",
+          "gambar": "A shadowy passenger figure stepping out of the open bus door into absolute darkness on an empty rural road.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [
+            "langkah",
+            "pintu"
+          ],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Jam dinding bus menunjukkan pukul dua malam saat nenek itu menoleh lagi.",
+          "gambar": "An analog clock mounted on the bus wall showing 2:00 AM, lit by faint yellow bus corridor lights.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "atas",
+          "dialog": null
+        },
+        {
+          "narasi": "Nenek itu kembali mengajukan pertanyaan yang sama, \"Turun di mana, Nak?\"",
+          "gambar": "Extreme close-up of the creepy old woman turning her head sharply toward the viewer, wide unnatural smile forming.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget"
+          ],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "hantu",
+            "kelamin": "wanita"
+          }
+        },
+        {
+          "narasi": "Aku kembali menjawab nama tujuanku sambil menggenggam erat tiket bus kertas di saku.",
+          "gambar": "Close-up of the young man's hand nervously clutching a crumpled paper bus ticket inside his green jacket pocket.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_up",
+          "efek": [],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Bus kembali berhenti di tempat sepi dan penumpang lain turun begitu saja.",
+          "gambar": "Interior view of the bus aisle looking towards the back as another motionless passenger steps into the dark exterior.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku menatap kaca jendela bus yang gelap di samping kursi nenek itu.",
+          "gambar": "The young man looking at the dark bus window reflection: the reflection shows the seat beside him is completely EMPTY, while the scary grandmother is physically sitting right beside him in the seat.",
+          "tokoh": true,
+          "petunjuk": true,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "kanan",
+          "dialog": null
+        },
+        {
+          "narasi": "Merasa ketakutan, aku berdiri dan berniat memanggil kenek yang berjalan di lorong.",
+          "gambar": "The young man standing up nervously in the narrow bus aisle, looking towards the bus conductor walking down.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_up",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Kenek bus menatapku heran lalu berbisik, \"Mas ngobrol sama siapa? Kursinya kosong.\"",
+          "gambar": "Close-up of the male bus conductor looking confused and frightened, whispering directly to the young man.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "kiri",
+          "dialog": {
+            "siapa": "orang",
+            "kelamin": "pria"
+          }
+        }
+      ]
+    },
+    {
+      "pertanyaan": "Ada yang lihat pantulan di kaca bus? Kursinya kosong, kan?",
+      "caption": "Jangan pernah pura-pura tidur saat ditanya makhluk halus... ini alasan resminya!",
+      "hashtag": [
+        "#ceritahoror",
+        "#busmalam",
+        "#part2",
+        "#hororindonesia",
+        "#misteri"
+      ],
+      "adegan": [
+        {
+          "narasi": "Lanjutan part satu. Aku langsung memejamkan mata dan berpura-pura tidur sangat nyenyak.",
+          "gambar": "Close-up of the young man sitting in his bus seat, eyes tightly shut in intense fear, sweat on his forehead.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Jantungku berdegup kencang saat merasakan hembusan napas sangat dingin di samping telingaku.",
+          "gambar": "Side view of the young man with closed eyes as a dark shadow leans extremely close to his ear from behind the seat.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "kanan",
+          "dialog": null
+        },
+        {
+          "narasi": "Nenek itu menempelkan wajahnya dan berbisik, \"Jangan pura-pura. Kamu turun di mana?\"",
+          "gambar": "Terrifying close-up of the wrinkled ghost grandmother leaning into camera, opening her pale lips close to the ear.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget"
+          ],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "hantu",
+            "kelamin": "wanita"
+          }
+        },
+        {
+          "narasi": "Aku memilih tetap diam seribu bahasa dan terus menahan napas karena ketakutan hebat.",
+          "gambar": "The young man clenching his jaw, hands gripping his knees tightly inside the dimly lit bus interior.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tiba-tiba penumpang di depan kursiku menoleh ke belakang dengan leher kaku.",
+          "gambar": "A male passenger in the front seat twisting his head back unnaturally at a strange angle toward the young man.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [],
+          "fokus": "kiri",
+          "dialog": null
+        },
+        {
+          "narasi": "Wajah pria penumpang depan itu pucat pasi dengan tatapan mata yang sangat kosong.",
+          "gambar": "Close-up of the front passenger's corpse-pale face, sunken black eyes, staring unblinkingly at the camera.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Pria itu berbisik gemetar, \"Jawab aja, Mas. Kalau nggak dijawab, dia yang milih.\"",
+          "gambar": "The pale passenger whispering with a trembling mouth, eyes wide with terror under faint overhead bus lighting.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "orang",
+            "kelamin": "pria"
+          }
+        },
+        {
+          "narasi": "Aku merinding hebat melihat suasana luar jendela bus yang semakin mencekam.",
+          "gambar": "Dark glass bus window showing the outer fog: hidden in the reflection overhead on the luggage rack, pale long ghastly fingers reach downwards silently.",
+          "tokoh": false,
+          "petunjuk": true,
+          "gerak": "zoom_out",
+          "efek": [
+            "kabut"
+          ],
+          "suara": [],
+          "fokus": "atas",
+          "dialog": null
+        },
+        {
+          "narasi": "Nenek di sampingku perlahan mengangkat tangannya yang keriput menuju ke arah mukaku.",
+          "gambar": "An old bony hand with long black fingernails reaching slowly toward the young man's terrified face.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "shake"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Suara mesin bus perlahan terdengar semakin pelan dan jalurnya berubah sangat sunyi.",
+          "gambar": "Wide shot of the bus interior as overhead lights flickers violently, dimming down to eerie red ambient lighting.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Bus malam yang kami tumpangi melambat dan berhenti di atas jembatan gelap.",
+          "gambar": "Exterior view of the long bus sitting completely still on a dark, foggy concrete bridge over a deep river at night.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kabut"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        }
+      ]
+    },
+    {
+      "pertanyaan": "Menurut kalian, kenapa nama mas ini nggak ada di daftar penumpang?",
+      "caption": "Jawaban cerdas penyelamat nyawa... tapi twist akhirnya bikin merinding total!",
+      "hashtag": [
+        "#ceritahoror",
+        "#busmalam",
+        "#ending",
+        "#twist",
+        "#hororindonesia"
+      ],
+      "adegan": [
+        {
+          "narasi": "Lanjutan part dua. Di tengah kepanikan, aku menggenggam erat tiket mudik di saku.",
+          "gambar": "The young man opening his eyes in determination, clutching his paper ticket tightly inside his pocket.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku membuka mata dan menjawab tegas, \"Saya nggak turun, Nek. Saya pulang.\"",
+          "gambar": "The young man looking straight ahead with a stern face, declaring his words bravely inside the bus.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_up",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "orang",
+            "kelamin": "pria"
+          }
+        },
+        {
+          "narasi": "Nenek tua itu mendadak tersenyum lebar hingga mulutnya merobek ke samping.",
+          "gambar": "Close-up of the ghost grandmother smiling unnaturally wide, stretching her jaw unnervingly into dark shadows.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Perlahan bayangan nenek itu memudar dan menghilang begitu saja dari kursi.",
+          "gambar": "The ghost grandmother's figure turning transparent and dissolving into black smoke inside the bus seat.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [
+            "kabut"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Mesin bus kembali meraung kencang melaju kencang menembus kegelapan malam yang dingin.",
+          "gambar": "The bus headlights cutting bright yellow beams through thick dark fog as the bus speeds along the road.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [
+            "kabut"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Bus akhirnya berhenti di terminal tujuan dan aku segera bergegas keluar.",
+          "gambar": "The young man stepping down from the bus steps into a brightly lit bus terminal platform in early morning light.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku berhasil sampai di rumah orang tuaku dengan selamat menjelang pagi hari.",
+          "gambar": "The young man sitting relieved on the wooden porch sofa of a modest Indonesian house, drinking tea.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Sambil menghempaskan badan di sofa teras, aku menyalakan siaran siaran berita televisi.",
+          "gambar": "A small television screen on the porch table showing breaking news. In the glass reflection of the TV screen, the silhouette of the creepy old grandmother is standing behind the young man in the doorway.",
+          "tokoh": true,
+          "petunjuk": true,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "kanan",
+          "dialog": null
+        },
+        {
+          "narasi": "Berita pagi melaporkan kecelakaan bus malam yang hilang di jalur jembatan tadi.",
+          "gambar": "Close-up of the TV broadcast showing a graphic image of a river canyon under a bridge surrounded by emergency lights.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "cctv"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Pembawa berita membacakan seluruh nama penumpang terdaftar di bus bernasib malang tersebut.",
+          "gambar": "The TV screen displaying a official manifest list of bus passenger names scrolling upwards rapidly.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Seluruh nama penumpang sama persis seperti orang-orang di dalam busku, kecuali namaku.",
+          "gambar": "Close-up of the young man staring at the TV with wide terrified eyes, dropping his teacup to the floor.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "kaca"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Lantas, siapa penumpang yang sebenarnya tumpangi bus malam misterius itu semalam?",
+          "gambar": "Slow zoom in on the crumpled bus ticket in the young man's hand; the ticket text is completely blank and turning to dust.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "bawah",
+          "dialog": null
+        }
+      ]
+    }
+  ],
+  "tema": "konsep: Nenek di Kursi Bus"
+}
