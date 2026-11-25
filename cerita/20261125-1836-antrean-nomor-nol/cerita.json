@@ -1,0 +1,480 @@
+{
+  "judul": "Antrean Nomor Nol",
+  "suasana": "sunyi",
+  "tokoh_utama": "A 24-year-old Indonesian female receptionist with pulled-back dark hair in a neat ponytail, wearing a light blue medical clinic uniform with a white name badge pinned on her chest, tired eyes with subtle dark circles",
+  "part": [
+    {
+      "pertanyaan": "Yang kerja shift malam, pernah ngalamin hal aneh di tempat kerja? Cerita dong.",
+      "caption": "Jangan pernah abaikan mesin antrean yang berbunyi sendiri saat tengah malam... #ceritahoror #hororindonesia",
+      "hashtag": [
+        "#ceritahoror",
+        "#hororindonesia",
+        "#kuntilanak",
+        "#kisahnyata",
+        "#urbanlegend"
+      ],
+      "adegan": [
+        {
+          "narasi": "Di klinik tempatku jaga malam, ada nomor antrean yang dipanggil tiap jam nol: nomor nol.",
+          "gambar": "Close-up of a digital LED queue display board on a dimly lit hospital hall wall, showing glowing red numbers zero zero zero, cold blue eerie atmosphere.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Mesin antrean ini cuma punya tombol angka satu sampai sembilan puluh sembilan.",
+          "gambar": "Close-up of a mechanical queue ticket printer machine on a wooden reception counter, physical buttons numbered 1 to 99 under dim light.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku selalu menempelkan kartu namaku di meja kasir tiap awal shift malam.",
+          "gambar": "A female clinic receptionist attaching her plastic employee ID badge onto a desk near a computer screen in a quiet reception area.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tepat jam nol nol nol nol, speaker di plafon mendadak berisik dan menyala sendiri.",
+          "gambar": "Angle looking up at an old dusty ceiling speaker box inside a dark corridor, small indicator light flickering green.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_up",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "atas",
+          "dialog": null
+        },
+        {
+          "narasi": "Suara mesin otomatis berbunyi, \"Nomor nol, silakan menuju ke ruang tiga.\"",
+          "gambar": "Wide shot of empty clinic hallway with shadowy doors, cold fluorescent lights humming silently above.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "orang",
+            "kelamin": "wanita"
+          }
+        },
+        {
+          "narasi": "Padahal ruang tiga sudah lama terkunci dan hanya dipakai sebagai gudang berkas.",
+          "gambar": "A wooden door with a weathered metal plate marked Room 03, secured with a heavy rusted padlock and chain.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku mencoba mengecek layar monitor antrean, tapi angkanya tetap menunjukkan angka nol.",
+          "gambar": "Medium shot of the receptionist leaning over her computer screen displaying glowing red queue log zero in a dark office room.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "kiri",
+          "dialog": null
+        },
+        {
+          "narasi": "Angin dingin tiba-tiba berembus dari arah lorong ruang tunggu yang sepi.",
+          "gambar": "Low angle view of dark empty clinic waiting area with rows of blue plastic chairs, curtains swaying gently from unseen breeze.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [
+            "kabut"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku berjalan pelan menelusuri deretan kursi plastik ruang tunggu yang terlihat kosong.",
+          "gambar": "The receptionist walking slowly past empty blue plastic chairs. On the shiny tiled floor, beneath an empty chair, a distinct black shadow of a seated person is visible even though the chair is empty.",
+          "tokoh": true,
+          "petunjuk": true,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Bulu kudukku berdiri saat melihat sesosok wanita duduk menyendiri di sudut gelap.",
+          "gambar": "Atmospheric shot of a pale woman sitting motionlessly in the farthest dark corner of the waiting room, wearing a faded traditional sarong batik dress.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "kanan",
+          "dialog": null
+        },
+        {
+          "narasi": "Wanita itu perlahan menengadah sambil meremas kertas antrean berangka nol di tangannya.",
+          "gambar": "Extreme close-up of pale hands holding a crumpled thermal paper queue ticket printed with a bold black number zero.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        }
+      ]
+    },
+    {
+      "pertanyaan": "Kalau jadi aku, kamu antar ibu itu ke ruang tiga nggak?",
+      "caption": "Ternyata nomor antrean nol itu bukan salah sistem... #ceritahoror #hororindonesia",
+      "hashtag": [
+        "#ceritahoror",
+        "#hororindonesia",
+        "#mistis",
+        "#viralhoror"
+      ],
+      "adegan": [
+        {
+          "narasi": "Lanjutan... Wanita misterius di ruang tunggu itu menatapku tajam di remang lampu.",
+          "gambar": "Close-up face of a pale woman with sunken hollow eyes and pale lips looking directly up in dim light.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Dia memeluk erat buntalan kain tebal yang membungkus bayinya dengan sangat rapat.",
+          "gambar": "Medium shot of the woman tightly cradling a thick dark floral cloth bundle in her arms, completely concealing whatever is inside.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Dengan suara bergetar wanita itu berbisik, \"Dari tadi nggak dipanggil-panggil, Mbak.\"",
+          "gambar": "Shot over the receptionist shoulder looking at the woman whispering with unnatural, motionless lips.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "kiri",
+          "dialog": {
+            "siapa": "hantu",
+            "kelamin": "wanita"
+          }
+        },
+        {
+          "narasi": "Tanganku gemetar mendingin, tapi aku tetap mencoba bersikap ramah padanya.",
+          "gambar": "Close-up of the receptionist shivering, clutching her clipboard tightly near her chest with pale nervous expression.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku mengambil keputusan membimbing wanita itu berjalan menuju pintu ruang tiga.",
+          "gambar": "The receptionist walking along a dark hallway leading the ghostly woman who walks silently behind her.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Langkah kaki kami bergema pelan menyusuri lorong klinik yang makin dingin.",
+          "gambar": "Low angle of two pairs of feet walking down the dark corridor, one pair wearing medical shoes, the other barefoot barely touching the floor.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Kunci besi gudang itu terasa membeku saat kuputar di lubang pintunya.",
+          "gambar": "Close-up of receptionist key-holding hand unlocking an old brass keyhole on a dusty wooden door.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "pintu"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Pintu kayu berdecit keras saat kubuka, memperlihatkan tumpukan lemari tua berdebu.",
+          "gambar": "Interior of a dark archive storage room filled with tall rusted metal cabinets. Deep between the narrow gap of two cabinets, pair of glowing yellow eyes stares back out.",
+          "tokoh": true,
+          "petunjuk": true,
+          "gerak": "zoom_in",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [
+            "pintu"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku menyuruhnya duduk sebentar selagi aku memeriksa tumpukan arsip lama.",
+          "gambar": "The receptionist opening a rusty filing cabinet drawer, shadows casting long ominous shapes across dusty floor.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [],
+          "fokus": "kanan",
+          "dialog": null
+        },
+        {
+          "narasi": "Tanganku meraba menarik map berdebu bertuliskan tahun seribu sembilan ratus sembilan puluh delapan.",
+          "gambar": "Hands pulling a thick yellowed paper folder labeled 1998 from a dusty metal shelf.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Jantungku berdegup kencang saat melihat nama pasien di map itu sama persis.",
+          "gambar": "Close-up of an old patient record document inside the folder showing a faded photo of the exact same woman.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        }
+      ]
+    },
+    {
+      "pertanyaan": "Kalau namamu muncul di mesin antrean misterius, kamu bakal gimana?",
+      "caption": "Jangan pernah biarkan nomor antrean nol memanggil namamu... #ceritahoror #hororindonesia",
+      "hashtag": [
+        "#ceritahoror",
+        "#hororindonesia",
+        "#creepy",
+        "#twistered",
+        "#alurnaskah"
+      ],
+      "adegan": [
+        {
+          "narasi": "Lanjutan... Dari lemari arsip tua, terungkap lembaran rekam medis pasien puluhan tahun lalu.",
+          "gambar": "Close-up view of weathered hospital record page with handwritten black ink and stamped official seals.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Wanita itu dinyatakan meninggal di ruang tunggu akibat tidak kunjung dipanggil dokter.",
+          "gambar": "Detail of the medical report document highlighting stamped words marked deceased in waiting room.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Rasa takut bercampur panik membuatku langsung berlari keluar menuju meja resepsionis utama.",
+          "gambar": "The receptionist sprinting down the dark clinic corridor in total panic towards bright reception desk light.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_left",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "langkah"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tanganku yang bergetar hebat segera menyalakan mikrofon pengeras suara di meja jaga.",
+          "gambar": "Close-up of trembling hand turning on a black desk microphone switch on the reception counter.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku memberanikan diri memanggil nama lengkap wanita itu lewat pengeras suara klinik.",
+          "gambar": "Medium shot of receptionist speaking urgently into microphone, sweat on her forehead under dim desk lamp.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "kiri",
+          "dialog": null
+        },
+        {
+          "narasi": "Setelah panggilan itu selesai, keheningan mencekam seketika melingkupi seluruh ruangan klinik.",
+          "gambar": "Wide shot of empty clinic lobby with silent ceiling lights, peaceful yet eerie atmosphere.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Panggilan otomatis nomor nol yang selalu terdengar tiap malam akhirnya berhenti total.",
+          "gambar": "The receptionist sitting alone at reception desk looking at dark window glass. In the glass window reflection behind her, a tall dark silhouette figure is standing silently.",
+          "tokoh": true,
+          "petunjuk": true,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "kanan",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku menghela napas lega sambil merapikan kartu identitas kerja di atas meja.",
+          "gambar": "Receptionist exhaling with relief, taking her employee ID card from the desk to put in her bag.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Tiba-tiba mesin cetak antrean di sebelahnya berbunyi nyaring dan bergetar sendiri.",
+          "gambar": "Close-up of queue printer machine suddenly whirring violently, spitting out a fresh paper slip.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Kertas berangka minus satu keluar, mencetak nama lengkapku yang terhubung dari kartu identitas.",
+          "gambar": "Extreme close-up of printed ticket paper showing bold text minus one followed by the full name of the receptionist.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Sebuah suara berbisik rapat di samping telingaku, \"Sekarang giliranmu yang antre.\"",
+          "gambar": "Dark chilling close-up shot of an eerie pale ghostly face leaning right behind the receptionist ear from dark background.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget"
+          ],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "kanan",
+          "dialog": {
+            "siapa": "hantu",
+            "kelamin": "wanita"
+          }
+        }
+      ]
+    }
+  ],
+  "tema": "konsep: Antrean Nomor Nol"
+}
