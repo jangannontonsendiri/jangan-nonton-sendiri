@@ -1,0 +1,506 @@
+{
+  "judul": "Peta ke Jalan Baru",
+  "suasana": "jangkrik",
+  "tokoh_utama": "A 23-year-old Indonesian man with short messy black hair, wearing a dark green windbreaker jacket and jeans, riding a grey automatic scooter.",
+  "part": [
+    {
+      "pertanyaan": "Kalian pernah dikasih jalan aneh sama Google Maps? Cerita dong.",
+      "caption": "Jangan pernah percaya 100% sama rute pintas Google Maps di kampung... #ceritahoror #urbanlegend",
+      "hashtag": [
+        "#ceritahoror",
+        "#googlemaps",
+        "#alambaip",
+        "#misteri"
+      ],
+      "adegan": [
+        {
+          "narasi": "Google Maps menyuruhku belok ke jalan yang belum pernah ada di kampungku.",
+          "gambar": "Close-up on smartphone mounted on scooter handlebar showing a dark navigation map, pointing toward a pitch black alley.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Padahal aku sudah paham betul setiap sudut jalanan kampung ini dari kecil.",
+          "gambar": "A 23-year-old Indonesian man riding a grey scooter, looking confused at a narrow paved entrance lit by dim yellow streetlights.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aplikasi di ponsel bilang ada jalan pintas sepuluh menit lebih cepat.",
+          "gambar": "POV looking at smartphone screen displaying a bright blue GPS route cutting through an unmarked black area.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "getar_hp"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Jalannya beraspal sangat mulus tanpa ada lubang sama sekali di sepanjang jalan.",
+          "gambar": "Wide shot of a clean, perfectly smooth black asphalt road stretching into darkness with warm yellow streetlights casting long shadows.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Lampu-lampu jalan memancarkan cahaya kuning redup memanjang ke depan lorong.",
+          "gambar": "Low angle view of eerie dim yellow streetlights along an empty, quiet Indonesian village road at night.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_up",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [],
+          "fokus": "atas",
+          "dialog": null
+        },
+        {
+          "narasi": "Rumah-rumah di pinggir jalan bermodel tua, tapi semua lampunya menyala terang.",
+          "gambar": "Row of traditional Javanese wooden houses with bright glowing porch lights, standing unnaturally quiet along the road.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [],
+          "fokus": "kiri",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku memperlambat laju motor karena merasa ada yang aneh di sini.",
+          "gambar": "Close-up of the protagonist's anxious face under helmet visor, glancing left and right suspiciously.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Suara mesin motorku terdengar sangat nyaring di tengah keheningan malam ini.",
+          "gambar": "Side view of grey scooter slowly cruising down the empty street under glowing yellow lamps.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku sempat melirik gantungan kunci di motorku, pemberian sahabat lama.",
+          "gambar": "Extreme close-up on the scooter key ignition featuring a distinct blue acrylic helmet keychain with a cartoon sticker.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Di teras rumah-rumah kayu itu, tampak beberapa warga sedang duduk santai.",
+          "gambar": "A group of pale figures sitting still on a wooden house porch; notably, one figure wearing a batik shirt has a completely smooth face with no eyes, nose, or mouth.",
+          "tokoh": false,
+          "petunjuk": true,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [],
+          "fokus": "kanan",
+          "dialog": null
+        },
+        {
+          "narasi": "Tiba-tiba bulu kudukku berdiri saat melihat ke arah teras-teras rumah itu.",
+          "gambar": "Close-up of goosebumps rising on the protagonist's forearm skin under his green jacket sleeve.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Di semua teras rumah, orang-orang duduk diam dan menoleh bersamaan menatapku!",
+          "gambar": "Terrifying wide shot of dozens of shadowy villagers on every porch suddenly snapping their heads sideways in unison to glare directly at the camera.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget",
+            "shake"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        }
+      ]
+    },
+    {
+      "pertanyaan": "Kalau ditanya 'mau menetap atau cuma lewat', kamu jawab apa?",
+      "caption": "Jangan sembarangan mampir ke warung kalau GPS bilang 'Anda telah sampai'... #ceritahoror #part2",
+      "hashtag": [
+        "#ceritahoror",
+        "#warungmisterius",
+        "#horrorindonesia"
+      ],
+      "adegan": [
+        {
+          "narasi": "Lanjutan... aku makin panik dan memacu motor kencang-kencang menembus kegelapan malam.",
+          "gambar": "The protagonist speeding frantically on his grey scooter through the eerie dark village street.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_left",
+          "efek": [
+            "shake"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aplikasi di ponsel mengeluarkan suara, 'Anda telah sampai' tepat di warung.",
+          "gambar": "Phone screen showing destination pin right in front of a rustic wooden food stall with glowing warm lights.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "getar_hp"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Sebuah warung kayu berdiri di pinggir jalan dengan lampu neon redup.",
+          "gambar": "Medium shot of an old traditional Javanese wooden food stall standing alone in dark surroundings with a buzzing flickering neon light.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Penjualnya seorang kakek tua yang tersenyum ramah dari balik meja kayu.",
+          "gambar": "Close-up of an elderly Indonesian man behind a wooden counter, wearing a sarong and black cap, smiling unnaturally wide.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Kakek itu langsung menyuguhkan segelas teh hangat manis beruap tebal padaku.",
+          "gambar": "An old wrinkled hand placing a glass of steaming hot dark amber tea onto a worn wooden table.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku duduk kaku sambil menggenggam stang motorku yang terasa dingin sekali.",
+          "gambar": "Protagonist sitting uncomfortably on a wooden bench, hands trembling while looking at the glass of tea.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Penjual itu menatapku erat lalu bertanya, \"Mau menetap atau cuma lewat?\"",
+          "gambar": "Close-up of the old warung seller leaning forward, eyes wide and unblinking under dim light.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "orang",
+            "kelamin": "pria"
+          }
+        },
+        {
+          "narasi": "Pertanyaan singkat itu membuat dadaku berdebar kencang dan merinding ketakutan.",
+          "gambar": "Close-up on protagonist's terrified eyes, sweat dripping down his cheek in the yellow lighting.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "shake"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Pandanganku beralih ke dinding kayu warung yang dipenuhi foto-foto tua berkaca.",
+          "gambar": "A wooden wall filled with old framed black-and-white photos of motorcyclists; in the reflection of the glass, a dark headless shadow stands right behind the protagonist.",
+          "tokoh": true,
+          "petunjuk": true,
+          "gerak": "pan_left",
+          "efek": [],
+          "suara": [],
+          "fokus": "kiri",
+          "dialog": null
+        },
+        {
+          "narasi": "Foto-foto itu memperlihatkan para pengendara motor yang tersenyum pucat dan kaku.",
+          "gambar": "Close-up of multiple framed photos on wall showing smiling motorcyclists posing with their bikes, all with eerie rigid smiles.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Jantungku serasa berhenti saat mataku menangkap satu foto di sudut atas.",
+          "gambar": "Protagonist pointing in shock toward a specific photo framed near the upper corner of the wooden wall.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "atas",
+          "dialog": null
+        },
+        {
+          "narasi": "Di foto itu terlihat jelas kawan SMA-ku yang hilang misterius tahun lalu!",
+          "gambar": "Extreme close-up on a framed photo showing a young man holding the exact same blue acrylic helmet keychain, smiling stiffly beside his motorcycle.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "kaget",
+            "shake"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        }
+      ]
+    },
+    {
+      "pertanyaan": "Kalau Google Maps kamu mendadak muncul notifikasi kayak gini, kamu ngapain?",
+      "caption": "Jangan pernah terima tawaran minuman di jalan yang tak dikenal... #ceritahoror #part3 #ending",
+      "hashtag": [
+        "#ceritahoror",
+        "#klimaks",
+        "#googlemaps",
+        "#misteriindonesia"
+      ],
+      "adegan": [
+        {
+          "narasi": "Lanjutan... aku menolak teh hangat itu dan menjawab, \"Cuma lewat, Mbah.\"",
+          "gambar": "Protagonist quickly pushing the glass of tea away and backing up toward his scooter.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": {
+            "siapa": "orang",
+            "kelamin": "pria"
+          }
+        },
+        {
+          "narasi": "Seketika itu juga seluruh lampu warung padam total dan kegelapan mencekam datang.",
+          "gambar": "Complete pitch black view as neon lights flicker violently and shut off instantly.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "flicker",
+            "kaget"
+          ],
+          "suara": [
+            "kaca"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Angin dingin berembus kencang diiringi bau tanah wetan yang sangat menyengat.",
+          "gambar": "Leaves blowing wildly through pitch black dark air, fog rolling along the ground.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "pan_left",
+          "efek": [
+            "kabut"
+          ],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Saat membuka mata, aku sudah berdiri gemetar di tengah kebun bambu.",
+          "gambar": "Protagonist standing terrified surrounded by dense, tall bamboo stalks under faint moonlight.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_out",
+          "efek": [
+            "kabut"
+          ],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Motorku tergeletak di atas tanah becek yang dipenuhi rumput liar tinggi.",
+          "gambar": "The grey automatic scooter lying sideways on muddy wet dirt among wild bamboo shoots.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_down",
+          "efek": [],
+          "suara": [],
+          "fokus": "bawah",
+          "dialog": null
+        },
+        {
+          "narasi": "Batang-batang bambu bergesekan nyaring seolah-olah ada sosok tinggi yang mengawasi.",
+          "gambar": "Dense dark bamboo forest at night; deep between the bamboo leaves, two glowing pale eyes and a white face peek out silently.",
+          "tokoh": false,
+          "petunjuk": true,
+          "gerak": "pan_up",
+          "efek": [
+            "kabut"
+          ],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "atas",
+          "dialog": null
+        },
+        {
+          "narasi": "Tanpa berpikir panjang, aku menegakkan motor dan langsung kabur sekuat tenaga.",
+          "gambar": "Protagonist frantically lifting his grey scooter up and kick-starting the engine in terror.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "shake"
+          ],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Aku akhirnya berhasil menembus kegelapan dan sampai di jalan raya utama.",
+          "gambar": "Scooter bursting out from dark woods onto a paved public street lit by bright white modern city streetlights.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "pan_right",
+          "efek": [],
+          "suara": [],
+          "fokus": "kanan",
+          "dialog": null
+        },
+        {
+          "narasi": "Kejadian mengerikan itu membuatku shock berat dan trauma melewati jalan pintas.",
+          "gambar": "Protagonist sitting on bedroom bed late at night, hugging knees while staring blankly at the wall.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "detak"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Namun teror sebenarnya baru dimulai setiap kali aku membuka aplikasi peta.",
+          "gambar": "Close-up on a hand holding a glowing smartphone on a nightstand in a dark room.",
+          "tokoh": true,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [
+            "getar_hp"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Rute jalan pintas misterius itu kini selalu muncul paling atas di layar.",
+          "gambar": "POV of smartphone map UI showing a top suggested route highlighted in red glowing line labeled 'Pintas Khusus'.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [],
+          "suara": [],
+          "fokus": "tengah",
+          "dialog": null
+        },
+        {
+          "narasi": "Peta itu menampilkan rute merah dengan keterangan, 'Teman Anda sedang menunggu.'",
+          "gambar": "Extreme close-up on smartphone screen displaying navigation notification box text reading 'Teman Anda sedang menunggu' with a small avatar of the missing friend.",
+          "tokoh": false,
+          "petunjuk": false,
+          "gerak": "zoom_in",
+          "efek": [
+            "flicker"
+          ],
+          "suara": [
+            "bisikan"
+          ],
+          "fokus": "tengah",
+          "dialog": null
+        }
+      ]
+    }
+  ],
+  "tema": "konsep: Peta ke Jalan Baru"
+}
